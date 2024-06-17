@@ -38,29 +38,29 @@ const LogoDesign = () => {
   return (
     <div className=' bg-blue pt-20 pb-[60px]'>
       <div className="container max-w-[1164px]">
-<div className="flex flex-row flex-wrap -mx-3 items-center mb-[96px]">
-    <div className="w-1/2 px-3">
-    <div className="flex bg-white w-[93.15px] h-[93.15px] justify-center items-center rounded-[7.59px] mb-[29px]">
+<div className="flex lg:flex-row flex-wrap -mx-3 items-center mb-24 flex-col-reverse">
+    <div className="lg:w-1/2 w-full px-3">
+    <div className="flex bg-white w-[93.15px] h-[93.15px] mx-auto lg:mx-0 justify-center items-center rounded-[7.59px] mb-[29px]">
          <DesignIcon/>
     </div>
-    <H4 heading="Logo Design"  className="!text-white !mb-2"/>
-<Description  description="Logo design is a specialized discipline within the realm of graphic design, focused on creating unique and memorable visual symbols that represent a brand, company, or organization." className="!text-[#C9B9F7] max-w-[421px]"/>
+    <H4 heading="Logo Design"  className="!text-white text-center lg:text-start !mb-2"/>
+<Description  description="Logo design is a specialized discipline within the realm of graphic design, focused on creating unique and memorable visual symbols that represent a brand, company, or organization." className="!text-[#C9B9F7] text-center mx-auto lg:mx-0 lg:text-start max-w-[421px]"/>
     </div>
-    <div className="w-1/2 px-3  ">
-    <img src={designImg} alt="designImg" />
+    <div className="lg:w-1/2 w-full px-3  flex justify-center lg:block ">
+    <img src={designImg} alt="designImg" className='max-w-[547.76px] w-full' />
     </div>
 </div>
 <div className="flex flex-row flex-wrap -mx-3 items-center">
-<div className="w-1/2 px-3 flex justify-start ">
-    <img src={digitalImg} alt="digitalImg" />
+<div className="lg:w-1/2 w-full px-3 flex lg:justify-start justify-center ">
+    <img src={digitalImg} alt="digitalImg" className='w-full max-w-[495px]' />
     </div>
-    <div className="w-1/2 px-3 flex justify-end">
+    <div className="lg:w-1/2 w-full px-3 lg:flex lg:justify-end">
     <div>
-        <div className="flex bg-white w-[93.15px] h-[93.15px] justify-center items-center rounded-[7.59px] mb-[29px]">
+        <div className="flex bg-white w-[93.15px] mx-auto lg:mx-0 h-[93.15px] justify-center items-center rounded-[7.59px] mb-[29px]">
         <StrategyIcon/>
         </div>
-        <H4 heading="Strategy & Digital Marketing"  className="!text-white !mb-2"/>
-        <Description  description="Strategy in digital marketing is the foundation upon which successful online campaigns are built. It involves setting clear objectives, identifying target audiences." className="!text-[#C9B9F7] max-w-[445px]"/>
+        <H4 heading="Strategy & Digital Marketing"  className="!text-white !mb-2 text-center lg:text-start"/>
+        <Description  description="Strategy in digital marketing is the foundation upon which successful online campaigns are built. It involves setting clear objectives, identifying target audiences." className="!text-[#C9B9F7] text-center lg:text-start mx-auto lg:mx-0 max-w-[445px]"/>
     </div>
     </div>
    
