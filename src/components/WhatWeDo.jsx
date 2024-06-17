@@ -6,7 +6,14 @@ import shopping from "../assets/images/png/shopping.png";
 import quality from "../assets/images/png/quality.png";
 import boodie from "../assets/images/png/boodie.png";
 import beauty from "../assets/images/png/beauty.png";
+import cartoons from "../assets/images/png/cartoons.png";
+import dogy from "../assets/images/png/dogy.png";
+import animals from "../assets/images/png/animals.png";
+import women from "../assets/images/png/women.png";
+import frute from "../assets/images/png/frute.png";
+import base from "../assets/images/png/base.png";
 import moon from "../assets/images/png/blue-moon.png";
+import skyMoon from "../assets/images/png/sky-moon.png";
 import { Description, H2, H4, H5 } from "./common/Heading";
 
 const addList = [
@@ -16,6 +23,17 @@ const addList = [
   { image: quality },
   { image: boodie },
   { image: beauty },
+];
+const cartoonList = [
+  {
+    col: [{ image: cartoons }, { image: women }],
+  },
+  {
+    col: [{ image: dogy }, { image: frute }],
+  },
+  {
+    col: [{ image: animals }, { image: base }],
+  },
 ];
 export const Vector = () => {
   return (
@@ -207,9 +225,9 @@ const WhatWeDo = () => {
             <CommonButton className="mt-8 md:mt-10" name="Contact" />
           </div>
         </div>
-        <div className="flex max-lg:flex-col xl:gap-[94px] lg:gap-10 justify-between items-center xl:items-end mt-24 lg:mt-[202px] relative">
+        <div className="flex lg:flex-row flex-col xl:gap-[94px] lg:gap-10 justify-between items-center xl:items-start mt-24 lg:mt-[202px] relative">
           <img
-            className="absolute max-w-[307px] right-[-10%] bottom-[-12%]"
+            className="absolute max-w-[307px] right-[-10%] bottom-[-7%]"
             src={moon}
             alt="moon"
           />
@@ -238,6 +256,45 @@ const WhatWeDo = () => {
                 />
               </div>
             ))}
+          </div>
+        </div>
+        <div className="flex lg:flex-row flex-col-reverse xl:gap-[94px] lg:gap-10 justify-between items-center xl:items-start mt-24 lg:mt-[202px] relative">
+          <img
+            className="absolute max-w-[307px] left-[-9%] bottom-[-3%]"
+            src={skyMoon}
+            alt="moon"
+          />
+          <div className="grid sm:grid-cols-3 grid-cols-2 items-center gap-x-[22px] gap-y-[25px] lg:mt-0 mt-10 relative">
+            {cartoonList.map((obj, index) => (
+              <div key={index}>
+                <div className="gap-y-[25px] flex flex-col">
+                  {obj.col.map((obj, i) => (
+                    <div key={i}>
+                      <img
+                        className="max-w-[203px] w-full"
+                        src={obj.image}
+                        alt="cartoons"
+                      />{" "}
+                    </div>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+          <div className="flex flex-col lg:items-start items-center lg:max-w-[512px] relative">
+            <div className="w-[93px] h-[93px] bg-bubbles flex justify-center items-center rounded-[7.58px] shadow-graphicIcon">
+              <Graphic />
+            </div>
+            <H4
+              heading="Visual Graphic Design"
+              className="pt-10 lg:mx-0 mx-auto"
+            />
+            <Description
+              className="pt-2 lg:max-w-[386px] max-w-[500px] lg:text-start text-center opacity-70"
+              description="
+               Visual graphic design is the art of using visual elements, such as images, typography, color, and layout, to convey a message, tell a story, or evoke emotions.
+              "
+            />
           </div>
         </div>
         <span className="absolute max-lg:hidden top-8 left-[37%]">
