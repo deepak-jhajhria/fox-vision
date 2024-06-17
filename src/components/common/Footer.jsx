@@ -67,7 +67,7 @@ export const InstaIcon = () => {
 
 const Footer = () => {
   return (
-    <div className='pt-56 bg-blackPearl px-6 '>
+    <div className='pt-56 bg-blackPearl px-6 -mt-[254px]'>
       <div className="container max-w-[1140px]">
 <div className=" flex flex-row flex-wrap -mx-3 mb-10 sm:mb-16 md:mb-20 lg:mb-[111px]">
 <div className="lg:w-5/12 w-full px-3 mb-10 lg:mb-0">
