@@ -20,7 +20,7 @@ const NavBar = () => {
 
   return (
     <nav className="py-5">
-      <div className="container px-8 lg:px-[50px] bg-white max-w-[1240px] py-4 lg:py-[11px] rounded-full">
+      <div className="container px-6 md:px-8 lg:px-[50px] bg-white max-w-[1240px] py-[9px] lg:py-[11px] rounded-full">
         <div className="flex items-center justify-between w-full gap-10">
           <Link rel="noopener noreferrer" href={"/"}><Logo /></Link>
           <div className={` ${isOpen ? "right-0" : "-right-full"} flex items-center xl:gap-[153px] lg:gap-12 max-lg:gap-8 max-lg:fixed max-lg:top-0 max-lg:bg-white md:bg-full bg-cover max-lg:h-full max-lg:w-full max-lg:z-30 max-lg:duration-300 max-lg:flex-col justify-center`}>
@@ -38,9 +38,9 @@ const NavBar = () => {
             </div>
           </div>
           <div onClick={() => setIsOpen(!isOpen)} className='lg:hidden sm:w-7 sm:h-5 w-6 h-5 relative z-50 flex justify-between flex-col cursor-pointer'>
-            <span className={`${isOpen ? 'rotate-[50deg] translate-y-[15px]' : ""} h-[3px] w-full duration-300 rounded-[3px] bg-blackPearl ease-linear transition-all`}></span>
-            <span className={`${isOpen ? 'hidden' : ""} h-[3px] w-full duration-300 rounded-[3px] bg-blackPearl ease-linear transition-all`}></span>
-            <span className={`${isOpen ? 'rotate-[-50deg] translate-y-[-50%]' : ""} h-[3px] w-full duration-300 rounded-[3px] bg-blackPearl ease-linear transition-all`}></span>
+            <span className={`${isOpen ? 'rotate-[50deg] translate-y-4' : ""} h-[2px] w-full duration-300 rounded-[3px] bg-blackPearl ease-linear transition-all`}></span>
+            <span className={`${isOpen ? 'hidden' : ""} h-[2px] w-full duration-300 rounded-[3px] bg-blackPearl ease-linear transition-all`}></span>
+            <span className={`${isOpen ? 'rotate-[-50deg] translate-y-[-50%]' : ""} h-[2px] w-full duration-300 rounded-[3px] bg-blackPearl ease-linear transition-all`}></span>
           </div>
         </div>
       </div>
@@ -52,7 +52,7 @@ export default NavBar;
 
 export const Logo = () => {
   return (
-    <svg width="208" height="29" viewBox="0 0 208 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg className="w-28 h-7 sm:w-32 md:w-36 lg:w-[208px]" height="29" viewBox="0 0 208 29" fill="none" xmlns="http://www.w3.org/2000/svg">
       <g clip-path="url(#clip0_1_390)">
         <path d="M19.7477 14.8189L14.3015 10.7602L11.5651 8.71754L0.109375 0.16748V18.8703L1.70964 20.1515L11.6618 28.0827L23.0232 18.8606V17.2604L19.7477 14.8189ZM3.38243 6.69425L8.82865 10.7602L7.25014 11.9326L5.26552 13.4144L3.38243 14.8189V6.69425ZM11.6448 23.8814L4.42429 18.1258L5.98588 16.963L9.99138 13.9752L11.5651 12.8028L18.7227 18.1354L11.6448 23.8814ZM13.1412 7.54031L15.8776 9.59503L19.7477 6.69425V12.4692L23.0232 14.9131V0.16748L13.1412 7.54031Z" fill="url(#paint0_linear_1_390)" />
         <path d="M47.02 5.57031V8.29222H33.8166V13.5088H45.8766V16.2307H33.8166V23.1757H30.8916V5.57031H47.02Z" fill="black" />
