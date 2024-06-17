@@ -2,8 +2,8 @@ import React from "react";
 import mochtenEllp from "../assets/images/svg/mochtenEllp.svg";
 const Mochten = () => {
   return (
-    <div>
-      <div className="container px-3 mx-auto">
+    <div className=" -translate-y-[50%]">
+      <div className="container !max-w-[1140px] px-3 xl:px-0 mx-auto">
         <div className="bg-turquoise relative rounded-[10px] md:min-h-[253px] py-9">
           <img
             className="absolute right-0 top-0"
