@@ -4,3 +4,8 @@
 @tailwind utilities;
 
 @layer components {}
+
+.navLinkStroke {
+  stroke: 0.5px #071838;
+  -webkit-text-stroke: 0.5px #071838;
+}
