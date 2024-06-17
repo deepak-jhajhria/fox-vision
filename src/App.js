@@ -3,7 +3,7 @@ import Homepage from './pages/homepage/Homepage';
 
 function App() {
   return (
-    <div>
+    <div className='max-w-[1920px] mx-auto'>
       <Homepage />
     </div>
   );
