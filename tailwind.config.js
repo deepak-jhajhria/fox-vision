@@ -35,6 +35,7 @@ module.exports = {
       backgroundImage: {},
       boxShadow: {
         nav: "0px 0px 13px 0px #00000024",
+        painIcon: "0px 12.63px 25.25px 0px #4B17E62B",
       },
     },
   },
