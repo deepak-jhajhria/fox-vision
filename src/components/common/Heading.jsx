@@ -8,11 +8,11 @@ export const H3 = ({ heading, className }) => {
     return <h3 className={`font-montserrat font-semibold text-blackPearl text-2xl sm:text-3xl md:text-4xl lg:text-custom-4xl leading-[48px] ${className}`}>{heading}</h3>
 }
 export const H4 = ({ heading, className }) => {
-    return <h4 className={`font-poppins font-semibold text-blackPearl text-2xl leading-9 ${className}`}>{heading}</h4>
+    return <h4 className={`font-poppins font-semibold text-blackPearl text-lg sm:text-xl lg:text-2xl leading-9 ${className}`}>{heading}</h4>
 }
 export const H5 = ({ title, className }) => {
     return <h5 className={`font-poppins font-bold text-blackPearl text-base sm:text-lg lg:text-xl leading-normal ${className}`}>{title}</h5>
 }
 export const Description = ({ description, className }) => {
-    return <p className={`font-poppins font-normal text-blackPearl text-xl leading-[36.6px] ${className}`}>{description}</p>
+    return <p className={`font-poppins font-normal text-blackPearl text-base sm:text-lg lg:text-xl leading-[36.6px] ${className}`}>{description}</p>
 }
