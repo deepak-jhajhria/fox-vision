@@ -4,6 +4,11 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
+    container: {
+      padding: '1rem',
+      center: true,
+      centerContent: true,
+    },
     fontFamily: {
       poppins: ['Poppins', 'sans-serif'],
       montserrat: ['Montserrat', 'sans-serif'],
