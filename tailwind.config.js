@@ -4,13 +4,34 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
+    fontFamily: {
+      poppins: ['Poppins', 'sans-serif'],
+      montserrat: ['Montserrat', 'sans-serif'],
+    },
     extend: {
-      fontFamily: {
-        mont: "Montserrat",
-        poppins: "Poppins",
+      colors: {
+        blue: "#4B17E6",
+        blackPearl: "#071838",
+        turquoise: "#05D5FB",
+        bubbles: "#E9FCFF",
+        blueChalk: "#E6DEFF",
+      },
+      lineHeight: {
+        '107': '107%',
+        '120': '120%',
+        '150': '150%',
+        '183': '183%',
+      },
+      fontSize: {
+        'custom-4xl': '40px',
+        'custom-8xl': '88.41px',
+      },
+      backgroundImage: {
+      },
+      boxShadow: {
+
       },
     },
   },
   plugins: [],
 }
-

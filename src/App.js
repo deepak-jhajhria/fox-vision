@@ -1,11 +1,13 @@
 import './App.css';
-import MoreWays from './components/MoreWays';
+import Homepage from './pages/homepage/Homepage';
+import Portfolio from './pages/portfolio/Portfolio';
 
 function App() {
   return (
-<div>
-<MoreWays/>
-</div>
+    <div className="App">
+      <Homepage />
+      <Portfolio/>
+    </div>
   );
 }
 
