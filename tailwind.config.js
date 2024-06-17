@@ -1,12 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
-  ],
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     fontFamily: {
-      poppins: ['Poppins', 'sans-serif'],
-      montserrat: ['Montserrat', 'sans-serif'],
+      poppins: ["Poppins", "sans-serif"],
+      montserrat: ["Montserrat", "sans-serif"],
     },
     extend: {
       colors: {
@@ -17,21 +15,20 @@ module.exports = {
         blueChalk: "#E6DEFF",
       },
       lineHeight: {
-        '107': '107%',
-        '120': '120%',
-        '150': '150%',
-        '183': '183%',
+        107: "107%",
+        120: "120%",
+        150: "150%",
+        183: "183%",
       },
       fontSize: {
-        'custom-4xl': '40px',
-        'custom-8xl': '88.41px',
+        "custom-4xl": "40px",
+        "custom-8xl": "88.41px",
       },
-      backgroundImage: {
-      },
+      backgroundImage: {},
       boxShadow: {
-
+        nav: "0px 0px 13px 0px #00000024",
       },
     },
   },
   plugins: [],
-}
+};
