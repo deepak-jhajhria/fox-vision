@@ -17,9 +17,14 @@ module.exports = {
         blueChalk: "#E6DEFF",
       },
       lineHeight: {
-        '1.5': '1.5',
+        '107': '107%',
+        '120': '120%',
+        '150': '150%',
+        '183': '183%',
       },
       fontSize: {
+        'custom-4xl': '40px',
+        'custom-8xl': '88.41px',
       },
       backgroundImage: {
       },
