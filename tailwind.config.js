@@ -17,7 +17,8 @@ module.exports = {
         turquoise: "#05D5FB",
         bubbles: "#E9FCFF",
         blueChalk: "#E6DEFF",
-        electricViolet: "#5925F2",
+        electricViolet: '#5925F2',
+        skyBlue: "#50E2FC"
       },
       lineHeight: {
         107: "107%",
@@ -34,6 +35,7 @@ module.exports = {
       backgroundImage: {},
       boxShadow: {
         nav: "0px 0px 13px 0px #00000024",
+        blueChalk: ['0px 10px 20px 0px #4B17E62B'],
       },
     },
   },
