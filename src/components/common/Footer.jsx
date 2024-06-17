@@ -5,46 +5,46 @@ export const FooterLinkData ={
     data1 :[
         {
             link:'About us',
-            path:'#'
+            path:'#About us'
         },
         {
               link:'Offer',
-            path:'#'
+            path:'#Offer'
         },
         {
             link:'Contact',
-          path:'#'
+          path:'#Contact'
       }
     ],
     data2:[
         {
             link:'Fox Vision GmbH ',
-            path:'#'
+            path:'#Fox'
         },
         {
             link:'Badstrasse 50 CH-5200 Brugg',
-            path:'#',
+            path:'#address',
         },{
             link:'+41 79 725 61 00',
-            path:'#'
+            path:'#phone'
         },
         {
         link:'info@foxvision.ch',
-        path:'#'
+        path:'#mailto',
         }
     ],
     data3:[
         {
 link:'Imprint',
-path:'#'
+path:'#Imprint'
         },
         {
             link:'Data protection',
-            path:'#'
+            path:'#data'
         },
         {
             link:'Copyright',
-            path:'#'
+            path:'#Copyright'
         }
     ]
 }
@@ -67,9 +67,9 @@ export const InstaIcon = () => {
 
 const Footer = () => {
   return (
-    <div className='pt-56 bg-blackPearl '>
-      <div className="container max-w-[1164px]">
-<div className=" flex flex-row flex-wrap -mx-3 mb-[111px]">
+    <div className='pt-56 bg-blackPearl px-6 -mt-[254px]'>
+      <div className="container max-w-[1140px]">
+<div className=" flex flex-row flex-wrap -mx-3 mb-10 sm:mb-16 md:mb-20 lg:mb-[111px]">
 <div className="lg:w-5/12 w-full px-3 mb-10 lg:mb-0">
 <div className=' flex justify-center lg:block'><img src={footerLogo} alt="logo" className='mb-4' /></div>
 <p className=' font-poppins text-base text-white text-opacity-70 max-w-[311px] mb-[30px] text-center lg:text-start mx-auto lg:mx-0'>Libero morbi pharetra sollicitudin enim praesent nulla velit sitonec leodui.</p>
@@ -87,8 +87,8 @@ const Footer = () => {
 </div>
 </div>
 <div className="lg:w-7/12 w-full px-3 flex lg:justify-end justify-center">
-<div className="flex lg:gap-[75px] lg:max-w-[548.21px] w-full lg:justify-end min-[500px]:justify-between flex-row max-[500px]:flex-wrap ">
-    <div className='lg:max-w-[71px] w-full max-[500px]:w-1/2 '>
+<div className="flex lg:gap-[75px] lg:max-w-[548.21px] w-full lg:justify-end min-[550px]:justify-between flex-row max-[550px]:flex-wrap ">
+    <div className='lg:max-w-[71px] w-full max-[550px]:w-1/2 '>
         <ul>
             <li className='font-poppins text-base  font-semibold text-white mb-[14px]'>
             Home
@@ -103,7 +103,7 @@ const Footer = () => {
             }
         </ul>
     </div>
-    <div className='lg:max-w-[201.21px] w-full  max-[500px]:w-1/2 flex min-[500px]:justify-center'>
+    <div className='lg:max-w-[201.21px] w-full  max-[550px]:w-1/2 flex min-[550px]:justify-center'>
         <ul>
             <li className='font-poppins text-base  font-semibold text-white mb-[14px]'>
             Agency
@@ -118,7 +118,7 @@ const Footer = () => {
             }
         </ul>
     </div>
-<div className='lg:max-w-[126px] w-full flex min-[500px]:justify-end'>
+<div className='lg:max-w-[126px] w-full flex min-[550px]:justify-end'>
     <ul >
         <li className='font-poppins  text-base font-semibold text-white mb-[14px]'>
         Legal

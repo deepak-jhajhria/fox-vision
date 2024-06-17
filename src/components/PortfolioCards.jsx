@@ -72,8 +72,8 @@ discription:"Geschäftsführer"
 
 const PortfolioCards = () => {
   return (
-    <div className='pt-[123px]'>
-        <div className=' container max-w-[1164px] mx-auto px-3'>
+    <div className='pt-[123px] px-6'>
+        <div className=' container max-w-[1140px]'>
             <div className=' flex flex-row flex-wrap -mx-3 mb-[26px] justify-center  lg:justify-normal'>
                     {
                         PortCardData.map((item, i) => (
