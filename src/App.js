@@ -4,8 +4,8 @@ import Portfolio from './pages/portfolio/Portfolio';
 
 function App() {
   return (
-    <div className="App">
-      <Homepage />
+    <div className='max-w-[1920px] mx-auto'>
+      {/* <Homepage /> */}
       <Portfolio/>
     </div>
   );
