@@ -35,7 +35,7 @@ const ResultsDriven = () => {
           <div className="md:w-1/2 md:mb-3 w-full md:pt-0 pt-3 px-3 flex items-end justify-end">
             <div className="mb-0">
                 <Description
-                  className="lg:max-w-[481px] max-md:!text-center !text-xl !text-opacity-70 !leading-150"
+                  className="lg:max-w-[481px] max-md:!text-center md:!text-xl sm:!text-lg text-base !text-opacity-70 !leading-150"
                   description={
                     <>
                       We see our customers as partners and identify passionately
