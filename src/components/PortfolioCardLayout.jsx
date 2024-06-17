@@ -8,7 +8,7 @@ export const PortfolioCardLayout = (props) => {
         </div>
         <div className=' px-[15px] pb-[15px]'>
 <H5 title={props.head} className="!leading-150 !mb-2.5"/>
-<p className=' font-poppins text-base leading-150 text-[#525E74]'>{props.discription}</p>
+<p className=' font-poppins text-sm lg:text-base leading-150 text-[#525E74]'>{props.discription}</p>
         </div>
       </div>
   )

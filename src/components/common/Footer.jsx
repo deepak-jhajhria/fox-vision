@@ -87,8 +87,8 @@ const Footer = () => {
 </div>
 </div>
 <div className="lg:w-7/12 w-full px-3 flex lg:justify-end justify-center">
-<div className="flex lg:gap-[75px] lg:max-w-[548.21px] w-full lg:justify-end min-[500px]:justify-between flex-row max-[500px]:flex-wrap ">
-    <div className='lg:max-w-[71px] w-full max-[500px]:w-1/2 '>
+<div className="flex lg:gap-[75px] lg:max-w-[548.21px] w-full lg:justify-end min-[550px]:justify-between flex-row max-[550px]:flex-wrap ">
+    <div className='lg:max-w-[71px] w-full max-[550px]:w-1/2 '>
         <ul>
             <li className='font-poppins text-base  font-semibold text-white mb-[14px]'>
             Home
@@ -103,7 +103,7 @@ const Footer = () => {
             }
         </ul>
     </div>
-    <div className='lg:max-w-[201.21px] w-full  max-[500px]:w-1/2 flex min-[500px]:justify-center'>
+    <div className='lg:max-w-[201.21px] w-full  max-[550px]:w-1/2 flex min-[550px]:justify-center'>
         <ul>
             <li className='font-poppins text-base  font-semibold text-white mb-[14px]'>
             Agency
@@ -118,7 +118,7 @@ const Footer = () => {
             }
         </ul>
     </div>
-<div className='lg:max-w-[126px] w-full flex min-[500px]:justify-end'>
+<div className='lg:max-w-[126px] w-full flex min-[550px]:justify-end'>
     <ul >
         <li className='font-poppins  text-base font-semibold text-white mb-[14px]'>
         Legal
