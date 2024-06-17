@@ -5,46 +5,46 @@ export const FooterLinkData ={
     data1 :[
         {
             link:'About us',
-            path:'#'
+            path:'#About us'
         },
         {
               link:'Offer',
-            path:'#'
+            path:'#Offer'
         },
         {
             link:'Contact',
-          path:'#'
+          path:'#Contact'
       }
     ],
     data2:[
         {
             link:'Fox Vision GmbH ',
-            path:'#'
+            path:'#Fox'
         },
         {
             link:'Badstrasse 50 CH-5200 Brugg',
-            path:'#',
+            path:'#address',
         },{
             link:'+41 79 725 61 00',
-            path:'#'
+            path:'#phone'
         },
         {
         link:'info@foxvision.ch',
-        path:'#'
+        path:'#mailto',
         }
     ],
     data3:[
         {
 link:'Imprint',
-path:'#'
+path:'#Imprint'
         },
         {
             link:'Data protection',
-            path:'#'
+            path:'#data'
         },
         {
             link:'Copyright',
-            path:'#'
+            path:'#Copyright'
         }
     ]
 }
@@ -67,8 +67,8 @@ export const InstaIcon = () => {
 
 const Footer = () => {
   return (
-    <div className='pt-56 bg-blackPearl '>
-      <div className="container max-w-[1164px]">
+    <div className='pt-56 bg-blackPearl px-6 '>
+      <div className="container max-w-[1140px]">
 <div className=" flex flex-row flex-wrap -mx-3 mb-[111px]">
 <div className="lg:w-5/12 w-full px-3 mb-10 lg:mb-0">
 <div className=' flex justify-center lg:block'><img src={footerLogo} alt="logo" className='mb-4' /></div>
