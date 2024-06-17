@@ -69,7 +69,7 @@ const Footer = () => {
   return (
     <div className='pt-56 bg-blackPearl px-6 '>
       <div className="container max-w-[1140px]">
-<div className=" flex flex-row flex-wrap -mx-3 mb-[111px]">
+<div className=" flex flex-row flex-wrap -mx-3 mb-10 sm:mb-16 md:mb-20 lg:mb-[111px]">
 <div className="lg:w-5/12 w-full px-3 mb-10 lg:mb-0">
 <div className=' flex justify-center lg:block'><img src={footerLogo} alt="logo" className='mb-4' /></div>
 <p className=' font-poppins text-base text-white text-opacity-70 max-w-[311px] mb-[30px] text-center lg:text-start mx-auto lg:mx-0'>Libero morbi pharetra sollicitudin enim praesent nulla velit sitonec leodui.</p>
