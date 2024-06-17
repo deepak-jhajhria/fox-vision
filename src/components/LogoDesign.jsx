@@ -43,7 +43,7 @@ const LogoDesign = () => {
     <div className="flex bg-white w-[93.15px] h-[93.15px] mx-auto lg:mx-0 justify-center items-center rounded-[7.59px] mb-[29px]">
          <DesignIcon/>
     </div>
-    <H4 heading="Logo Design"  className="!text-white text-center lg:text-start !mb-2"/>
+    <H4 heading="Logo Design"  className="!text-white text-center !leading-150 lg:text-start !mb-2"/>
 <Description  description="Logo design is a specialized discipline within the realm of graphic design, focused on creating unique and memorable visual symbols that represent a brand, company, or organization." className="!text-white !leading-150 !text-opacity-70 text-center mx-auto lg:mx-0 lg:text-start max-w-[421px]"/>
     </div>
     <div className="lg:w-1/2 w-full px-3  flex justify-center lg:block ">
@@ -59,7 +59,7 @@ const LogoDesign = () => {
         <div className="flex bg-white w-[93.15px] mx-auto lg:mx-0 h-[93.15px] justify-center items-center rounded-[7.59px] mb-[29px]">
         <StrategyIcon/>
         </div>
-        <H4 heading="Strategy & Digital Marketing"  className="!text-white !mb-2 text-center lg:text-start"/>
+        <H4 heading="Strategy & Digital Marketing"  className="!text-white !mb-2 text-center !leading-150 lg:text-start"/>
         <Description  description="Strategy in digital marketing is the foundation upon which successful online campaigns are built. It involves setting clear objectives, identifying target audiences." className="!text-white !text-opacity-70 text-center !leading-150 lg:text-start mx-auto lg:mx-0 max-w-[445px]"/>
     </div>
     </div>
