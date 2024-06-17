@@ -1,8 +1,9 @@
 import React from 'react'
 import { WorkCard } from './WorkCard'
+import ResultsDriven from './ResultsDriven';
 const AppIcon = () => {
     return (
-      <svg
+      <svg className='max-md:w-[40px] max-md:h-[40px]'
         width="55"
         height="56"
         viewBox="0 0 55 56"
@@ -39,6 +40,7 @@ const AppIcon = () => {
 const SoftwareIcon = () => {
     return (
       <svg
+        className="max-md:w-[37px] max-md:h-[36px]"
         width="47"
         height="46"
         viewBox="0 0 47 46"
@@ -79,6 +81,7 @@ const SoftwareIcon = () => {
 const TeachIcon = () => {
     return (
       <svg
+        className="max-md:w-[40px] max-md:h-[32px]"
         width="51"
         height="43"
         viewBox="0 0 51 43"
@@ -128,19 +131,23 @@ const WorkData = [
 ];
 
 const HowWeWork = () => {
-  return (
-    <div className=' py-28 my-3'>
-        <div className='container max-w-[1140px]'>
-          <div className='flex flex-row flex-wrap justify-center -mx-3'>
+    return (
+        <div className=" xl:pt-36 lg:pt-28 md:pt-16 pt-12 px-3 ">
+          <div className="container max-w-[1164px]">
+            <ResultsDriven />
+            <div className="flex lg:py-28 md:py-16 py-12 xl:my-3 flex-row flex-wrap justify-center -mx-3">
               {WorkData.map((obj, i) => (
-                <div key={i} className='md:w-1/3 sm:w-1/2 w-full flex justify-center lg:px-3 px-2'>
-                    <WorkCard icons={obj.icons} tittle={obj.tittle} />
+                <div
+                  key={i}
+                  className="md:w-1/3 sm:w-1/2 w-full flex justify-center px-2"
+                >
+                  <WorkCard icons={obj.icons} tittle={obj.tittle} />
                 </div>
               ))}
+            </div>
           </div>
         </div>
-    </div>
-  );
+    );
 }
 
 export default HowWeWork
