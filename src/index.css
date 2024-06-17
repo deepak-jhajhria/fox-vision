@@ -3,9 +3,15 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components {}
 
 .navLinkStroke {
   stroke: 0.5px #071838;
   -webkit-text-stroke: 0.5px #071838;
+}
+
+@layer components {
+  .footerLinkHover {
+    @apply after:absolute relative hover:after:left-[0] after:bottom-[-2%] after:w-0 after:left-[50%] after:rounded-[10px] after:h-[2px] after:bg-white hover:text-opacity-100 hover:after:w-full after:duration-300;
+  }
+
 }
