@@ -10,6 +10,9 @@ export const H3 = ({ heading, className }) => {
 export const H4 = ({ heading, className }) => {
     return <h4 className={`font-poppins font-semibold text-blackPearl text-2xl leading-9 ${className}`}>{heading}</h4>
 }
-export const Description = ({ Description, className }) => {
-    return <p className={`font-poppins font-bold text-blackPearl ${fontSize ? "" : "text-xl"} leading-normal ${className}`}>{Description}</p>
+export const H5 = ({ title, className }) => {
+    return <h5 className={`font-poppins font-bold text-blackPearl text-xl leading-normal ${className}`}>{title}</h5>
+}
+export const Description = ({ description, className }) => {
+    return <p className={`font-poppins font-bold text-blackPearl text-xl leading-normal ${className}`}>{description}</p>
 }
