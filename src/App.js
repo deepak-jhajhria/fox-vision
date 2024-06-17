@@ -1,10 +1,14 @@
-import './App.css';
-import Homepage from './pages/homepage/Homepage';
+import "./App.css";
+import Angebot from "./components/Angebot";
+import Mochten from "./components/Mochten";
+import Homepage from "./pages/homepage/Homepage";
 
 function App() {
   return (
     <div className="App">
       <Homepage />
+      <Angebot />
+      <Mochten />
     </div>
   );
 }
