@@ -1,100 +1,124 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import Button from "./common/Button";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const NavBar = () => {
   const navLink = [
-    { title: "Home", path: "#Home" },
-    { title: "About Us", path: "#AboutUs" },
-    { title: "What We Do", path: "#WhatWeDo" },
-    { title: "Why Choose Us", path: "#WhyChooseUs" },
-    { title: "Reviews", path: "#Reviews" },
+    { title: "Home", src: "/home", label: "home" },
+    { title: "Über uns", src: "/uber-uns", label: "uber-uns" },
+    { title: "Angebot", src: "/angebot", label: "angebot" },
+    { title: "Portfolio", src: "/portfolio", label: "portfolio" },
   ];
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const [activeLink, setActiveLink] = useState(navLink[0].src);
+
+  const location = useLocation();
+
+  useEffect(() => {
+    setActiveLink(location.pathname);
+  }, [location]);
 
   const sidebarHandler = () => {
     setIsSidebarOpen(!isSidebarOpen);
     document.body.classList.toggle("overflow-hidden");
   };
+
   return (
-    <nav className="z-10 py-3.5 flex-grow-0">
-      <div className="flex items-center justify-between container max-w-[1152px] mx-auto px-3">
-        <Logo />
-        <ul className="hidden lg:flex gap-6 ">
-          {navLink.map((value, index) => {
-            return (
-              <li key={index}>
-                <NavLink
-                  aria-label={value.title}
-                  className="text-light-white hover:text-green font-Inter font-normal sm:text-sm text-xsm transition-all ease-in-out duration-300"
-                  key={index}
-                  href={value.path}
-                >
-                  {value.title}
-                </NavLink>
-              </li>
-            );
-          })}
-        </ul>
-        <div className="hidden lg:flex">
-          <Button content={"Kontakt"} />
-        </div>
-        <button
-          className="block lg:hidden text-white text-3xl"
-          onClick={sidebarHandler}
-        >
-          <Menu />
-        </button>
-      </div>
-      {/* Sidebar */}
-      {isSidebarOpen && (
-        <div
-          className="lg:hidden fixed inset-0 bg-black opacity-50 z-50"
-          onClick={sidebarHandler}
-        ></div>
-      )}
-      <div
-        className={`lg:hidden fixed inset-y-0 left-0 w-full bg-white z-50 transform ${
-          isSidebarOpen ? "translate-x-0" : "-translate-x-full"
-        } transition duration-300 ease-in-out`}
-      >
-        <div className="p-4 min-h-screen flex flex-col justify-center items-center">
-          <button
-            className="text-white text-sm absolute top-6 right-5"
-            onClick={sidebarHandler}
-          >
-            <Cross />
-          </button>
-          <ul className="flex flex-col items-center space-y-4 my-5">
-            {navLink.map((value, index) => {
-              return (
+    <div className="bg-blue px-4 pt-5 pb-10">
+      <div>
+        <nav className="z-10 flex-grow-0">
+          <div className="max-w-[1240px] mx-auto xl:px-[50px] px-6 bg-white rounded-[150px] py-[11px] flex items-center justify-between">
+            <Link to="/">
+              <Logo className="md:w-[208px] md:h-[29px] sm:w-[180px] sm:h-[26px] w-[150px] h-[24px]" />
+            </Link>
+            <ul className="hidden lg:flex gap-6">
+              {navLink.map((obj, index) => (
                 <li key={index}>
                   <NavLink
-                    aria-label={value.title}
-                    className="text-light-white hover:text-green font-Inter font-normal sm:text-sm text-xsm  transition-all ease-in-out duration-300"
-                    key={index}
-                    href={value.path}
-                    onClick={sidebarHandler}
+                    to={obj.src}
+                    aria-label={obj.title}
+                    className={`text-blackPearl hover:text-blue font-poppins font-normal text-base !leading-150 transition-all ease-in-out duration-300 ${
+                      activeLink === obj.src ? "text-red-500" : ""
+                    }`}
                   >
-                    {value.title}
+                    {obj.title}
                   </NavLink>
                 </li>
-              );
-            })}
-          </ul>
-          <div className="flex justify-center">
-            <Button content={"Kontakt"} />
+              ))}
+            </ul>
+            <div className="hidden lg:flex justify-center items-center gap-4">
+              <div className="flex justify-center items-center lg:gap-4 gap-2">
+                <Call />
+                <Mail />
+              </div>
+              <Button content={"Kontakt"} />
+            </div>
+            <button
+              className="block lg:hidden text-white text-3xl"
+              onClick={sidebarHandler}
+            >
+              <Menu />
+            </button>
           </div>
-        </div>
+          {/* Sidebar */}
+          {isSidebarOpen && (
+            <div
+              className="lg:hidden fixed inset-0 bg-black opacity-50 z-50"
+              onClick={sidebarHandler}
+            ></div>
+          )}
+          <div
+            className={`lg:hidden fixed inset-y-0 left-0 w-full bg-white z-50 transform ${
+              isSidebarOpen ? "translate-x-0" : "-translate-x-full"
+            } transition duration-300 ease-in-out`}
+          >
+            <div className="p-4 min-h-screen flex flex-col justify-center items-center">
+              <button
+                className="text-white text-sm absolute top-6 right-5"
+                onClick={sidebarHandler}
+              >
+                <Cross />
+              </button>
+              <ul className="flex flex-col items-center space-y-4 my-5">
+                {navLink.map((obj, index) => (
+                  <li key={index}>
+                    <NavLink
+                      aria-label={obj.title}
+                      className={`text-light-white hover:text-green font-Inter font-normal sm:text-sm text-xsm transition-all ease-in-out duration-300 ${
+                        activeLink === obj.src ? "font-bold" : ""
+                      }`}
+                      to={obj.src}
+                      onClick={() => {
+                        setActiveLink(obj.src);
+                        sidebarHandler();
+                      }}
+                    >
+                      {obj.title}
+                    </NavLink>
+                  </li>
+                ))}
+              </ul>
+              <div className="flex lg:flex-row flex-col justify-center items-center gap-4">
+                <div className="flex justify-center items-center lg:gap-4 gap-2">
+                  <Call />
+                  <Mail />
+                </div>
+                <Button content={"Kontakt"} />
+              </div>
+            </div>
+          </div>
+        </nav>
       </div>
-    </nav>
+    </div>
   );
 };
 
 export default NavBar;
-export const Logo = () => {
+
+export const Logo = (props) => {
   return (
     <svg
+      className={`${props.className}`}
       width="208"
       height="29"
       viewBox="0 0 208 29"
@@ -162,8 +186,8 @@ export const Logo = () => {
 export const Menu = () => {
   return (
     <svg
-      width="24"
-      height="24"
+      width="40"
+      height="40"
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -178,8 +202,8 @@ export const Menu = () => {
 export const Cross = () => {
   return (
     <svg
-      width="24"
-      height="24"
+      width="40"
+      height="40"
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -187,6 +211,58 @@ export const Cross = () => {
       <path
         d="M3.57843 0.589049L12 9.01026L20.3779 0.632682C20.563 0.435716 20.7859 0.27815 21.0334 0.169433C21.2808 0.0607153 21.5476 0.00308562 21.8179 0C22.3965 0 22.9515 0.229853 23.3606 0.638994C23.7698 1.04813 23.9996 1.60305 23.9996 2.18166C24.0047 2.44914 23.9551 2.71483 23.8538 2.96244C23.7525 3.21004 23.6017 3.43434 23.4106 3.62156L14.9235 11.9991L23.4106 20.4858C23.7702 20.8376 23.981 21.3139 23.9996 21.8166C23.9996 22.3952 23.7698 22.9501 23.3606 23.3593C22.9515 23.7684 22.3965 23.9983 21.8179 23.9983C21.5398 24.0098 21.2624 23.9634 21.0033 23.862C20.7441 23.7606 20.5089 23.6064 20.3125 23.4092L12 14.988L3.60025 23.3874C3.4159 23.5778 3.19567 23.7298 2.95227 23.8347C2.70887 23.9395 2.44711 23.9951 2.18211 23.9983C1.60347 23.9983 1.04853 23.7684 0.639376 23.3593C0.230218 22.9501 0.000354986 22.3952 0.000354986 21.8166C-0.00473176 21.5491 0.0448964 21.2834 0.146194 21.0358C0.247492 20.7882 0.398322 20.5639 0.589428 20.3767L9.07645 11.9991L0.589428 3.51247C0.229843 3.1607 0.0189863 2.68434 0.000354986 2.18166C0.000354986 1.60305 0.230218 1.04813 0.639376 0.638994C1.04853 0.229853 1.60347 0 2.18211 0C2.70573 0.00654498 3.20753 0.218166 3.57843 0.589049Z"
         fill="black"
+      />
+    </svg>
+  );
+};
+export const Call = () => {
+  return (
+    <svg
+      width="37"
+      height="37"
+      viewBox="0 0 37 37"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <rect
+        x="0.609375"
+        y="1.125"
+        width="35"
+        height="35"
+        rx="17.5"
+        stroke="#071838"
+      />
+      <path
+        d="M19.1548 11.7277C19.175 11.6519 19.2101 11.5808 19.2578 11.5185C19.3056 11.4562 19.3652 11.404 19.4331 11.3647C19.5011 11.3255 19.5761 11.3 19.654 11.2897C19.7318 11.2795 19.8109 11.2847 19.8867 11.305C20.9943 11.594 22.0049 12.1731 22.8144 12.9825C23.6239 13.792 24.2029 14.8026 24.4919 15.9102C24.5122 15.986 24.5174 16.0651 24.5072 16.1429C24.4969 16.2208 24.4714 16.2958 24.4322 16.3638C24.3929 16.4318 24.3407 16.4913 24.2784 16.5391C24.2161 16.5869 24.145 16.6219 24.0692 16.6422C24.0187 16.6554 23.9668 16.6622 23.9146 16.6623C23.783 16.6624 23.6551 16.619 23.5507 16.5389C23.4463 16.4588 23.3713 16.3465 23.3372 16.2194C23.1017 15.3151 22.6291 14.4899 21.9684 13.829C21.3076 13.1681 20.4825 12.6954 19.5782 12.4597C19.5023 12.4395 19.4312 12.4045 19.3688 12.3568C19.3064 12.309 19.2541 12.2495 19.2147 12.1815C19.1754 12.1135 19.1499 12.0385 19.1396 11.9606C19.1293 11.8827 19.1344 11.8036 19.1548 11.7277ZM18.9807 14.8497C20.0107 15.1245 20.6724 15.787 20.9472 16.8169C20.9813 16.944 21.0563 17.0563 21.1607 17.1364C21.2651 17.2165 21.393 17.2599 21.5246 17.2598C21.5768 17.2597 21.6287 17.2529 21.6792 17.2397C21.755 17.2194 21.8261 17.1844 21.8884 17.1366C21.9507 17.0888 22.0029 17.0292 22.0422 16.9613C22.0815 16.8933 22.1069 16.8183 22.1172 16.7404C22.1274 16.6626 22.1222 16.5835 22.1019 16.5077C21.7195 15.0767 20.7202 14.0774 19.2892 13.695C19.2134 13.6747 19.1343 13.6696 19.0565 13.6799C18.9787 13.6902 18.9037 13.7158 18.8358 13.755C18.7679 13.7943 18.7083 13.8466 18.6606 13.9089C18.6129 13.9712 18.5779 14.0423 18.5576 14.1181C18.5374 14.1939 18.5323 14.273 18.5426 14.3508C18.5529 14.4286 18.5784 14.5036 18.6177 14.5715C18.657 14.6394 18.7092 14.699 18.7715 14.7467C18.8338 14.7944 18.9049 14.8294 18.9807 14.8497ZM24.3903 20.7298L20.8718 19.1531L20.8621 19.1487C20.6794 19.0705 20.4802 19.0392 20.2824 19.0574C20.0845 19.0757 19.8944 19.143 19.7291 19.2532C19.7096 19.2661 19.6909 19.28 19.6731 19.295L17.8552 20.8448C16.7035 20.2854 15.5145 19.1053 14.9551 17.9686L16.5071 16.1231C16.522 16.1044 16.5362 16.0857 16.5497 16.0656C16.6575 15.9007 16.723 15.7118 16.7402 15.5156C16.7574 15.3193 16.7258 15.1219 16.6483 14.9408V14.9318L15.0671 11.4073C14.9646 11.1708 14.7883 10.9737 14.5646 10.8456C14.3409 10.7174 14.0817 10.6651 13.8258 10.6963C12.8138 10.8295 11.8848 11.3265 11.2125 12.0945C10.5401 12.8626 10.1703 13.8491 10.1721 14.8698C10.1721 20.8 14.9969 25.6248 20.9271 25.6248C21.9478 25.6266 22.9344 25.2568 23.7024 24.5844C24.4704 23.9121 24.9674 22.9831 25.1006 21.9711C25.1319 21.7153 25.0797 21.4562 24.9517 21.2325C24.8237 21.0088 24.6267 20.8324 24.3903 20.7298Z"
+        fill="#071838"
+      />
+    </svg>
+  );
+};
+export const Mail = () => {
+  return (
+    <svg
+      width="37"
+      height="37"
+      viewBox="0 0 37 37"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <rect
+        x="0.609375"
+        y="1.125"
+        width="35"
+        height="35"
+        rx="17.5"
+        stroke="#071838"
+      />
+      <path
+        d="M27.1094 14.6064V23.1249C27.1094 23.8136 26.8463 24.4763 26.3738 24.9774C25.9014 25.4784 25.2553 25.78 24.5678 25.8204L24.4094 25.8249H11.8094C11.1207 25.825 10.458 25.5619 9.95694 25.0894C9.45587 24.6169 9.15428 23.9708 9.11388 23.2833L9.10938 23.1249V14.6064L17.6099 20.2737L17.7143 20.3331C17.8373 20.3933 17.9724 20.4245 18.1094 20.4245C18.2463 20.4245 18.3814 20.3933 18.5045 20.3331L18.6089 20.2737L27.1094 14.6064Z"
+        fill="#071838"
+      />
+      <path
+        d="M24.41 11.4248C25.382 11.4248 26.2343 11.9378 26.7095 12.7091L18.11 18.4421L9.5105 12.7091C9.73616 12.3426 10.0462 12.0354 10.4147 11.813C10.7833 11.5907 11.1996 11.4598 11.6291 11.4311L11.81 11.4248H24.41Z"
+        fill="#071838"
       />
     </svg>
   );
