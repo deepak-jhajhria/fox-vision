@@ -24,7 +24,7 @@ const NavBar = () => {
   };
 
   return (
-    <div className="bg-blue px-4 pt-5 pb-10">
+    <div className="bg-blue px-4 pt-5">
       <div>
         <nav className="z-10 flex-grow-0">
           <div className="max-w-[1240px] mx-auto xl:px-[50px] px-6 bg-white rounded-[150px] py-[11px] flex items-center justify-between">
