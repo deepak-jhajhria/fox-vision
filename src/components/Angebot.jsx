@@ -1,11 +1,10 @@
 import Corporate from "./AngebotCardPath";
 import angebotLogo from "../assets/images/svg/angebotLogo.svg";
-import { H2 } from "./common/Heading";
+import { H2, H5 } from "./common/Heading";
 export const Identity = () => {
   return (
     <svg
-      width="51"
-      height="50"
+      className="sm:w-[51px] sm:h-[50px] w-[40px] h-[40px]"
       viewBox="0 0 51 50"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -40,8 +39,7 @@ export const Identity = () => {
 export const Redesign = () => {
   return (
     <svg
-      width="46"
-      height="47"
+      className="sm:w-[47px] sm:h-[46px] w-[40px] h-[40px]"
       viewBox="0 0 46 47"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -80,8 +78,7 @@ export const Redesign = () => {
 export const Design = () => {
   return (
     <svg
-      width="45"
-      height="46"
+      className="sm:w-[45px] sm:h-[46px] w-[40px] h-[40px]"
       viewBox="0 0 45 46"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -112,8 +109,7 @@ export const Design = () => {
 export const Marketing = () => {
   return (
     <svg
-      width="47"
-      height="44"
+      className="sm:w-[47px] sm:h-[44px] w-[40px] h-[40px]"
       viewBox="0 0 47 44"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -156,8 +152,7 @@ export const Marketing = () => {
 export const Druck = () => {
   return (
     <svg
-      width="42"
-      height="43"
+      className="sm:w-[42px] sm:h-[43px] w-[40px] h-[40px]"
       viewBox="0 0 42 43"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -176,8 +171,7 @@ export const Druck = () => {
 export const Beschriftungen = () => {
   return (
     <svg
-      width="41"
-      height="41"
+      className="sm:w-[41px] sm:h-[40px] w-[40px] h-[40px]"
       viewBox="0 0 41 41"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -212,8 +206,7 @@ export const Beschriftungen = () => {
 export const Arrow = () => {
   return (
     <svg
-      width="39"
-      height="15"
+      className="w-[25px] h-[13px] md:w-[39px] md:h-[15px]"
       viewBox="0 0 39 15"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -279,32 +272,37 @@ const howWeWorkCardlist = [
 
 const Angebot = () => {
   return (
-    <div className="bg-blue pt-12 md:pt-24 lg:pt-[122px] pb-36 md:pb-[190px] lg:pb-[238px]">
+    <div className="bg-blue pt-12 -mt-[1px] md:pt-24 lg:pt-[122px] pb-40 md:pb-[190px] lg:pb-[238px]">
       <div className="container max-w-[1164px] mx-auto px-3">
-        <p className="text-xl text-white font-poppins font-bold mb-3 text-center leading-150">
-          A RESULTS-DRIVEN AGENCY
-        </p>
-        <H2 className="!text-white mb-6 lg:mb-[71px]" heading="Angebot" />
+        <H5
+          className="!text-white  text-center mb-2 md:mb-3"
+          title="A RESULTS-DRIVEN AGENCY"
+        />
+        <H2
+          className="!text-white  text-center lg:mb-[76px]"
+          heading="Angebot"
+        />
 
-        <div className="flex flex-row -mx-3 justify-center flex-wrap ">
+        <div className="flex flex-row -mx-3 pb-10 md:pb-16 lg:pb-[77px] justify-center flex-wrap ">
           {howWeWorkCardlist.map((obj, index) => (
             <div
-              className="lg:w-4/12 md:1/2 pt-6 !px-[11.5px] sm:w-[49%] w-full"
+              className="lg:w-4/12 md:1/2 pt-[22px] !px-[11.5px] sm:w-[49%] w-full"
               key={index}
             >
               <Corporate
-                className={index === 1 ? "bg-lightsky" : "bg-lightpurple"}
+                className=""
                 svg={obj.svg}
                 title={obj.title}
                 description={obj.description}
-                link={obj.link}
+                linkText={obj.link}
                 arrow={obj.arrow}
+                cardBox={index === 1 || index === 3 || index === 5}
               />
             </div>
           ))}
         </div>
         <img
-          className="w-[140px] h-[171px] pt-10 md:pt-16 lg:pt-[77px] mx-auto "
+          className="w-[90px] h-[100px] md:w-[140px] md:h-[171px] mx-auto"
           src={angebotLogo}
           alt="logo_angebot"
         />
