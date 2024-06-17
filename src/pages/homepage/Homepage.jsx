@@ -6,13 +6,13 @@ import HowWeWork from '../../components/HowWeWork'
 
 const Homepage = () => {
     return (
-        <div>
+        <>
             <WhatWeDo />
             <LogoDesign />
             <HowWeWork />
             <Angebot />
             <Mochten />
-        </div>
+        </>
     )
 }
 

@@ -4,7 +4,7 @@ import Button from "./common/Button";
 import { H3 } from "./common/Heading";
 const Mochten = () => {
   return (
-    <div className=" -translate-y-[48%]">
+    <div className="-translate-y-[48%]">
       <div className="container !max-w-[1140px] px-3 xl:px-0 mx-auto">
         <div className="bg-turquoise relative rounded-[10px] md:min-h-[253px] py-9">
           <img

@@ -3,9 +3,9 @@ import PortfolioCards from '../../components/PortfolioCards'
 
 const Portfolio = () => {
   return (
-    <div>
+    <>
       <PortfolioCards/>
-    </div>
+    </>
   )
 }
 
