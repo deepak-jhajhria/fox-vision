@@ -24,6 +24,7 @@ module.exports = {
       },
       fontSize: {
         'custom-4xl': '40px',
+        'custom-6xl': '64px',
         'custom-8xl': '88.41px',
       },
       backgroundImage: {
