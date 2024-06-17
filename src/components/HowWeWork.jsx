@@ -129,14 +129,16 @@ const WorkData = [
 
 const HowWeWork = () => {
   return (
-    <div className='container max-w-[1140px]'>
-      <div className='flex flex-row flex-wrap justify-center -mx-3'>
-          {WorkData.map((obj, i) => (
-            <div key={i} className='md:w-1/3 sm:w-1/2 w-full flex justify-center lg:px-3 px-2'>
-                <WorkCard icons={obj.icons} tittle={obj.tittle} />
-            </div>
-          ))}
-      </div>
+    <div className=' py-28 my-3'>
+        <div className='container max-w-[1140px]'>
+          <div className='flex flex-row flex-wrap justify-center -mx-3'>
+              {WorkData.map((obj, i) => (
+                <div key={i} className='md:w-1/3 sm:w-1/2 w-full flex justify-center lg:px-3 px-2'>
+                    <WorkCard icons={obj.icons} tittle={obj.tittle} />
+                </div>
+              ))}
+          </div>
+        </div>
     </div>
   );
 }

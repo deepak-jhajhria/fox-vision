@@ -20,6 +20,7 @@ module.exports = {
         turquoise: "#05D5FB",
         bubbles: "#E9FCFF",
         blueChalk: "#E6DEFF",
+        electricViolet: '#5925F2'
       },
       lineHeight: {
         '107': '107%',
