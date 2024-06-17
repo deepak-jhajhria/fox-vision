@@ -1,10 +1,12 @@
 import { H1 } from "./common/Heading";
 import headerpc from "../assets/images/webp/hero-pc.webp";
+import NavBar from "./NavBar";
 
 const HeroSec = () => {
   return (
-    <div className="bg-blue pt-16 pb-[59px] mt-[-1px]">
-      <div className="max-w-[1172px] mx-auto px-4">
+    <div className="bg-blue">
+      <NavBar />
+      <div className="max-w-[1172px] mx-auto px-4 pt-16">
         <H1
           boldHeadingBefore="FOX"
           heading={
