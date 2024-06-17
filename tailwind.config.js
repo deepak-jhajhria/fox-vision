@@ -35,7 +35,8 @@ module.exports = {
       backgroundImage: {
       },
       boxShadow: {
-        blueChalk: '0px_10px_20px_0px_#4B17E62B',
+        blueChalk: ['0px 10px 20px 0px #4B17E62B'],
+
 
       },
     },
