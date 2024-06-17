@@ -3,6 +3,7 @@ import './App.css';
 import Homepage from './pages/homepage/Homepage';
 import Portfolio from './pages/portfolio/Portfolio';
 import HeroSec from './components/HeroSec';
+import Footer from './components/common/Footer';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route path='/' element={<Homepage />} />
         <Route path='/portfolio' element={<Portfolio />} />
       </Routes>
+      <Footer />
     </div>
   );
 }
