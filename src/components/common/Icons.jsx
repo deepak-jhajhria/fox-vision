@@ -6,6 +6,15 @@ export const RightIcon = () => {
         </svg>
     )
 }
+// Faqs section 
+export const DownArrow = ({ className }) => {
+    return (
+        <svg className={className} width="35" height="36" viewBox="0 0 35 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 22.625L17.5 13.625L26 22.625" stroke="#071838" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+    )
+}
+
 // footer section
 export const FacebookIcon = () => {
     return (
