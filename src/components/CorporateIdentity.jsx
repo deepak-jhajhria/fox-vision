@@ -1,4 +1,5 @@
 import identity from "../assets/images/webp/corporateIdentity.webp"
+import wireFraming from "../assets/images/webp/wireFraming.webp"
 import CommonButton from "./common/CommonButton";
 import { Description, H2 } from './common/Heading'
 export const CorporateIcon = () => {
@@ -68,7 +69,7 @@ const CorporateIdentity = () => {
   return (
     <div className="pt-32 mb-96 px-6">
       <div className="container max-w-[1140px]">
-        <div className="flex flex-wrap relative items-center flex-row -mx-3">
+        <div className="flex flex-wrap relative items-center mb-32 flex-row -mx-3">
           <div className="absolute top-[2%] lg:block hidden left-[34%]">
             <CorporateArrow />
           </div>
@@ -77,14 +78,18 @@ const CorporateIdentity = () => {
               className="!leading-121 md:!text-start !text-center md:!max-w-[388px] !mb-[17px]"
               heading={<>Corporate identity</>}
             />
-            <img src={identity} alt="identity" className="xl:max-w-[465px] max-md:max-w-[300px] max-md:mx-auto" />
+            <img
+              src={identity}
+              alt="identity"
+              className="xl:max-w-[465px] max-md:max-w-[300px] max-md:mx-auto"
+            />
           </div>
-          <div className="md:w-1/2 w-full px-3">
+          <div className="md:w-1/2 max-md:mt-3 w-full px-3">
             <div className="w-[93px] h-[93px] max-md:mx-auto bg-bubbles flex justify-center items-center">
               <CorporateIcon />
             </div>
             <Description
-              className="lg:max-w-[552px] max-md:!text-center md:text-xl sm:text-lg text-base !text-opacity-70 !leading-183"
+              className="lg:max-w-[552px] max-md:mt-2 max-md:!text-center md:text-xl sm:text-lg text-base !text-opacity-70 lg:!leading-183"
               description={
                 <>
                   Many people primarily associate logo and colors with it.
@@ -107,8 +112,20 @@ const CorporateIdentity = () => {
               }
             />
             <div className="flex md:justify-start justify-center">
-                <CommonButton className="!mt-[35px]" name="Contact" />
+              <CommonButton
+                className="lg:!mt-[35px] md:!mt-7 !mt-3 "
+                name="Contact"
+              />
             </div>
+          </div>
+        </div>
+        <div className="flex flex-row mt-[2px] flex-wrap -mx-3">
+          <div className="w-1/4 px-3">
+            <div
+              className="p-[22px_10px] bg-white
+              shadow-[0px_4px_27px_0px_#4B17E614]">
+                          <img src={wireFraming} alt="wireframe" />
+              </div>
           </div>
         </div>
       </div>

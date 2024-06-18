@@ -1,4 +1,4 @@
-import CorporateIdentity from "../../components/CorporateIdentity"
+import CorporateIdentity from "../components/CorporateIdentity"
 
 const Offer = () => {
   return (
