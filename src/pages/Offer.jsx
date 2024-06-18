@@ -1,11 +1,13 @@
 import DesignStrategy from "../components/offers/DesignStrategy"
 import CorporateIdentity from "../components/offer/CorporateIdentity"
+import Faqs from "../components/offer/Faqs"
 
 const Offer = () => {
   return (
     <>
       <CorporateIdentity />
       <DesignStrategy />
+      <Faqs />
     </>
   )
 }
