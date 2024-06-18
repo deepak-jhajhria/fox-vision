@@ -132,7 +132,7 @@ const WorkData = [
 
 const HowWeWork = () => {
     return (
-        <div className=" xl:pt-36 lg:pt-28 md:pt-16 pt-12 px-3 ">
+        <div className=" xl:pt-36 lg:pt-28 md:pt-16 pt-12 px-6 ">
           <div className="container max-w-[1164px]">
             <ResultsDriven />
             <div className="flex lg:py-28 md:py-16 py-12 xl:my-3 flex-row flex-wrap justify-center -mx-3">

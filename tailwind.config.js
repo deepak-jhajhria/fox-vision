@@ -31,13 +31,18 @@ module.exports = {
         "custom-6xl": "64px",
         "custom-8xl": "88.41px",
       },
-      backgroundImage: {},
+    
       backgroundImage: {},
       boxShadow: {
-        nav: "0px 0px 13px 0px #00000024",
         blueChalk: ['0px 10px 20px 0px #4B17E62B'],
+<<<<<<< HEAD
         painIcon: "0px 12.63px 25.25px 0px #4B17E62B",
         graphicIcon: "0px 10px 20px 0px #05D5FB29",
+=======
+
+
+        nav: "0px 0px 13px 0px #00000024",
+>>>>>>> b8d177c2a76de744cb34a3eec04ea6acd90c4e3d
       },
     },
   },
