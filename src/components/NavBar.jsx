@@ -5,8 +5,8 @@ import CommonButton from "./common/CommonButton";
 const NavBar = () => {
   const navLinkList = [
     { title: "Home", src: "/" },
-    { title: "Über uns", src: "/uber-uns" },
-    { title: "Angebot", src: "/angebot" },
+    { title: "Über uns", src: "/about" },
+    { title: "Angebot", src: "/offer" },
     { title: "Portfolio", src: "/portfolio" },
   ];
   const [isOpen, setIsOpen] = useState(false);
@@ -31,13 +31,13 @@ const NavBar = () => {
                 </li>
               ))}
             </ul>
-            <div className="flex max-lg:flex-col items-center gap-4">
-              <Link className="w-9 h-9 rounded-full border flex items-center justify-center border-blackPearl"><CallIcon /></Link>
-              <Link className="w-9 h-9 rounded-full border flex items-center justify-center border-blackPearl"><MailIcon /></Link>
+            <div className="flex items-center gap-4 max-lg:flex-col">
+              <Link className="flex items-center justify-center border rounded-full w-9 h-9 border-blackPearl"><CallIcon /></Link>
+              <Link className="flex items-center justify-center border rounded-full w-9 h-9 border-blackPearl"><MailIcon /></Link>
               <CommonButton name="Kontakt" className='py-[11px]' />
             </div>
           </div>
-          <div onClick={() => setIsOpen(!isOpen)} className='lg:hidden sm:w-7 sm:h-5 w-6 h-5 relative z-50 flex justify-between flex-col cursor-pointer'>
+          <div onClick={() => setIsOpen(!isOpen)} className='relative z-50 flex flex-col justify-between w-6 h-5 cursor-pointer lg:hidden sm:w-7 sm:h-5'>
             <span className={`${isOpen ? 'rotate-[50deg] translate-y-4' : ""} h-[2px] w-full duration-300 rounded-[3px] bg-blackPearl ease-linear transition-all`}></span>
             <span className={`${isOpen ? 'hidden' : ""} h-[2px] w-full duration-300 rounded-[3px] bg-blackPearl ease-linear transition-all`}></span>
             <span className={`${isOpen ? 'rotate-[-50deg] translate-y-[-50%]' : ""} h-[2px] w-full duration-300 rounded-[3px] bg-blackPearl ease-linear transition-all`}></span>
@@ -81,14 +81,14 @@ export const Logo = () => {
 };
 export const CallIcon = () => {
   return (
-    <svg className="fill-blackPearl group-hover:fill-blue duration-300" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg className="duration-300 fill-blackPearl group-hover:fill-blue" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M9.15476 1.72774C9.17504 1.65191 9.21006 1.58082 9.25783 1.51854C9.30559 1.45625 9.36516 1.40398 9.43314 1.36472C9.50111 1.32547 9.57615 1.29999 9.65397 1.28974C9.73179 1.2795 9.81087 1.28469 9.88669 1.30501C10.9943 1.59401 12.0049 2.17306 12.8144 2.98251C13.6239 3.79197 14.2029 4.80257 14.4919 5.91022C14.5122 5.98604 14.5174 6.06512 14.5072 6.14294C14.4969 6.22077 14.4714 6.29581 14.4322 6.36378C14.3929 6.43175 14.3407 6.49132 14.2784 6.53909C14.2161 6.58685 14.145 6.62188 14.0692 6.64216C14.0187 6.65542 13.9668 6.66219 13.9146 6.66232C13.783 6.66236 13.6551 6.61898 13.5507 6.5389C13.4463 6.45882 13.3713 6.34652 13.3372 6.21943C13.1017 5.31507 12.6291 4.48991 11.9684 3.82902C11.3076 3.16814 10.4825 2.69544 9.57823 2.45968C9.50234 2.43947 9.43117 2.40451 9.3688 2.35678C9.30643 2.30904 9.25408 2.24949 9.21475 2.18151C9.17542 2.11352 9.14987 2.03846 9.13958 1.9606C9.12928 1.88273 9.13444 1.80361 9.15476 1.72774ZM8.98073 4.84967C10.0107 5.12452 10.6724 5.78699 10.9472 6.81693C10.9813 6.94402 11.0563 7.05631 11.1607 7.13639C11.2651 7.21648 11.393 7.25986 11.5246 7.25982C11.5768 7.25969 11.6287 7.25291 11.6792 7.23966C11.755 7.21938 11.8261 7.18435 11.8884 7.13658C11.9507 7.08882 12.0029 7.02925 12.0422 6.96128C12.0815 6.8933 12.1069 6.81826 12.1172 6.74044C12.1274 6.66262 12.1222 6.58354 12.1019 6.50772C11.7195 5.07672 10.7202 4.0774 9.28919 3.695C9.21338 3.67475 9.13431 3.66963 9.05652 3.67993C8.97872 3.69023 8.90372 3.71575 8.83578 3.75504C8.76785 3.79433 8.70832 3.84662 8.6606 3.90891C8.61287 3.9712 8.57788 4.04229 8.55763 4.1181C8.53738 4.19392 8.53226 4.27298 8.54256 4.35078C8.55286 4.42858 8.57838 4.50358 8.61767 4.57151C8.65696 4.63944 8.70924 4.69897 8.77154 4.7467C8.83383 4.79442 8.90492 4.82941 8.98073 4.84967ZM14.3903 10.7298L10.8718 9.15314L10.8621 9.14866C10.6794 9.07054 10.4802 9.03918 10.2824 9.05744C10.0845 9.0757 9.89438 9.14299 9.7291 9.25322C9.70964 9.26608 9.69094 9.28004 9.67309 9.29505L7.8552 10.8448C6.70352 10.2854 5.5145 9.10534 4.95509 7.9686L6.50709 6.12308C6.52203 6.10441 6.53622 6.08574 6.54967 6.06557C6.65753 5.90074 6.72298 5.7118 6.74018 5.51556C6.75738 5.31932 6.7258 5.12187 6.64825 4.94078V4.93182L5.06712 1.40733C4.96461 1.17077 4.78834 0.973711 4.56462 0.845565C4.3409 0.717419 4.08174 0.665063 3.82582 0.696311C2.81379 0.829484 1.88484 1.3265 1.21247 2.09453C0.5401 2.86256 0.170296 3.84908 0.172126 4.86983C0.172126 10.8 4.99692 15.6248 10.9271 15.6248C11.9478 15.6266 12.9344 15.2568 13.7024 14.5844C14.4704 13.9121 14.9674 12.9831 15.1006 11.9711C15.1319 11.7153 15.0797 11.4562 14.9517 11.2325C14.8237 11.0088 14.6267 10.8324 14.3903 10.7298Z" />
     </svg>
   );
 };
 export const MailIcon = () => {
   return (
-    <svg className="fill-blackPearl group-hover:fill-blue duration-300" width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg className="duration-300 fill-blackPearl group-hover:fill-blue" width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M20.1094 7.60645V16.1249C20.1094 16.8136 19.8463 17.4763 19.3738 17.9774C18.9014 18.4784 18.2553 18.78 17.5678 18.8204L17.4094 18.8249H4.80937C4.12069 18.825 3.45801 18.5619 2.95694 18.0894C2.45587 17.6169 2.15428 16.9708 2.11388 16.2833L2.10938 16.1249V7.60645L10.6099 13.2737L10.7143 13.3331C10.8373 13.3933 10.9724 13.4245 11.1094 13.4245C11.2463 13.4245 11.3814 13.3933 11.5045 13.3331L11.6089 13.2737L20.1094 7.60645Z" />
       <path d="M17.41 4.4248C18.382 4.4248 19.2343 4.9378 19.7095 5.7091L11.11 11.4421L2.5105 5.7091C2.73616 5.3426 3.04619 5.03537 3.41473 4.81305C3.78328 4.59073 4.19965 4.45978 4.6291 4.4311L4.81 4.4248H17.41Z" />
     </svg>
