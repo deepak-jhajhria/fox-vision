@@ -3,11 +3,11 @@ import React from "react";
 export const ContactCard = (props) => {
   return (
     <div
-      className={` max-w-[360px] shadow-[0px_4px_27px_0px_#4B17E614] bg-white w-full  ${props.class}`}
+      className={` max-w-[360px] group lg:hover:-translate-y-[38px] duration-300 shadow-[0px_4px_27px_0px_#4B17E614] bg-white w-full  ${props.class}`}
     >
       <div className="flex justify-center mb-[25px] ">
         <div
-          className="flex justify-center items-center bg-[#EFEAFD] w-[85.27px] h-[85.27px] rounded-[6.94px] shadow-[0px_11.57px_27px_0px_#4B17E61A]
+          className="flex justify-center group-hover:bg-blue duration-300 items-center bg-[#EFEAFD] w-[85.27px] h-[85.27px] rounded-[6.94px] shadow-[0px_11.57px_27px_0px_#4B17E61A]
 "
         >
           {props.icons}
