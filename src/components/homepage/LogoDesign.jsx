@@ -1,5 +1,6 @@
 import { Description, H4 } from '../common/Heading'
-import designImg from '../../assets/images/webp/designImg.webp'
+import designCard1 from '../../assets/images/webp/designCard1.webp'
+import designCard2 from '../../assets/images/webp/designCard2.webp'
 import digitalImg from '../../assets/images/webp/digitalImg.webp'
 
 export const DesignIcon = () => {
@@ -45,8 +46,12 @@ const LogoDesign = () => {
             <H4 heading="Logo Design" className="!text-white text-center !leading-150 lg:text-start !mb-2" />
             <Description description="Logo design is a specialized discipline within the realm of graphic design, focused on creating unique and memorable visual symbols that represent a brand, company, or organization." className="!text-white !leading-150 !text-opacity-70 text-center mx-auto lg:mx-0 lg:text-start max-w-[421px]" />
           </div>
-          <div className="flex justify-center w-full px-3 lg:w-1/2 lg:block ">
-            <img src={designImg} alt="designImg" className='max-w-[547.76px] w-full' />
+          <div className=" flex gap-[22.88px]  w-full px-3 lg:w-1/2">
+          <div>
+<img src={designCard1} alt="" className='max-w-[203.39px] shadow-[0px_16.7px_41.74px_0px_#3B3E430D]
+' />
+<img src={designCard2} alt="" className='max-w-[203.39px]' />
+          </div>
           </div>
         </div>
         <div className="flex flex-row flex-wrap items-center -mx-3">
