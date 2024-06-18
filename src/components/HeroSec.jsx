@@ -12,8 +12,8 @@ const HeroSec = () => {
       <div className="max-w-[1140px] container">
         <div className={`${location.pathname === '/' ? "pt-11" : "pt-[76px] pb-[100px]"}`}>
           {location.pathname === '/' && <H1 boldHeadingBefore="FOX" heading={<>Vision <br /> Ihre Design Agentur!</>} className="max-w-[948px] text-center mx-auto" />}
-          {location.pathname === '/about' && <H1 boldHeadingBefore="About" heading='Us' className="max-w-[948px] text-center mx-auto" />}
-          {location.pathname === '/contactus' && <H1 heading='Contact' boldHeadingAfter="Us" className="max-w-[948px] text-center mx-auto" />}
+          {location.pathname === '/about-us' && <H1 boldHeadingBefore="About" heading='Us' className="max-w-[948px] text-center mx-auto" />}
+          {location.pathname === '/contact-us' && <H1 heading='Contact' boldHeadingAfter="Us" className="max-w-[948px] text-center mx-auto" />}
           {location.pathname === '/portfolio' && <H1 heading='Portfolio' className="max-w-[948px] text-center mx-auto" />}
           {location.pathname === '/offer' && <H1 heading='Offer' className="max-w-[948px] text-center mx-auto" />}
         </div>
@@ -24,7 +24,7 @@ const HeroSec = () => {
         {location.pathname !== '/' && <div className="flex items-center gap-4 pb-[30px]">
           <p className="text-base font-medium text-white font-poppins">Home</p>
           <RightIcon />
-          <p className="text-base font-medium text-white capitalize font-poppins">{location.pathname.replace(/\//g, '')}</p>
+          <p className="text-base font-medium text-white capitalize font-poppins">{location.pathname.replace(/[\/-]/g, ' ')}</p>
         </div>}
       </div>
     </div>

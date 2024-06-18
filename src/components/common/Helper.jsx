@@ -6,7 +6,7 @@ export const footerLinkList = [
         links: [
             { link: 'About us', path: '/aboutus' },
             { link: 'Offer', path: '/Offer' },
-            { link: 'Contact', path: '/contactus' }
+            { link: 'Contact', path: '/contact-us' }
         ],
     },
     {

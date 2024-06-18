@@ -3,7 +3,7 @@ import DesignMastery from "../../components/aboutus/DesignMastery";
 import Customer from "../../components/aboutus/Customer";
 import HowWeWork from "../../components/homepage/HowWeWork";
 
-const Aboutus = () => {
+const AboutUs = () => {
   return (
     <>
       <ProjectAgency />
@@ -14,4 +14,4 @@ const Aboutus = () => {
   );
 };
 
-export default Aboutus;
+export default AboutUs;
