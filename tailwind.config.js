@@ -19,6 +19,10 @@ module.exports = {
         blueChalk: "#E6DEFF",
         electricViolet: "#5925F2",
         skyBlue: "#50E2FC",
+        alto: "#d3d3d3",
+        noble: "#b3b3b3",
+        silver: "#a6a6a6",
+        alabaster: "#f9f9f9",
         violet:"#815DED"
       },
       lineHeight: {

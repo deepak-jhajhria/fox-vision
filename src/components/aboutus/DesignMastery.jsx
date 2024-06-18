@@ -26,7 +26,7 @@ const DesignMastery = () => {
             />
           </div>
           <img
-            className=" w-full sm:max-w-[50%] md:max-w-[350px] md:max-h-[355px] lg:max-w-[480px] lg:max-h-[385px] xl:max-w-[530px] xl:max-h-[392px] rounded-md"
+            className=" w-full sm:max-w-[80%] md:max-w-[350px] md:max-h-[355px] lg:max-w-[480px] lg:max-h-[385px] xl:max-w-[530px] xl:max-h-[392px] rounded-md"
             src={mhillPolka}
             alt="designer"
           />

@@ -6,7 +6,7 @@ import Avtar from "../../assets/images/svg/customerAvtar.svg";
 const Customer = () => {
   return (
     <div className="bg-blue pt-12 md:pt-[77px] pb-40 md:pb-[190px] lg:pb-[240px]">
-      <div className="container px-3 mx-auto">
+      <div className="container max-w-[1140px] px-3 mx-auto">
         <div className="flex flex-wrap justify-center items-center flex-row -mx-3 pb-2 md:pb-[78px]">
           <div className="w-full px-3 md:w-1/2">
             <Description
