@@ -19,8 +19,6 @@ module.exports = {
         blueChalk: "#E6DEFF",
         electricViolet: "#5925F2",
         skyBlue: "#50E2FC",
-        electricViolet: '#5925F2', 
-        skyBlue: "#50E2FC",
         violet:"#815DED"
       },
       lineHeight: {

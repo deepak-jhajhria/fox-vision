@@ -1,8 +1,10 @@
-import CorporateIdentity from "../components/CorporateIdentity"
+import CorporateIdentity from "../components/offer/CorporateIdentity"
 
 const Offer = () => {
   return (
-    <div><CorporateIdentity/></div>
+    <>
+      <CorporateIdentity />
+    </>
   )
 }
 
