@@ -4,7 +4,7 @@ import { H4 } from "../common/Heading";
 const AngebotCardPath = (props) => {
   return (
     <div
-      className={`${props.className} p-[26.83px] xl:w-[366px] xl:min-h-[383px] w-full h-full group relative bg-white rounded-[6px]`}
+      className={`${props.className} p-[26.83px] xl:w-[366px] xl:min-h-[383px] w-full h-full group relative duration-300 bg-white rounded-[6px]`}
     >
       <div>
         <div
@@ -28,7 +28,9 @@ const AngebotCardPath = (props) => {
         >
           {props.linkText}
         </Link>
-        <span>{props.arrow}</span>
+        <span className=" group-hover:translate-x-2 duration-300">
+          {props.arrow}
+        </span>
       </div>
     </div>
   );

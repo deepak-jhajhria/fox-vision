@@ -70,7 +70,7 @@ const ProjectAgency = () => {
             </span>
           </div>
         </div>
-        <span className="absolute top-[49%] md:-top-9 lg:top-0 xl:top-20 -left-10 md:left-[41%]">
+        <span className="absolute max-sm:hidden top-[49%] md:-top-9 lg:top-0 xl:top-20 -left-10 md:left-[41%]">
           <Vector />
         </span>
       </div>

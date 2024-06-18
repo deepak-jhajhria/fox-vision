@@ -218,7 +218,6 @@ export const Arrow = () => {
     </svg>
   );
 };
-
 const howWeWorkCardlist = [
   {
     svg: <Identity />,
