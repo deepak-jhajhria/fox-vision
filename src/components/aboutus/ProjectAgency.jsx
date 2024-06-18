@@ -34,46 +34,46 @@ export const Vector = () => {
 };
 const ProjectAgency = () => {
   return (
-    <section className="py-10 sm:py-16 md:py-20 lg:pt-[126px] lg:pb-[150px] px-6 overflow-hidden">
+    <section className="py-10 sm:py-16 md:pt-20 lg:pb-0 lg:pt-[126px] px-6 overflow-hidden">
       <div className="container px-0 max-w-[1140px] relative">
-        <H5 className="uppercase" title="FOX VISION" />
-        <H2 className="md:mt-2 max-w-[498px]" heading="Design Project Agency" />
-        <div className="flex items-center mt-3 max-lg:flex-col max-sm:gap-3 max-lg:gap-5 xl:items-end lg:mt-10">
-          <img
-            className="w-full lg:max-w-[564px] xl:max-w-[590px] lg:h-[328px] h-full mt-2"
-            src={cardImage}
-            alt="cardimage"
-          />
-          <div className="flex flex-col items-start lg:ml-8 lg:max-w-[511px]">
+        <div className="flex flex-col items-center mt-3 md:flex-row  lg:mt-10">
+          <div className="flex flex-col">
+            <H5 className="uppercase max-md:text-center" title="FOX VISION" />
+            <H2
+              className="md:mt-2 !leading-120 max-md:text-center max-md:mx-auto max-w-[498px]"
+              heading="Design Project Agency"
+            />
+            <img
+              className="w-full max-w-[380px] md:max-w-[450px] lg:max-w-[524px] xl:max-w-[590px] lg:h-[328px] h-full mt-2"
+              src={cardImage}
+              alt="cardimage"
+            />
+          </div>
+          <div className="flex relative flex-col items-start lg:ml-8 lg:max-w-[511px]">
             <Description
-              className=""
+              className="max-md:text-center"
               description={
                 <>
                   As a design agency, we create a contemporary and{" "}
-                  {
-                    <span className="text-electricViolet">
-                      distinctive appearance
-                    </span>
-                  }{" "}
+                  {<span className="text-skyBlue">distinctive appearance</span>}{" "}
                   for you. Style is more in demand than ever. We help you show
                   your best side to your customers. you{" "}
-                  {
-                    <span className="text-electricViolet">
-                      Strong branding sets
-                    </span>
-                  }{" "}
+                  {<span className="text-skyBlue">Strong branding sets</span>}{" "}
                   apart from your competition and creates trust and seriousness.
                 </>
               }
             />
-            <CommonButton className="mt-8 md:mt-10" name="Contact" />
+            <CommonButton
+              className="mt-8 max-md:mx-auto md:mt-10"
+              name="Contact"
+            />
+            <span className="absolute right-4 -top-24">
+              <Logo />
+            </span>
           </div>
         </div>
-        <span className="absolute max-lg:hidden -top-9 left-[37%]">
+        <span className="absolute max-lg:hidden top-32 left-[41%]">
           <Vector />
-        </span>
-        <span className="absolute right-0 max-lg:hidden top-5 lg:top-16">
-          <Logo />
         </span>
       </div>
     </section>

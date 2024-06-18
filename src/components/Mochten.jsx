@@ -8,18 +8,18 @@ const Mochten = () => {
       <div className="container !max-w-[1140px] px-3 xl:px-0 mx-auto">
         <div className="bg-turquoise relative rounded-[10px] md:min-h-[253px] py-9">
           <img
-            className="absolute right-0 top-0 pointer-events-none"
+            className="absolute max-h-[253px] right-0 top-0 pointer-events-none"
             src={mochtenEllp}
             alt="dot_ellp"
           />
           <img
-            className="absolute rotate-180 left-0 top-0 pointer-events-none"
+            className="absolute max-h-[253px] rotate-180 left-0 top-0 pointer-events-none"
             src={mochtenEllp}
             alt="dot_ellp"
           />
 
           <H3
-            className="!text-white  relative z-20 max-w-[713px] mx-auto text-center mb-[29.4px]"
+            className="!text-white max-md:px-8 relative z-20 max-w-[713px] !leading-120 mx-auto text-center mb-[29.4px]"
             heading="Möchten Sie ein Projekt starten? Wir freuen uns."
           />
           <Button
