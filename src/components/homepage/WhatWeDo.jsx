@@ -1,5 +1,5 @@
 import cardImage from "../assets/images/webp/what-we/what-we-card.webp";
-import CommonButton from "./common/CommonButton";
+import CommonButton from "../common/CommonButton";
 import watch from "../assets/images/png/watch.png";
 import things from "../assets/images/png/things.png";
 import shopping from "../assets/images/png/shopping.png";
@@ -14,7 +14,7 @@ import frute from "../assets/images/png/frute.png";
 import base from "../assets/images/png/base.png";
 import moon from "../assets/images/png/blue-moon.png";
 import skyMoon from "../assets/images/png/sky-moon.png";
-import { Description, H2, H4, H5 } from "./common/Heading";
+import { Description, H2, H4, H5 } from "../common/Heading";
 
 const addList = [
   { image: watch },
@@ -195,7 +195,7 @@ const WhatWeDo = () => {
       <div className="container px-0 max-w-[1140px] relative">
         <H5 className="uppercase" title="A RESULTS-DRIVEN AGENCY" />
         <H2 className="md:mt-3" heading="What we do" />
-        <div className="flex max-lg:flex-col max-sm:gap-3 max-lg:gap-5 items-center xl:items-end mt-3 lg:mt-10">
+        <div className="flex items-center mt-3 max-lg:flex-col max-sm:gap-3 max-lg:gap-5 xl:items-end lg:mt-10">
           <img
             className="w-full lg:max-w-[500px] xl:max-w-[590px] lg:h-[378px] h-full mt-2"
             src={cardImage}
@@ -237,7 +237,7 @@ const WhatWeDo = () => {
             </div>
             <H4
               heading="UI/UX Creative Design"
-              className="pt-10 lg:mx-0 mx-auto"
+              className="pt-10 mx-auto lg:mx-0"
             />
             <Description
               className="pt-2 lg:max-w-[386px] max-w-[500px] lg:text-start text-center opacity-70"
@@ -287,7 +287,7 @@ const WhatWeDo = () => {
             </div>
             <H4
               heading="Visual Graphic Design"
-              className="pt-10 lg:mx-0 mx-auto"
+              className="pt-10 mx-auto lg:mx-0"
             />
             <Description
               className="pt-2 lg:max-w-[386px] max-w-[500px] lg:text-start text-center opacity-70"
@@ -300,7 +300,7 @@ const WhatWeDo = () => {
         <span className="absolute max-lg:hidden top-8 left-[37%]">
           <Vector />
         </span>
-        <span className="absolute  max-lg:hidden top-5 lg:top-10 right-0">
+        <span className="absolute right-0 max-lg:hidden top-5 lg:top-10">
           <Logo />
         </span>
       </div>

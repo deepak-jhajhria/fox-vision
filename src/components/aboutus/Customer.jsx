@@ -1,5 +1,5 @@
 import React from "react";
-import { Description, H2 } from "./common/Heading";
+import { Description, H2 } from "../common/Heading";
 import pcmember from "../assets/images/webp/pcMembers.webp";
 import angebotLogo from "../assets/images/svg/angebotLogo.svg";
 import Avtar from "../assets/images/svg/customerAvtar.svg";
@@ -7,9 +7,9 @@ import Avtar from "../assets/images/svg/customerAvtar.svg";
 const Customer = () => {
   return (
     <div className="bg-blue pt-[77px] pb-40 md:pb-[190px] lg:pb-[240px]">
-      <div className="container  px-3 mx-auto">
+      <div className="container px-3 mx-auto">
         <div className="flex flex-wrap justify-center items-center flex-row -mx-3 pb-6 md:pb-[78px]">
-          <div className="md:w-1/2 w-full px-3">
+          <div className="w-full px-3 md:w-1/2">
             <Description
               className="!text-white text-center md:text-start mb-3"
               description="FOX philosophy"
@@ -23,7 +23,7 @@ const Customer = () => {
               description="The customer is our focus. We do everything we can to provide our customers with individual, needs-based advice."
             />
           </div>
-          <div className="md:w-1/2 w-full px-3">
+          <div className="w-full px-3 md:w-1/2">
             <div className="relative">
               <img
                 className="mx-auto md:mx-0 max-w-[556px] max-h-[371px] w-[70%] md:w-full"

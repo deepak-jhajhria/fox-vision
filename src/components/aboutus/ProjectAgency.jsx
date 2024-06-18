@@ -1,8 +1,8 @@
 import React from "react";
-import { Description, H2, H5 } from "./common/Heading";
-import CommonButton from "./common/CommonButton";
+import { Description, H2, H5 } from "../common/Heading";
+import CommonButton from "../common/CommonButton";
 import cardImage from "../assets/images/webp/projectAgency.webp";
-import { Logo } from "./WhatWeDo";
+import { Logo } from "../homepage/WhatWeDo";
 export const Vector = () => {
   return (
     <svg
@@ -39,7 +39,7 @@ const ProjectAgency = () => {
       <div className="container px-0 max-w-[1140px] relative">
         <H5 className="uppercase" title="FOX VISION" />
         <H2 className="md:mt-2 max-w-[498px]" heading="Design Project Agency" />
-        <div className="flex max-lg:flex-col max-sm:gap-3 max-lg:gap-5 items-center xl:items-end mt-3 lg:mt-10">
+        <div className="flex items-center mt-3 max-lg:flex-col max-sm:gap-3 max-lg:gap-5 xl:items-end lg:mt-10">
           <img
             className="w-full lg:max-w-[564px] xl:max-w-[590px] lg:h-[328px] h-full mt-2"
             src={cardImage}
@@ -73,7 +73,7 @@ const ProjectAgency = () => {
         <span className="absolute max-lg:hidden -top-9 left-[37%]">
           <Vector />
         </span>
-        <span className="absolute  max-lg:hidden top-5 lg:top-16 right-0">
+        <span className="absolute right-0 max-lg:hidden top-5 lg:top-16">
           <Logo />
         </span>
       </div>

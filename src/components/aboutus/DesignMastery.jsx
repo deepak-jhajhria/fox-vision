@@ -1,5 +1,5 @@
 import React from "react";
-import { H2, H4, H5 } from "./common/Heading";
+import { H2, H4, H5 } from "../common/Heading";
 import mhillPolka from "../assets/images/webp/mhillPolaka.webp";
 
 const DesignMastery = () => {
@@ -11,7 +11,7 @@ const DesignMastery = () => {
           title="FOX VISION - Friendly and reliable"
         />
         <H2
-          className="md:mt-3 mb-6 md:mb-10 lg:mb-14 text-blackPearl text-center"
+          className="mb-6 text-center md:mt-3 md:mb-10 lg:mb-14 text-blackPearl"
           heading="Design Mastery in Our Genes"
         />
 

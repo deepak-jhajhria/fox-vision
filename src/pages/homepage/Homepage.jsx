@@ -1,8 +1,8 @@
-import WhatWeDo from '../../components/WhatWeDo'
-import LogoDesign from '../../components/LogoDesign'
-import Angebot from '../../components/Angebot'
+import WhatWeDo from '../../components/homepage/WhatWeDo'
+import LogoDesign from '../../components/homepage/LogoDesign'
+import Angebot from '../../components/homepage/Angebot'
 import Mochten from '../../components/Mochten'
-import HowWeWork from '../../components/HowWeWork'
+import HowWeWork from '../../components/homepage/HowWeWork'
 
 const Homepage = () => {
     return (
