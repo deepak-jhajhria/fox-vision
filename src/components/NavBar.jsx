@@ -5,7 +5,7 @@ import CommonButton from "./common/CommonButton";
 const NavBar = () => {
   const navLinkList = [
     { title: "Home", src: "/" },
-    { title: "Über uns", src: "/about" },
+    { title: "Über uns", src: "/about-us" },
     { title: "Angebot", src: "/offer" },
     { title: "Portfolio", src: "/portfolio" },
   ];

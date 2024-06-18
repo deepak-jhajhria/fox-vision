@@ -1,13 +1,12 @@
 import "./App.css";
 import { Route, Routes } from "react-router-dom";
-import Homepage from "./pages/homepage/Homepage";
-import Portfolio from "./pages/portfolio/Portfolio";
+import Homepage from "./pages/Homepage";
+import Portfolio from "./pages/Portfolio";
 import HeroSec from "./components/HeroSec";
 import Footer from "./components/common/Footer";
-import Offer from "./pages/offer/Offer";
-import Aboutus from "./pages/aboutus/Aboutus";
-import ContactUs from "./pages/contactUs/ContactUs";
-
+import Offer from "./pages/Offer";
+import ContactUs from "./pages/ContactUs";
+import AboutUs from "./pages/AboutUs";
 
 function App() {
   return (
@@ -16,9 +15,9 @@ function App() {
       <Routes>
         <Route path='/' element={<Homepage />} />
         <Route path='/about' element={<Aboutus />} />
-        <Route path='/contactus' element={<ContactUs/>} />
+        <Route path='/contactus' element={<Aboutus />} />
         <Route path='/portfolio' element={<Portfolio />} />
-        <Route path='/offer' element={<Offer/>} />
+        <Route path='/offer' element={<Offer />} />
       </Routes>
       <Footer />
     </div>
