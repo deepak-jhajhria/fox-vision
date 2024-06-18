@@ -1,7 +1,6 @@
-import React from 'react'
 import { Description, H4 } from '../common/Heading'
-import designImg from '../assets/images/webp/designImg.webp'
-import digitalImg from '../assets/images/webp/digitalImg.webp'
+import designImg from '../../assets/images/webp/designImg.webp'
+import digitalImg from '../../assets/images/webp/digitalImg.webp'
 
 export const DesignIcon = () => {
   return (

@@ -1,5 +1,5 @@
 import { Description, H2, H5 } from "../common/Heading";
-import cardImage from "../assets/images/webp/how-we/workImg.webp";
+import cardImage from "../../assets/images/webp/how-we/workImg.webp";
 import CommonButton from "../common/CommonButton";
 const Arrow = () => {
   return (

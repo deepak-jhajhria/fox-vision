@@ -1,7 +1,6 @@
-import React from "react";
 import { Description, H2, H5 } from "../common/Heading";
 import CommonButton from "../common/CommonButton";
-import cardImage from "../assets/images/webp/projectAgency.webp";
+import cardImage from "../../assets/images/webp/projectAgency.webp";
 import { Logo } from "../homepage/WhatWeDo";
 export const Vector = () => {
   return (

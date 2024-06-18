@@ -1,6 +1,5 @@
-import React from "react";
-import { H2, H4, H5 } from "../common/Heading";
-import mhillPolka from "../assets/images/webp/mhillPolaka.webp";
+import { H2, H4, H5} from "../common/Heading";
+import mhillPolka from "../../assets/images/webp/mhillPolaka.webp";
 
 const DesignMastery = () => {
   return (

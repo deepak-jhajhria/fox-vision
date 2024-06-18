@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { H4 } from "./common/Heading";
+import { H4 } from "../common/Heading";
 
 const AngebotCardPath = (props) => {
   return (
@@ -17,14 +17,14 @@ const AngebotCardPath = (props) => {
           {props.svg}
         </div>
         <H4 heading={props.title} />
-        <p className="text-black text-start opacity-70 pb-6 md:pb-11 sm:text-base text-sm font-poppins font-normal leading-normal">
+        <p className="pb-6 text-sm font-normal leading-normal text-black text-start opacity-70 md:pb-11 sm:text-base font-poppins">
           {props.description}
         </p>
       </div>
       <div className="flex items-center cursor-pointer absolute bottom-5 sm:bottom-6 xl:bottom-14 gap-2.5 ">
         <Link
           to={props.link}
-          className="text-blue text-start opacity-70 sm:text-base text-sm font-poppins font-normal leading-normal"
+          className="text-sm font-normal leading-normal text-blue text-start opacity-70 sm:text-base font-poppins"
         >
           {props.linkText}
         </Link>

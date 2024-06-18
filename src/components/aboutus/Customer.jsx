@@ -1,8 +1,7 @@
-import React from "react";
 import { Description, H2 } from "../common/Heading";
-import pcmember from "../assets/images/webp/pcMembers.webp";
-import angebotLogo from "../assets/images/svg/angebotLogo.svg";
-import Avtar from "../assets/images/svg/customerAvtar.svg";
+import pcmember from "../../assets/images/webp/pcMembers.webp";
+import angebotLogo from "../../assets/images/svg/angebotLogo.svg";
+import Avtar from "../../assets/images/svg/customerAvtar.svg";
 
 const Customer = () => {
   return (
