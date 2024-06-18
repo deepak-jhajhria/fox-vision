@@ -1,16 +1,17 @@
-import React from 'react'
-import Customer from "./components/Customer";
-import Mochten from "./components/Mochten";
-import ProjectAgency from "./components/ProjectAgency";
-import DesignMastery from "./components/DesignMastery";
+import Mochten from "../../components/Mochten";
+import ProjectAgency from "../../components/aboutus/ProjectAgency";
+import DesignMastery from "../../components/aboutus/DesignMastery";
+import Customer from "../../components/aboutus/Customer";
+
 const Aboutus = () => {
   return (
     <>
-<ProjectAgency />
+      <ProjectAgency />
       <DesignMastery />
       <Customer />
-      <Mochten />    </>
-  )
-}
+      <Mochten />
+    </>
+  );
+};
 
-export default Aboutus
+export default Aboutus;

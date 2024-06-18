@@ -4,7 +4,7 @@ import Homepage from "./pages/homepage/Homepage";
 import Portfolio from "./pages/portfolio/Portfolio";
 import HeroSec from "./components/HeroSec";
 import Footer from "./components/common/Footer";
-import Aboutus from "./pages/aboutUs/Aboutus";
+import Aboutus from "./pages/aboutus/Aboutus";
 
 
 function App() {
