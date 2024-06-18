@@ -4,10 +4,10 @@ import Mochten from '../../components/Mochten'
 
 const Portfolio = () => {
   return (
-    <div>
+    <>
       <PortfolioCards/>
       <Mochten/>
-    </div>
+    </>
   )
 }
 

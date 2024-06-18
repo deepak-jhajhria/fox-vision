@@ -36,6 +36,8 @@ module.exports = {
       boxShadow: {
         nav: "0px 0px 13px 0px #00000024",
         blueChalk: ['0px 10px 20px 0px #4B17E62B'],
+        painIcon: "0px 12.63px 25.25px 0px #4B17E62B",
+        graphicIcon: "0px 10px 20px 0px #05D5FB29",
       },
     },
   },
