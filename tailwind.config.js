@@ -19,12 +19,16 @@ module.exports = {
         blueChalk: "#E6DEFF",
         electricViolet: "#5925F2",
         skyBlue: "#50E2FC",
+        electricViolet: '#5925F2', 
+        skyBlue: "#50E2FC",
+        violet:"#815DED"
       },
       lineHeight: {
         107: "107%",
         120: "120%",
         150: "150%",
         183: "183%",
+        121:"121%"
       },
       fontSize: {
         "custom-4xl": "40px",
