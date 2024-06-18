@@ -40,7 +40,7 @@ export const StrategyIcon = () => {
 
 const LogoDesign = () => {
   return (
-    <div className=' bg-blue pt-[193px]  px-6'>
+    <div className=' bg-blue pt-[193px] sm:pb-[60px] pb-10  px-6'>
       <div className="container max-w-[1140px]">
         <div className="flex flex-col-reverse flex-wrap  mb-24 -mx-3 lg:flex-row">
           <div className="w-full px-3 lg:w-1/2">
