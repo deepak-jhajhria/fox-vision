@@ -1,6 +1,6 @@
-import DesignStrategy from "../components/offers/DesignStrategy"
-import CorporateIdentity from "../components/offer/CorporateIdentity"
-import Faqs from "../components/offer/Faqs"
+import DesignStrategy from "../components/offer/DesignStrategy";
+import CorporateIdentity from "../components/offer/CorporateIdentity";
+import Faqs from "../components/offer/Faqs";
 
 const Offer = () => {
   return (
@@ -9,7 +9,7 @@ const Offer = () => {
       <DesignStrategy />
       <Faqs />
     </>
-  )
-}
+  );
+};
 
-export default Offer
+export default Offer;
