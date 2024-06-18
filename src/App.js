@@ -13,11 +13,11 @@ function App() {
     <div className="max-w-[1920px] mx-auto">
       <HeroSec />
       <Routes>
-        <Route path='/' element={<Homepage />} />
-        <Route path='/about' element={<Aboutus />} />
-        <Route path='/contactus' element={<Aboutus />} />
-        <Route path='/portfolio' element={<Portfolio />} />
-        <Route path='/offer' element={<Offer />} />
+        <Route path="/" element={<Homepage />} />
+        <Route path="/about-us" element={<AboutUs />} />
+        <Route path="/contact-us" element={<ContactUs />} />
+        <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/offer" element={<Offer />} />
       </Routes>
       <Footer />
     </div>
