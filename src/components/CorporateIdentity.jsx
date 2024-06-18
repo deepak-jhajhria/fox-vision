@@ -88,7 +88,7 @@ const corporateCardData = [
 
 const CorporateIdentity = () => {
   return (
-    <div className="xl:pt-32 lg:pt-28 md:pt-16 pt-12 mb-96 px-6">
+    <div className="xl:pt-32 lg:pt-28 md:pt-16 pt-12 px-6">
       <div className="container max-w-[1140px]">
         <div className="flex flex-wrap relative items-center xl:mb-32 lg:mb-28 md:mb-16 mb-12 flex-row -mx-3">
           <div className="absolute top-[2%] lg:block hidden left-[34%]">

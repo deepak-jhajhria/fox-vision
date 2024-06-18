@@ -17,13 +17,18 @@ module.exports = {
         turquoise: "#05D5FB",
         bubbles: "#E9FCFF",
         blueChalk: "#E6DEFF",
-        electricViolet: '#5925F2', 
+        electricViolet: "#5925F2",
         skyBlue: "#50E2FC",
+        alto: "#d3d3d3",
+        noble: "#b3b3b3",
+        silver: "#a6a6a6",
+        alabaster: "#f9f9f9",
         violet:"#815DED"
       },
       lineHeight: {
         107: "107%",
         120: "120%",
+        121:"121%",
         150: "150%",
         183: "183%",
         121:"121%"
@@ -33,12 +38,13 @@ module.exports = {
         "custom-6xl": "64px",
         "custom-8xl": "88.41px",
       },
-    
+
       backgroundImage: {},
       boxShadow: {
-        blueChalk: ['0px 10px 20px 0px #4B17E62B'],
+        blueChalk: ["0px 10px 20px 0px #4B17E62B"],
         painIcon: "0px 12.63px 25.25px 0px #4B17E62B",
         graphicIcon: "0px 10px 20px 0px #05D5FB29",
+        addCards: "0px 16.7px 41.74px 0px #3B3E430D",
         nav: "0px 0px 13px 0px #00000024",
       },
     },

@@ -7,6 +7,7 @@ import Footer from "./components/common/Footer";
 import Offer from "./pages/Offer";
 import ContactUs from "./pages/ContactUs";
 import AboutUs from "./pages/AboutUs";
+import ScrollToTop from "./components/common/ScrollToTop";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/offer" element={<Offer />} />
       </Routes>
       <Footer />
+      <ScrollToTop />
     </div>
   );
 }

@@ -1,8 +1,14 @@
-import CorporateIdentity from "../components/CorporateIdentity"
+import DesignStrategy from "../components/offers/DesignStrategy"
+import CorporateIdentity from "../components/offer/CorporateIdentity"
+import Faqs from "../components/offer/Faqs"
 
 const Offer = () => {
   return (
-    <div><CorporateIdentity/></div>
+    <>
+      <CorporateIdentity />
+      <DesignStrategy />
+      <Faqs />
+    </>
   )
 }
 
