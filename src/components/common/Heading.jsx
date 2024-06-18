@@ -5,7 +5,7 @@ export const H2 = ({ heading, className }) => {
     return <h2 className={`font-montserrat font-semibold text-blackPearl text-4xl sm:text-custom-4xl md:text-5xl lg:text-custom-6xl leading-normal ${className}`}>{heading}</h2>
 }
 export const H3 = ({ heading, className }) => {
-    return <h3 className={`font-montserrat font-semibold text-blackPearl text-2xl sm:text-3xl md:text-4xl lg:text-custom-4xl leading-[48px] ${className}`}>{heading}</h3>
+    return <h3 className={`font-montserrat font-semibold text-blackPearl text-2xl sm:text-3xl md:text-4xl lg:text-custom-4xl lg:leading-[48px] ${className}`}>{heading}</h3>
 }
 export const H4 = ({ heading, className }) => {
     return <h4 className={`font-poppins font-semibold text-blackPearl text-lg sm:text-xl lg:text-2xl leading-9 ${className}`}>{heading}</h4>
