@@ -6,7 +6,6 @@ const Portfolio = () => {
   return (
     <>
       <PortfolioCards />
-      <Mochten />
     </>
   )
 }
