@@ -19,9 +19,9 @@ const Footer = () => {
                         </div>
                     </div>
                     <div className="flex justify-center w-full px-3 lg:w-7/12 lg:justify-end">
-                        <div className="flex lg:gap-[75px] lg:max-w-[548.21px] w-full lg:justify-end min-[550px]:justify-between flex-row max-[550px]:flex-wrap ">
+                        <div className="flex lg:gap-[75px] lg:max-w-[548.21px] gap-6 sm:gap-10 w-full lg:justify-end justify-between max-sm:flex-wrap">
                             {footerLinkList.map((item, index) => (
-                                <ul key={index}>
+                                <ul key={index} className='flex flex-col'>
                                     <li className='font-poppins text-base font-semibold text-white mb-[14px]'>{item.title}</li>
                                     {item.links.map((data, i) => (
                                         <li key={i} className='mb-3'>

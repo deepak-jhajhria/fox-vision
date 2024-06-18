@@ -14,8 +14,8 @@ function App() {
       <HeroSec />
       <Routes>
         <Route path='/' element={<Homepage />} />
-        <Route path='/about' element={<Aboutus />} />
-        <Route path='/contactus' element={<Aboutus />} />
+        <Route path='/about-us' element={<Aboutus />} />
+        <Route path='/contact-us' element={<Aboutus />} />
         <Route path='/portfolio' element={<Portfolio />} />
         <Route path='/offer' element={<Offer />} />
       </Routes>
