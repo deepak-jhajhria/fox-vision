@@ -1,9 +1,10 @@
-import DesignStrategy from "../../components/offers/DesignStrategy"
+import DesignStrategy from "../components/offers/DesignStrategy"
+
 
 
 const Offer = () => {
   return (
-    <DesignStrategy/>
+<div><DesignStrategy/></div>
   )
 }
 
