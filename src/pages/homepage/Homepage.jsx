@@ -11,7 +11,6 @@ const Homepage = () => {
             <LogoDesign />
             <HowWeWork />
             <Angebot />
-            <Mochten />
         </>
     )
 }
