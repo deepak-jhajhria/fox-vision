@@ -17,7 +17,7 @@ const AngebotCardPath = (props) => {
           {props.svg}
         </div>
         <H4 heading={props.title} />
-        <p className="pb-6 text-sm font-normal leading-normal text-black text-start opacity-70 md:pb-11 sm:text-base font-poppins">
+        <p className="pb-6 text-sm font-normal leading-normal text-black text-start md:mt-2 opacity-70 md:pb-11 sm:text-base font-poppins">
           {props.description}
         </p>
       </div>
