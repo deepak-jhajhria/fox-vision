@@ -36,22 +36,20 @@ const ProjectAgency = () => {
   return (
     <section className="py-10 sm:py-16 md:pt-20 lg:pb-0 lg:pt-[126px] px-6 overflow-hidden">
       <div className="container px-0 max-w-[1140px] relative">
-        <div className="flex flex-col items-center mt-3 md:flex-row  lg:mt-10">
-          <div className="flex flex-col">
-            <H5 className="uppercase max-md:text-center" title="FOX VISION" />
-            <H2
-              className="md:mt-2 !leading-120 max-md:text-center max-md:mx-auto max-w-[498px]"
-              heading="Design Project Agency"
-            />
-            <img
-              className="w-full max-w-[380px] md:max-w-[450px] lg:max-w-[524px] xl:max-w-[590px] lg:h-[328px] h-full mt-2"
-              src={cardImage}
-              alt="cardimage"
-            />
-          </div>
-          <div className="flex relative flex-col items-start lg:ml-8 lg:max-w-[511px]">
+        <H5 className="uppercase max-md:text-center" title="FOX VISION" />
+        <H2
+          className="md:mt-2 !leading-120 max-md:text-center max-md:mx-auto max-w-[498px]"
+          heading="Design Project Agency"
+        />
+        <div className="flex items-center mt-3 max-md:flex-col max-sm:gap-3 max-lg:gap-5 xl:items-end lg:mt-10">
+          <img
+            className="w-full max-w-[380px] md:max-w-[450px] lg:max-w-[524px] xl:max-w-[590px] lg:h-[328px] h-full mt-2"
+            src={cardImage}
+            alt="cardimage"
+          />
+          <div className="flex relative flex-col items-start md;translate-y-[-19%] lg:ml-8 lg:max-w-[523px]">
             <Description
-              className="max-md:text-center"
+              className="max-md:text-center max-sm:mt-28"
               description={
                 <>
                   As a design agency, we create a contemporary and{" "}
@@ -67,12 +65,12 @@ const ProjectAgency = () => {
               className="mt-8 max-md:mx-auto md:mt-10"
               name="Contact"
             />
-            <span className="absolute right-4 -top-24">
+            <span className="absolute right-[45%] sm:right-4 top-0 sm:-top-24">
               <Logo />
             </span>
           </div>
         </div>
-        <span className="absolute max-lg:hidden top-32 left-[41%]">
+        <span className="absolute top-[49%] md:-top-9 lg:top-0 xl:top-20 -left-10 md:left-[41%]">
           <Vector />
         </span>
       </div>

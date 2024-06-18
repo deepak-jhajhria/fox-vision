@@ -4,23 +4,27 @@ import Button from "./common/Button";
 import { H3 } from "./common/Heading";
 import { useLocation } from "react-router-dom";
 const Mochten = () => {
-  const pathName = useLocation().pathname
+  const pathName = useLocation().pathname;
   return (
-    <div className={`absolute top-0 left-0 w-full -translate-y-1/2 ${pathName === '/contactus' && '!hidden'}`}>
+    <div
+      className={`absolute top-0 left-0 w-full -translate-y-1/2 ${
+        pathName === "/contactus" && "!hidden"
+      }`}
+    >
       <div className="bg-turquoise relative rounded-[10px] md:min-h-[253px] py-9">
         <img
-          className="absolute top-0 right-0 pointer-events-none"
+          className="absolute max-md:hidden top-0 right-0 pointer-events-none"
           src={mochtenEllp}
           alt="dot_ellp"
         />
         <img
-          className="absolute top-0 left-0 rotate-180 pointer-events-none"
+          className="absolute max-md:hidden top-0 left-0 rotate-180 pointer-events-none"
           src={mochtenEllp}
           alt="dot_ellp"
         />
 
         <H3
-          className="!text-white  relative z-20 max-w-[713px] mx-auto text-center mb-[29.4px]"
+          className="!text-white  relative px-5 sm:px-0 z-20 max-w-[713px] mx-auto text-center mb-[29.4px]"
           heading="Möchten Sie ein Projekt starten? Wir freuen uns."
         />
         <Button
