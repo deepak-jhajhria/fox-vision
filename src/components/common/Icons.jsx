@@ -1,5 +1,12 @@
-// footer icons
-
+// hero section
+export const RightIcon = () => {
+    return (
+        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9.54971 5.45499C9.76065 5.24431 10.0466 5.12598 10.3447 5.12598C10.6428 5.12598 10.9288 5.24431 11.1397 5.45499L17.5147 11.83C17.7254 12.0409 17.8437 12.3269 17.8437 12.625C17.8437 12.9231 17.7254 13.209 17.5147 13.42L11.1397 19.795C10.9263 19.9936 10.6442 20.1018 10.3528 20.0967C10.0613 20.0917 9.78312 19.9739 9.57671 19.768C9.37085 19.5616 9.25302 19.2834 9.24798 18.9919C9.24295 18.7005 9.3511 18.4184 9.54971 18.205L15.1297 12.625L9.54971 7.04499C9.33904 6.83405 9.2207 6.54811 9.2207 6.24999C9.2207 5.95186 9.33904 5.66592 9.54971 5.45499Z" fill="white" />
+        </svg>
+    )
+}
+// footer section
 export const FacebookIcon = () => {
     return (
         <svg width="13" height="22" viewBox="0 0 13 22" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -7,7 +14,6 @@ export const FacebookIcon = () => {
         </svg>
     )
 }
-
 export const InstaIcon = () => {
     return (
         <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
