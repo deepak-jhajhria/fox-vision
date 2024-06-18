@@ -40,7 +40,7 @@ export const StrategyIcon = () => {
 
 const LogoDesign = () => {
   return (
-    <div className=' bg-blue lg:pt-[193px] py-10 sm:py-[60px] px-6'>
+    <div className=' bg-blue pt-[193px]  px-6'>
       <div className="container max-w-[1140px]">
         <div className="flex flex-col-reverse flex-wrap  mb-24 -mx-3 lg:flex-row">
           <div className="w-full px-3 lg:w-1/2">
@@ -50,15 +50,15 @@ const LogoDesign = () => {
             <H4 heading="Logo Design" className="!text-white text-center !leading-150 lg:text-start !mb-2" />
             <Description description="Logo design is a specialized discipline within the realm of graphic design, focused on creating unique and memorable visual symbols that represent a brand, company, or organization." className="!text-white !leading-150 !text-opacity-70 text-center mx-auto lg:mx-0 lg:text-start max-w-[421px]" />
           </div>
-          <div className=" flex gap-[22.88px]  w-full px-3 lg:w-1/2 relative z-[1]">
-          <img src={designWhiteEllipse} alt="ellipse1" className=' absolute z-[-1] max-w-[414.46px] w-full bottom-[6%] right-[2%]' />
-          <img src={designBoy1} alt="boy1" className='absolute top-[-26%] left-[36%] max-w-[194.67px]' />
-          <div className=' flex flex-col gap-[26.5px]'>
+          <div className=" min-[500px]:flex gap-[22.88px] justify-center lg:justify-normal  w-full px-3 lg:w-1/2 relative z-[1] mb-10">
+          <img src={designWhiteEllipse} alt="ellipse1" className=' absolute max-[500px]:hidden z-[-1] max-w-[414.46px] w-full bottom-[6%] right-[4%] sm:right-[7%] min-[900px]:right-[16%] lg:right-[2%]' />
+          <img src={designBoy1} alt="boy1" className='absolute min-[500px]:top-[-26%] top-[-19%] left-[28%]  min-[500px]:left-[48%] lg:left-[36%] max-w-[194.67px]' />
+          <div className=' flex flex-col max-[500px]:items-center gap-5 min-[500px]:gap-[26.5px]'>
 <img src={designCard1} alt="designcard1" className='max-w-[203.39px] border border-solid border-transparent hover:border-blue duration-300 rounded-[12.52px] shadow-[0px_16.7px_41.74px_0px_#3B3E430D]
 ' />
 <img src={designCard2} alt="designCard2" className='max-w-[203.39px] border border-solid border-transparent hover:border-blue duration-300 rounded-[12.52px]' />
           </div>
-          <div className=' flex flex-col gap-[28.68px] mt-10'>
+          <div className=' flex flex-col max-[500px]:items-center gap-5 min-[500px]:gap-[28.68px] mt-5 min-[500px]:mt-10'>
             <img src={designCard3} alt="designCard3" className='max-w-[203.39px]  border border-solid border-transparent hover:border-blue duration-300 rounded-[12.52px]' />
             <img src={designCard4} alt="designCard4" className='max-w-[203.39px] border border-solid border-transparent hover:border-blue duration-300 rounded-[12.52px] shadow-[0px_16.7px_41.74px_0px_#3B3E430D]' />
           </div>
