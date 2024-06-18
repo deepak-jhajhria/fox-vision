@@ -4,9 +4,9 @@ import Homepage from "./pages/homepage/Homepage";
 import Portfolio from "./pages/portfolio/Portfolio";
 import HeroSec from "./components/HeroSec";
 import Footer from "./components/common/Footer";
-import Aboutus from "./pages/aboutUs/Aboutus";
 import Offer from "./pages/offer/Offer";
 import ContactUs from "./pages/contactUs/ContactUs";
+import AboutUs from "./pages/aboutUs/Aboutus";
 
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
       <HeroSec />
       <Routes>
         <Route path='/' element={<Homepage />} />
-        <Route path='/about-us' element={<Aboutus />} />
+        <Route path='/about-us' element={<AboutUs />} />
         <Route path='/contact-us' element={<ContactUs />} />
         <Route path='/portfolio' element={<Portfolio />} />
         <Route path='/offer' element={<Offer />} />

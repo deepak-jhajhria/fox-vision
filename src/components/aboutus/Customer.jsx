@@ -5,16 +5,16 @@ import Avtar from "../../assets/images/svg/customerAvtar.svg";
 
 const Customer = () => {
   return (
-    <div className="bg-blue pt-[77px] pb-40 md:pb-[190px] lg:pb-[240px]">
+    <div className="bg-blue pt-12 md:pt-[77px] pb-40 md:pb-[190px] lg:pb-[240px]">
       <div className="container px-3 mx-auto">
-        <div className="flex flex-wrap justify-center items-center flex-row -mx-3 pb-6 md:pb-[78px]">
+        <div className="flex flex-wrap justify-center items-center flex-row -mx-3 pb-2 md:pb-[78px]">
           <div className="w-full px-3 md:w-1/2">
             <Description
-              className="!text-white text-center md:text-start mb-3"
+              className="!text-white text-center !font-bold md:text-start md:mb-3"
               description="FOX philosophy"
             />
             <H2
-              className="!text-white mb-5 text-center md:text-start"
+              className="!text-white mb-2 md:mb-5 text-center md:text-start"
               heading="Customer Focus"
             />
             <Description
@@ -38,7 +38,7 @@ const Customer = () => {
           </div>
         </div>{" "}
         <img
-          className="w-[90px] h-[100px] md:w-[140px] md:h-[171px] mx-auto"
+          className="w-[60px] h-[60px] sm:w-[90px] sm:h-[100px] md:w-[140px] md:h-[171px] mx-auto"
           src={angebotLogo}
           alt="logo_angebot"
         />
