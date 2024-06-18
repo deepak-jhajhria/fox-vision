@@ -1,7 +1,11 @@
 import { Description, H4 } from '../common/Heading'
 import designCard1 from '../../assets/images/webp/designCard1.webp'
 import designCard2 from '../../assets/images/webp/designCard2.webp'
+import designCard3 from '../../assets/images/webp/designCard3.webp'
+import designCard4 from '../../assets/images/webp/designCard4.webp'
+import designBoy1 from '../../assets/images/webp/designBoy1.webp'
 import digitalImg from '../../assets/images/webp/digitalImg.webp'
+import designWhiteEllipse from '../../assets/images/webp/designWhiteEllipse.webp'
 
 export const DesignIcon = () => {
   return (
@@ -36,9 +40,9 @@ export const StrategyIcon = () => {
 
 const LogoDesign = () => {
   return (
-    <div className=' bg-blue lg:pt-20 py-10 sm:py-[60px] px-6'>
+    <div className=' bg-blue lg:pt-[193px] py-10 sm:py-[60px] px-6'>
       <div className="container max-w-[1140px]">
-        <div className="flex flex-col-reverse flex-wrap items-center mb-24 -mx-3 lg:flex-row">
+        <div className="flex flex-col-reverse flex-wrap  mb-24 -mx-3 lg:flex-row">
           <div className="w-full px-3 lg:w-1/2">
             <div className="flex bg-white w-[93.15px] h-[93.15px] mx-auto lg:mx-0 justify-center items-center rounded-[7.59px] mb-[29px]">
               <DesignIcon />
@@ -46,11 +50,17 @@ const LogoDesign = () => {
             <H4 heading="Logo Design" className="!text-white text-center !leading-150 lg:text-start !mb-2" />
             <Description description="Logo design is a specialized discipline within the realm of graphic design, focused on creating unique and memorable visual symbols that represent a brand, company, or organization." className="!text-white !leading-150 !text-opacity-70 text-center mx-auto lg:mx-0 lg:text-start max-w-[421px]" />
           </div>
-          <div className=" flex gap-[22.88px]  w-full px-3 lg:w-1/2">
-          <div>
-<img src={designCard1} alt="" className='max-w-[203.39px] shadow-[0px_16.7px_41.74px_0px_#3B3E430D]
+          <div className=" flex gap-[22.88px]  w-full px-3 lg:w-1/2 relative z-[1]">
+          <img src={designWhiteEllipse} alt="ellipse1" className=' absolute z-[-1] max-w-[414.46px] w-full bottom-[6%] right-[2%]' />
+          <img src={designBoy1} alt="boy1" className='absolute top-[-26%] left-[36%] max-w-[194.67px]' />
+          <div className=' flex flex-col gap-[26.5px]'>
+<img src={designCard1} alt="designcard1" className='max-w-[203.39px] border border-solid border-transparent hover:border-blue duration-300 rounded-[12.52px] shadow-[0px_16.7px_41.74px_0px_#3B3E430D]
 ' />
-<img src={designCard2} alt="" className='max-w-[203.39px]' />
+<img src={designCard2} alt="designCard2" className='max-w-[203.39px] border border-solid border-transparent hover:border-blue duration-300 rounded-[12.52px]' />
+          </div>
+          <div className=' flex flex-col gap-[28.68px] mt-10'>
+            <img src={designCard3} alt="designCard3" className='max-w-[203.39px]  border border-solid border-transparent hover:border-blue duration-300 rounded-[12.52px]' />
+            <img src={designCard4} alt="designCard4" className='max-w-[203.39px] border border-solid border-transparent hover:border-blue duration-300 rounded-[12.52px] shadow-[0px_16.7px_41.74px_0px_#3B3E430D]' />
           </div>
           </div>
         </div>
