@@ -23,12 +23,15 @@ module.exports = {
         noble: "#b3b3b3",
         silver: "#a6a6a6",
         alabaster: "#f9f9f9",
+        violet:"#815DED"
       },
       lineHeight: {
         107: "107%",
         120: "120%",
+        121:"121%",
         150: "150%",
         183: "183%",
+        121:"121%"
       },
       fontSize: {
         "custom-4xl": "40px",
@@ -41,6 +44,7 @@ module.exports = {
         blueChalk: ["0px 10px 20px 0px #4B17E62B"],
         painIcon: "0px 12.63px 25.25px 0px #4B17E62B",
         graphicIcon: "0px 10px 20px 0px #05D5FB29",
+        addCards: "0px 16.7px 41.74px 0px #3B3E430D",
         nav: "0px 0px 13px 0px #00000024",
       },
     },

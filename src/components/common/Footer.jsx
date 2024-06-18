@@ -8,7 +8,7 @@ const Footer = () => {
     const pathName = useLocation().pathname
     return (
         <footer className='px-6 bg-blackPearl'>
-            <div className={`container max-w-[1140px] pt-56 relative ${pathName === '/contactus' && "!pt-20"}`}>
+            <div className={`container max-w-[1140px] pt-56 relative ${pathName === '/contact-us' && "!pt-20"}`}>
                 <div className="flex flex-row flex-wrap mb-10 -mx-3 sm:mb-16 md:mb-20 lg:mb-24">
                     <div className="w-full px-3 mb-10 lg:w-5/12 lg:mb-0">
                         <div className='flex justify-center lg:block'><img src={footerLogo} alt="logo" className='mb-4' /></div>

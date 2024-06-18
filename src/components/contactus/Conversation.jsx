@@ -105,10 +105,10 @@ const Conversation = () => {
   };
 
   return (
-    <div className="py-12 md:py-14 lg:pt-[126px] lg:pb-[118px]">
+    <div className="pt-12 md:pt-14 lg:pt-[126px]">
       <div className="container xl:max-w-[1164px] px-3 mx-auto">
         <div className="flex flex-wrap flex-row justify-between">
-          <div className="w-full px-3 md:w-1/2">
+          <div className="w-full px-3 lg:w-[46%]">
             <H5
               className="uppercase max-md:text-center"
               title="Contact With FoxVision"
@@ -123,7 +123,7 @@ const Conversation = () => {
               alt="conversation_Image"
             />
           </div>
-          <div className="w-full px-3 lg:pt-10 md:w-1/2">
+          <div className="w-full px-3 lg:pt-10 lg:w-[53%]">
             <form className="lg:mt-[10px]" onSubmit={handleSubmit}>
               <div className="flex sm:flex-row flex-col sm:gap-4">
                 <div className="lg:max-w-[297px] w-full mb-3 sm:mb-[14px]">
@@ -238,30 +238,33 @@ const Conversation = () => {
                 )}
               </div>
               <div className="flex items-center mb-4">
-                <div className="flex justify-between items-center max-[450px]:w-full w-[250px] lg:w-[302px] py-2 px-3 rounded-md border border-noble bg-alabaster">
-                  <div className="flex">
-                    <input
-                      required
-                      type="checkbox"
-                      id="box"
-                      name="box"
-                      checked={formData.box}
-                      onChange={handleChange}
-                    />
-                    <label
-                      htmlFor="captcha"
-                      className="ml-2 text-sm md:text-base font-normal text-black opacity-70"
-                    >
-                      I’m not a robot
-                    </label>
-                  </div>
+                <div
+                  htmlFor="box"
+                  className="flex justify-between items-center max-[450px]:w-full w-[250px] lg:w-[302px] py-2 px-3 rounded-md border border-noble bg-alabaster"
+                >
+                  <label className="flex w-[70%] cursor-pointer">
+                    <div className="flex items-center">
+                      <input
+                        required
+                        type="checkbox"
+                        id="box"
+                        name="box"
+                        className="custom-checkbox"
+                        checked={formData.box}
+                        onChange={handleChange}
+                      />
+                      <span className="ml-2 text-sm md:text-base font-normal text-black opacity-70">
+                        I’m not a robot
+                      </span>
+                    </div>
+                  </label>
                   <div className="flex flex-col items-center">
                     <img
                       className="w-[49px] pointer-events-none h-[45px]"
                       src={captcha}
                       alt="captcha_image"
                     />
-                    <p className="text-silver font-normal font-poppins leading-[12px] text-[8px]">
+                    <p className="text-silver !flex-nowrap font-normal font-poppins leading-[12px] text-[8px]">
                       Privacy - Terms
                     </p>
                   </div>
