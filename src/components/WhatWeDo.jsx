@@ -191,7 +191,7 @@ export const Logo = () => {
 
 const WhatWeDo = () => {
   return (
-    <section className="py-10 sm:py-16 md:py-20 lg:pt-[238px] lg:pb-[218px] px-6 overflow-hidden">
+    <section className="py-10 sm:py-16 md:py-20 lg:pt-[126px] lg:pb-[218px] px-6 overflow-hidden">
       <div className="container px-0 max-w-[1140px] relative">
         <H5 className="uppercase" title="A RESULTS-DRIVEN AGENCY" />
         <H2 className="md:mt-3" heading="What we do" />
