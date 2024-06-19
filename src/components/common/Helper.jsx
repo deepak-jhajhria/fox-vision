@@ -1,4 +1,4 @@
-import { EmailIcon, PhoneIcon, VisitIcon } from "./Icons"
+import { AppIcon, Beschriftungen, Design, Druck, EmailIcon, Identity, Marketing, PhoneIcon, Redesign, SoftwareIcon, TeachIcon, VisitIcon } from "./Icons"
 import portCard1 from '../../assets/images/webp/portfolio/portCard1.webp'
 import portCard2 from '../../assets/images/webp/portfolio/portCard2.webp'
 import portCard3 from '../../assets/images/webp/portfolio/portCard3.webp'
@@ -22,6 +22,10 @@ import animals from "../../assets/images/webp/what-we/animals.webp";
 import women from "../../assets/images/webp/what-we/women.webp";
 import frute from "../../assets/images/webp/what-we/frute.webp";
 import base from "../../assets/images/webp/what-we/base.webp";
+import wireFraming from "../../assets/images/webp/wireFraming.webp";
+import webImg from "../../assets/images/webp/webDesigning.webp";
+import logoImg from "../../assets/images/webp/logoDesign.webp";
+import appImg from "../../assets/images/webp/appDesign.webp";
 
 // accordion list
 export const accordionList = [
@@ -157,4 +161,79 @@ export const graphicDesignList = [
     { col: [{ image: cartoons }, { image: women }], },
     { col: [{ image: dogy }, { image: frute }], },
     { col: [{ image: animals }, { image: base }], },
+];
+
+// homepage how we work data
+
+export const howWeWorkCardlist = [
+    {
+        svg: <Identity />,
+        title: "Corporate Identity",
+        description: "Viele verbinden damit in erster Linie Logo und Farben. Corporate Identity ist weitaus mehr...",
+        link: "Mehr",
+    },
+    {
+        svg: <Redesign />,
+        title: "Redesign",
+        description: "Sie haben durch Ihren Service und Ihre Dienstleistungen bereits einen hohen Bekanntheitsgrad erreicht und möchten...",
+        link: "Mehr",
+    },
+    {
+        svg: <Design />,
+        title: "Web design",
+        description: "Zeitgemässe und schönes Design macht Kunden neugierig und weckt bereits innert kurzer Zeit mehr Vertrauen....",
+        link: "Mehr",
+    },
+    {
+        svg: <Marketing />,
+        title: "Digital Marketing",
+        description: "Digitales Auftreten war für Unternehmen noch nie wichtiger als jetzt. Kunden, Partner und Lieferanten setzen von Tag zu Tag auf digitale Lösungen...",
+        link: "Mehr",
+    },
+    {
+        svg: <Druck />,
+        title: "Arbeitsbekleidungen - Druck & Stick",
+        description: "Visual graphic design is the art of using visual elements, such as images, typography, color, and layout.",
+        link: "Mehr",
+    },
+    {
+        svg: <Beschriftungen />,
+        title: "Beschriftungen",
+        description: "Lorem ipsum dolor sit amet consectetur. Urna feugiat et morbi risus nibh in sed. Felis nisl bibendum ut velit amet pharetra.",
+        link: "Mehr",
+    },
+];
+export const howWeWorkList = [
+    {
+        icons: <AppIcon />,
+        tittle: "App Platform Intergration",
+    },
+    {
+        icons: <SoftwareIcon />,
+        tittle: "Software Tools Development",
+    },
+    {
+        icons: <TeachIcon />,
+        tittle: "Teach Website Solution",
+    },
+];
+
+// offer section data
+export const corporateCardList = [
+    {
+        img: wireFraming,
+        title: "Wireframing",
+    },
+    {
+        img: webImg,
+        title: "Web Design",
+    },
+    {
+        img: logoImg,
+        title: "Logo Design",
+    },
+    {
+        img: appImg,
+        title: "App Design",
+    },
 ];

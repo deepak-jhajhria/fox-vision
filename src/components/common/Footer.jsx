@@ -1,8 +1,8 @@
-import footerLogo from '../../assets/images/svg/footerLogo.svg'
 import { Link, useLocation } from 'react-router-dom'
 import { FacebookIcon, InstaIcon } from './Icons'
 import { footerLinkList } from './Helper'
 import Mochten from '../Mochten'
+import footerLogo from '../../assets/images/svg/footerLogo.svg'
 import footerLeftEllipse from '../../assets/images/webp/footerLeftEllipse.webp'
 import footerRightEllipse from '../../assets/images/webp/footerRightEllipse.webp'
 

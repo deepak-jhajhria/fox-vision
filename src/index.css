@@ -14,6 +14,13 @@
     @apply after:absolute relative hover:after:left-[0] after:bottom-[-2%] after:w-0 after:left-[50%] after:rounded-[10px] after:h-[2px] after:bg-white hover:text-opacity-100 hover:after:w-full after:duration-300;
   }
 
+  .error-message {
+    @apply text-red-600 text-xs mt-[5px]
+  }
+
+  .custom-checkbox {
+    @apply inline-block relative pl-[25px] cursor-pointer text-base select-none
+  }
 }
 
 ::-webkit-scrollbar-track {
