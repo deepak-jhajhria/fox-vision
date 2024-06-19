@@ -9,8 +9,8 @@ const AboutUs = () => {
       <ProjectAgency />
       <DesignMastery />
       <HowWeWork
-        padding="lg:!pt-24 lg:!mt-3 lg:!pb-32 lg:!mb-[2px]"
-        imgClassName="lg:!max-w-[467px] max-md:!max-w-[360px] !mt-0 lg:!max-h-[363px]"
+        padding="lg:!pt-24 lg:!mt-2 lg:!pb-32 lg:!mb-[2px]"
+        imgClassName="lg:!max-w-[467px] xl:-mt-2 max-md:!max-w-[360px] !mt-0 lg:!max-h-[363px]"
       />
       <Customer />
     </>
