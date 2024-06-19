@@ -5,17 +5,21 @@ import { DownArrow } from "../common/Icons";
 const Accordion = ({ data, className }) => {
     const [activeIndex, setActiveIndex] = useState(0);
     const handleToggle = (index) => {
-        setActiveIndex(activeIndex === index ? null : index);
+        if (activeIndex === index) {
+            setActiveIndex(null);
+        } else {
+            setActiveIndex(index);
+        }
     };
     return (
         <div className={`flex flex-col gap-[18px] ${className}`}>
             {data.map((item, index) => (
-                <div key={index} className={`p-[21px] border border-black border-opacity-20 rounded-[6px] duration-300 min-h-[197px] ${activeIndex !== index && 'min-h-[70px]'}`}>
-                    <button className="flex items-center justify-between w-full gap-8" onClick={() => handleToggle(index)}>
-                        <H4 heading={item.title} />
+                <div key={index} className={`p-[21px] border border-black border-opacity-20 rounded-[6px] overflow-hidden duration-300 ${activeIndex !== index && ''}`}>
+                    <button className="flex items-start justify-between w-full gap-8" onClick={() => handleToggle(index)}>
+                        <H4 className='text-start' heading={item.title} />
                         <DownArrow className={`duration-300 ${activeIndex !== index && "rotate-180"}`} />
                     </button>
-                    <Description className={`${activeIndex !== index && 'hidden opacity-0'} text-opacity-70 duration-300 h-auto overflow-hidden`} description={item.content} />
+                    <Description className={`${activeIndex !== index && '!max-h-0 opacity-0'} max-h-[109px] text-opacity-70 duration-300 mt-2 lg:mt-[15px] overflow-hidden mr-7 lg:mr-[70px]`} description={item.content} />
                 </div>
             ))}
         </div>
