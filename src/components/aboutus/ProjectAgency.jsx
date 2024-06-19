@@ -1,8 +1,7 @@
 import { Description, H2, H5 } from "../common/Heading";
 import CommonButton from "../common/CommonButton";
 import cardImage from "../../assets/images/webp/projectAgency.webp";
-import WhatWeDo from "../homepage/WhatWeDo";
-import { WhatWeSecVector } from "../common/Icons";
+import { WhatWeSecLogo, WhatWeSecVector } from "../common/Icons";
 
 const ProjectAgency = () => {
   return (
@@ -38,7 +37,7 @@ const ProjectAgency = () => {
               name="Contact"
             />
             <span className="absolute right-[45%] sm:right-4 top-0 sm:-top-24">
-              <WhatWeDo />
+              <WhatWeSecLogo />
             </span>
           </div>
         </div>
