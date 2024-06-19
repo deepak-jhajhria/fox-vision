@@ -10,7 +10,7 @@ const HeroSec = () => {
     <div className="px-6 bg-blue">
       <NavBar />
       <div className="max-w-[1140px] container">
-        <div className={`${location.pathname === '/' ? "pt-11" : "pt-[56px] pb-[100px]"}`}>
+        <div className={`${location.pathname === '/' ? "pt-11" : "pt-10 pb-14 sm:pt-12 sm:pb-16 lg:pt-[56px] lg:pb-[100px]"}`}>
           {location.pathname === '/' && <H1 boldHeadingBefore="FOX" heading={<>Vision <br /> Ihre Design Agentur!</>} className="max-w-[948px] text-center mx-auto" />}
           {location.pathname === '/about-us' && <H1 boldHeadingBefore="About" heading='Us' className="max-w-[948px] text-center mx-auto" />}
           {location.pathname === '/contact-us' && <H1 heading='Contact' boldHeadingAfter="Us" className="max-w-[948px] text-center mx-auto" />}
@@ -22,15 +22,15 @@ const HeroSec = () => {
           <div className="relative flex justify-center mx-auto">
             <div className="absolute right-[69%] top-[5%]">
               <CloudTop />
-              </div>
-            <div className="absolute left-[73%] bottom-[10%]"><CloudBottom className="absolute bottom-0"/></div>
+            </div>
+            <div className="absolute left-[73%] bottom-[10%]"><CloudBottom className="absolute bottom-0" /></div>
             <img className="max-w-[621px] w-full max-h-[469px]" src={headerpc} alt="header-pc" />
           </div>
         </div>}
-        {location.pathname !== '/' && <div className="flex items-center gap-4 pb-[30px]">
-          <Link to='/' className="text-base font-medium text-white font-poppins">Home</Link>
+        {location.pathname !== '/' && <div className="flex items-center gap-2 md:gap-4 pb-4 sm:pb-6 md:pb-[30px]">
+          <Link to='/' className="text-sm font-medium text-white sm:text-base font-poppins">Home</Link>
           <RightIcon />
-          <Link to={location.pathname} className="text-base font-medium text-white capitalize font-poppins">{location.pathname.replace(/[\/-]/g, ' ')}</Link>
+          <Link to={location.pathname} className="text-sm font-medium text-white capitalize sm:text-base font-poppins">{location.pathname.replace(/[\/-]/g, ' ')}</Link>
         </div>}
       </div>
     </div>
