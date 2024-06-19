@@ -1,4 +1,16 @@
 import { EmailIcon, PhoneIcon, VisitIcon } from "./Icons"
+import watch from "../../assets/images/png/watch.png";
+import things from "../../assets/images/png/things.png";
+import shopping from "../../assets/images/png/shopping.png";
+import quality from "../../assets/images/png/quality.png";
+import boodie from "../../assets/images/png/boodie.png";
+import beauty from "../../assets/images/png/beauty.png";
+import cartoons from "../../assets/images/png/cartoons.png";
+import dogy from "../../assets/images/png/dogy.png";
+import animals from "../../assets/images/png/animals.png";
+import women from "../../assets/images/png/women.png";
+import frute from "../../assets/images/png/frute.png";
+import base from "../../assets/images/png/base.png";
 
 // accordion list
 export const accordionList = [
@@ -43,24 +55,9 @@ export const footerLinkList = [
 // more ways contact card data
 
 export const contactCardData = [
-    {
-        icons: <PhoneIcon />,
-        title: 'Call Us',
-        value: '+41 725 61 00',
-        link: "tel:+41 725 61 00"
-    },
-    {
-        icons: <EmailIcon />,
-        title: 'Email Us',
-        value: 'info@foxvision.ch',
-        link: "mailto:info@foxvision.ch",
-    },
-    {
-        icons: <VisitIcon />,
-        title: 'Visit Us',
-        value: 'Fox Vision GmbH Badstrasse 50 CH-5200 Brugg',
-        link: "https://www.google.com/maps/place/Fox+Vision+GmbH/@47.109919,8.500001,17z/data=!3m1!4b1!4m5!3m4!1s0x4790000000000000:0x00000000000"
-    }
+    { icons: <PhoneIcon />, title: 'Call Us', value: '+41 725 61 00', link: "tel:+41 725 61 00" },
+    { icons: <EmailIcon />, title: 'Email Us', value: 'info@foxvision.ch', link: "mailto:info@foxvision.ch", },
+    { icons: <VisitIcon />, title: 'Visit Us', value: 'Fox Vision GmbH Badstrasse 50 CH-5200 Brugg', link: "https://www.google.com/maps/place/Fox+Vision+GmbH/@47.109919,8.500001,17z/data=!3m1!4b1!4m5!3m4!1s0x4790000000000000:0x00000000000" }
 ]
 
 // design strategy card data 
@@ -69,4 +66,20 @@ export const strategyCardData = [
     { head: "Research and Analysis", discription: "Our team conducts thorough research, including market and competitor analysis, to inform our design decisions.", },
     { head: "Wireframing and Prototyping", discription: "We create wireframes and interactive prototypes to map out the layout and functionality of your project.", },
     { head: "User Testing", discription: "Real users provide invaluable feedback to refine the design, ensuring it aligns with user expectations.", },
+];
+
+// homepage what we do data
+
+export const uiUxDesignList = [
+    { image: watch },
+    { image: things },
+    { image: shopping },
+    { image: quality },
+    { image: boodie },
+    { image: beauty },
+];
+export const graphicDesignList = [
+    { col: [{ image: cartoons }, { image: women }],},
+    { col: [{ image: dogy }, { image: frute }],},
+    { col: [{ image: animals }, { image: base }],},
 ];
