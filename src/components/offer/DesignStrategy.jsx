@@ -30,7 +30,7 @@ export const strategyCardData = [
 ];
 const DesignStrategy = () => {
   return (
-    <div className=" py-[150px] px-6">
+    <div className="pt-10 sm:pt-16 md:pt-20 lg:pt-[150px] px-6">
       <div className="container max-w-[1140px]">
         <div className="xl:flex gap-6 ">
           <div className=" flex flex-col items-center mb-5 xl:mb-0">
@@ -56,6 +56,7 @@ const DesignStrategy = () => {
             {strategyCardData.map((item, i) => (
               <StrategyCard
                 key={i}
+                class={` ${i === 3 ? "!mb-0":""}`}
                 number={item.num}
                 title={item.head}
                 para={item.discription}
