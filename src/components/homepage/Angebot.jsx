@@ -301,7 +301,7 @@ const Angebot = () => {
           ))}
         </div>
         <img
-          className="w-[90px] h-[100px] md:w-[140px] md:h-[171px] mx-auto"
+          className="w-[90px] pointer-events-none h-[100px] md:w-[140px] md:h-[171px] mx-auto"
           src={angebotLogo}
           alt="logo_angebot"
         />

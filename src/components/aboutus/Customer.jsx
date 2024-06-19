@@ -5,7 +5,7 @@ import Avtar from "../../assets/images/svg/customerAvtar.svg";
 
 const Customer = () => {
   return (
-    <div className="bg-blue pt-12 md:pt-[77px] pb-40 md:pb-[190px] lg:pb-[240px]">
+    <div className="bg-blue pt-12 md:pt-[82px] pb-40 md:pb-[190px] lg:pb-[240px]">
       <div className="container max-w-[1140px] px-3 mx-auto">
         <div className="flex flex-wrap justify-center items-center flex-row -mx-3 pb-2 md:pb-[78px]">
           <div className="w-full px-3 md:w-1/2">
@@ -25,12 +25,12 @@ const Customer = () => {
           <div className="w-full px-3 md:w-1/2">
             <div className="relative">
               <img
-                className="mx-auto md:mx-0 max-w-[556px] max-h-[371px] w-[70%] md:w-full"
+                className="mx-auto md:mx-0 md:!max-w-[556px] pointer-events-none md:!max-h-[371px] w-[70%] md:w-full"
                 src={pcmember}
                 alt="Pc_persons"
               />
               <img
-                className="w-12 h-12 sm:h-20 sm:w-20 lg:w-[98px] lg:h-[98px] absolute right-[42%] sm:top-12 lg:right-[45%] top-5 md:right-[36%] md:top-11 lg:top-18"
+                className="w-12 h-12 sm:h-20 sm:w-20 pointer-events-none lg:w-[98px] lg:h-[98px] absolute right-[42%] sm:top-12 lg:right-[45%] top-5 md:right-[36%] md:top-11 lg:top-18"
                 src={Avtar}
                 alt="avtar"
               />
@@ -38,7 +38,7 @@ const Customer = () => {
           </div>
         </div>{" "}
         <img
-          className="w-[60px] h-[60px] sm:w-[90px] sm:h-[100px] md:w-[140px] md:h-[171px] mx-auto"
+          className="w-[60px] pointer-events-none h-[60px] sm:w-[90px] sm:h-[100px] md:w-[140px] md:h-[171px] mx-auto"
           src={angebotLogo}
           alt="logo_angebot"
         />

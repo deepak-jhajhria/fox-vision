@@ -193,10 +193,10 @@ export const Logo = () => {
 
 const WhatWeDo = () => {
   return (
-    <section className="py-10 sm:py-16 md:py-20 lg:pt-[238px] lg:pb-[218px] px-6 overflow-hidden">
+    <section className="py-10 sm:py-16 md:py-20 lg:pt-[238px] lg:pb-[258px] px-6 overflow-hidden">
       <div className="container px-0 max-w-[1140px] relative">
         <H5
-          className="uppercase lg:text-start text-center"
+          className="uppercase !leading-150 lg:text-start text-center"
           title="A RESULTS-DRIVEN AGENCY"
         />
         <H2
@@ -211,7 +211,7 @@ const WhatWeDo = () => {
           />
           <div className="flex flex-col lg:items-start items-center lg:ml-10 lg:max-w-[512px] max-w-[650px]">
             <Description
-              className="lg:text-start text-center"
+              className="lg:text-start text-center my-0.5"
               description={
                 <>
                   We define the intangible assets of your brand and subsequently
@@ -233,7 +233,7 @@ const WhatWeDo = () => {
             <CommonButton className="mt-8 md:mt-10" name="Contact" />
           </div>
         </div>
-        <div className="flex lg:flex-row flex-col xl:gap-[94px] lg:gap-10 justify-between items-center xl:items-start xl:mt-[202px] md:mt-24 sm:mt-20 mt-12 relative">
+        <div className="flex lg:flex-row flex-col xl:gap-[94px] lg:gap-10 justify-between items-center xl:items-start xl:mt-[185px] md:mt-24 sm:mt-20 mt-12 relative">
           <img
             className="absolute pointer-events-none lg:max-w-[307px] md:max-w-[280px] max-w-[250px] right-[-10%] sm:bottom-[-7%] bottom-0"
             src={moon}
@@ -248,7 +248,7 @@ const WhatWeDo = () => {
               className="pt-10 mx-auto lg:mx-0"
             />
             <Description
-              className="pt-2 lg:max-w-[386px] max-w-[650px] lg:text-start text-center opacity-70"
+              className="pt-2 lg:max-w-[386px] max-w-[650px] lg:text-start text-center !leading-150 opacity-70"
               description="
                 UI/UX creative design is the art of crafting digital experiences that seamlessly blend aesthetics with functionality. It's about understanding users' needs and behaviors and translating that knowledge into intuitive, visually appealing interfaces. 
               "
@@ -273,7 +273,7 @@ const WhatWeDo = () => {
             ))}
           </div>
         </div>
-        <div className="flex lg:flex-row flex-col-reverse xl:gap-[94px] lg:gap-10 justify-between items-center xl:items-start xl:mt-[202px] md:mt-24 sm:mt-20 mt-12 relative">
+        <div className="flex lg:flex-row flex-col-reverse lg:gap-[59px] justify-between items-center xl:mt-[243px] md:mt-24 sm:mt-20 mt-12 relative">
           <img
             className="absolute pointer-events-none lg:max-w-[307px] md:max-w-[280px] max-w-[250px] left-[-9.1%] lg:top-0 bottom-0 "
             src={skyMoon}
@@ -312,7 +312,7 @@ const WhatWeDo = () => {
               className="pt-10 mx-auto lg:mx-0"
             />
             <Description
-              className="pt-2 lg:max-w-[386px] max-w-[650px] lg:text-start text-center opacity-70"
+              className="pt-2 lg:max-w-[420px] max-w-[650px] lg:text-start !leading-150 text-center opacity-70"
               description="
                Visual graphic design is the art of using visual elements, such as images, typography, color, and layout, to convey a message, tell a story, or evoke emotions.
               "
@@ -325,7 +325,7 @@ const WhatWeDo = () => {
         <span className="absolute right-0 max-lg:hidden top-5 lg:top-10">
           <Logo />
         </span>
-        <span className="absolute left-0 max-lg:hidden -bottom-[10%] z-10">
+        <span className="absolute left-0 max-lg:hidden -bottom-[12%] z-10">
           <Logo />
         </span>
       </div>

@@ -15,7 +15,7 @@ const DesignMastery = () => {
         />
 
         <div
-          className="bg-white flex flex-col md:flex-row gap-5 justify-between items-center shadow-[0px_-40px_51px_8px_#00000012] ;
+          className="flex flex-col md:flex-row gap-5 justify-between items-center shadow-[0px_0px_51px_8px_#00000012] ;
  p-5 md:p-6 lg:p-[35px]"
         >
           <div>

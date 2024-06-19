@@ -8,7 +8,7 @@ const AboutUs = () => {
     <>
       <ProjectAgency />
       <DesignMastery />
-      <HowWeWork />
+      <HowWeWork imgClassName='lg:!max-w-[467px] !mt-0 lg:!max-h-[363px]'/>
       <Customer />
     </>
   );
