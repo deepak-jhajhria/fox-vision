@@ -2,6 +2,7 @@ import Corporate from "./AngebotCardPath";
 import angebotLogo from "../../assets/images/svg/angebotLogo.svg";
 import { H2, H5 } from "../common/Heading";
 import { Arrow } from "../common/Icons";
+import { howWeWorkCardlist } from "../common/Helper";
 
 const Angebot = () => {
   return (
