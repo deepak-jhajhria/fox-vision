@@ -4,21 +4,21 @@ import mhillPolka from "../../assets/images/webp/mhillPolaka.webp";
 const DesignMastery = () => {
   return (
     <section className="pt-10 sm:py-16 md:py-14 lg:pt-[138px] lg:pb-0 overflow-hidden">
-      <div className="container max-lg:px-3 max-w-[1140px] relative">
+      <div className="container max-lg:px-3 max-w-[1140px] pb-2 relative">
         <H5
           className="text-center text-blackPearl"
           title="FOX VISION - Friendly and reliable"
         />
         <H2
-          className="mb-2 sm:mb-6 text-center md:mt-3 md:mb-10 lg:mb-[60px] text-blackPearl"
+          className="mb-2 sm:mb-6 text-center md:mt-3 md:mb-10 lg:mb-[50px] text-blackPearl"
           heading="Design Mastery in Our Genes"
         />
 
         <div
-          className="flex flex-col md:flex-row gap-5 justify-between items-center shadow-[0px_0px_51px_8px_#00000012] ;
+          className="flex flex-col md:flex-row gap-5 justify-between items-center shadow-[27px_-37px_150px_-75px_#00000012] ;
  p-5 md:p-6 lg:p-[35px]"
         >
-          <div>
+          <div className="flex flex-col">
             <H4 className="text-blackPearl mb-[15px]" heading="Mhill Paloka" />
             <H5
               className="text-blackPearl !leading-normal lg:!leading-183 !font-normal md:max-w-[500px] opacity-70"

@@ -272,20 +272,20 @@ const howWeWorkCardlist = [
 const Angebot = () => {
   return (
     <div className="bg-blue pt-12 -mt-[1px] md:pt-24 lg:pt-[122px] pb-40 md:pb-[190px] lg:pb-[238px]">
-      <div className="container max-w-[1164px] mx-auto px-3">
+      <div className="container max-w-[1164px] mx-auto px-6 md:px-3">
         <H5
           className="!text-white  text-center mb-2 md:mb-3"
           title="A RESULTS-DRIVEN AGENCY"
         />
         <H2
-          className="!text-white  text-center lg:mb-[76px]"
+          className="!text-white  text-center mb-5 lg:mb-[76px]"
           heading="Angebot"
         />
 
         <div className="flex flex-row -mx-3 pb-10 md:pb-16 lg:pb-[77px] justify-center flex-wrap ">
           {howWeWorkCardlist.map((obj, index) => (
             <div
-              className="lg:w-4/12 md:1/2 pt-[22px] !px-[11.5px] sm:w-[49%] w-full"
+              className="lg:w-4/12 md:1/2 pt-4 md:pt-[22px] !px-[11.5px] sm:w-[49%] w-full"
               key={index}
             >
               <Corporate
