@@ -9,7 +9,7 @@ export const WorkCard = (props) => {
         {props.icons}
       </div>
       <H4 className="md:max-w-[288px]" heading={props.tittle} />
-      <p className="mt-1 text-sm font-normal sm:text-base leading-150 font-poppins md:mt-2 text-blackPearl text-opacity-70">
+      <p className="mt-1 text-sm font-normal sm:text-base !leading-150 font-poppins md:mt-2 text-blackPearl text-opacity-70">
         Visual graphic design is the art of using visual elements, such as
         images, typography, color, and layout, to convey a message, tell a
         story, or evoke emotions.
