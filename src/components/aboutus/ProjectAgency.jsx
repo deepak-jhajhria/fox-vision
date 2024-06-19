@@ -5,7 +5,7 @@ import { WhatWeSecLogo, WhatWeSecVector } from "../common/Icons";
 
 const ProjectAgency = () => {
   return (
-    <section className="py-10 sm:py-16 md:pt-20 lg:pb-0 lg:pt-[126px] px-6 overflow-hidden">
+    <section className="py-10 sm:py-16 md:pb-5 md:pt-20 lg:pb-0 lg:pt-[126px] px-6 overflow-hidden">
       <div className="container px-0 max-w-[1140px] relative">
         <H5 className="uppercase max-md:text-center" title="FOX VISION" />
         <H2
@@ -18,19 +18,19 @@ const ProjectAgency = () => {
             src={cardImage}
             alt="cardimage"
           />
-          <div className="flex relative flex-col items-start md:translate-y-[-16%] lg:ml-8 lg:max-w-[523px]">
+          <div className="flex relative flex-col items-start md:translate-y-[-16%] lg:ml-8 ">
             <Description
-              className="max-md:text-center max-sm:mt-28"
+              className="max-md:text-center max-sm:mt-28 lg:max-w-[523px]"
               description={
                 <>
-                  {" "}
-                  As a design agency, we create a contemporary and{" "}
+                  
+                  As a design agency, we create a contemporary and
                   {
                     <span className="text-skyBlue">distinctive appearance</span>
-                  }{" "}
+                  }
                   for you. Style is more in demand than ever. We help you show
-                  your best side to your customers. you{" "}
-                  {<span className="text-skyBlue">Strong branding sets</span>}{" "}
+                  your best side to your customers. you
+                  {<span className="text-skyBlue">Strong branding sets</span>}
                   apart from your competition and creates trust and seriousness.
                 </>
               }
