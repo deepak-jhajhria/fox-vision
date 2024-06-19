@@ -24,7 +24,7 @@ const AngebotCardPath = (props) => {
       <div className="flex items-center cursor-pointer absolute bottom-5 sm:bottom-6 xl:bottom-14 gap-2.5 ">
         <Link
           to={props.link}
-          className="text-sm font-normal leading-normal text-blue text-start opacity-70 sm:text-base font-poppins"
+          className="text-sm font-normal leading-normal text-blue group-hover:opacity-100 duration-300 text-start opacity-70 sm:text-base font-poppins"
         >
           {props.linkText}
         </Link>

@@ -109,10 +109,7 @@ const Conversation = () => {
       <div className="container xl:max-w-[1164px] px-3 mx-auto">
         <div className="flex flex-wrap flex-row justify-between">
           <div className="w-full px-3 lg:w-[46%]">
-            <H5
-              className="uppercase max-md:text-center"
-              title="Contact With FoxVision"
-            />
+            <H5 className="max-md:text-center" title="Contact With FoxVision" />
             <H2
               className="md:mt-3 !leading-120 max-md:text-center max-md:mx-auto max-w-[498px]"
               heading="Let's Start a Conversation"
@@ -123,7 +120,7 @@ const Conversation = () => {
               alt="conversation_Image"
             />
           </div>
-          <div className="w-full px-3 lg:pt-10 lg:w-[53%]">
+          <div className="w-full px-3 lg:pt-11 lg:w-[53%]">
             <form className="lg:mt-[10px]" onSubmit={handleSubmit}>
               <div className="flex sm:flex-row flex-col sm:gap-4">
                 <div className="lg:max-w-[297px] w-full mb-3 sm:mb-[14px]">
