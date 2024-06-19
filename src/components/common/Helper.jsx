@@ -7,9 +7,9 @@ import portCard5 from '../../assets/images/webp/portfolio/portCard5.webp'
 import portCard6 from '../../assets/images/webp/portfolio/portCard6.webp'
 import portCard7 from '../../assets/images/webp/portfolio/portCard7.webp'
 import portCard8 from '../../assets/images/webp/portfolio/portCard8.webp'
-import portCard9 from  '../../assets/images/webp/portfolio/portCard9.webp'
-import portCard10 from  '../../assets/images/webp/portfolio/portCard10.webp'
-import portCard11 from  '../../assets/images/webp/portfolio/portCard11.webp'
+import portCard9 from '../../assets/images/webp/portfolio/portCard9.webp'
+import portCard10 from '../../assets/images/webp/portfolio/portCard10.webp'
+import portCard11 from '../../assets/images/webp/portfolio/portCard11.webp'
 import watch from "../../assets/images/png/watch.png";
 import things from "../../assets/images/png/things.png";
 import shopping from "../../assets/images/png/shopping.png";
@@ -32,7 +32,13 @@ export const accordionList = [
     { title: "quisque aliquam Mi ullamcorper lectus orci purus felis scelerisque.", content: "Scelerisque lacus non ut diam auctor elementum suspendisse. Erat feugiat tincidunt aliquam phasellus nulla diam. Id id eget risus nisi viverra varius non. Venenatis augue id lacus diam sed pellentesque amet senectus nunc." },
     { title: "Iaculis odio vitae morbi magna enim dictum viverra habitasse.", content: "Scelerisque lacus non ut diam auctor elementum suspendisse. Erat feugiat tincidunt aliquam phasellus nulla diam. Id id eget risus nisi viverra varius non. Venenatis augue id lacus diam sed pellentesque amet senectus nunc." },
 ]
-
+// nav data list
+export const navLinkList = [
+    { title: "Home", src: "/" },
+    { title: "Über uns", src: "/about-us" },
+    { title: "Angebot", src: "/offer" },
+    { title: "Portfolio", src: "/portfolio" },
+];
 // footer list
 
 export const footerLinkList = [
@@ -148,7 +154,7 @@ export const uiUxDesignList = [
     { image: beauty },
 ];
 export const graphicDesignList = [
-    { col: [{ image: cartoons }, { image: women }],},
-    { col: [{ image: dogy }, { image: frute }],},
-    { col: [{ image: animals }, { image: base }],},
+    { col: [{ image: cartoons }, { image: women }], },
+    { col: [{ image: dogy }, { image: frute }], },
+    { col: [{ image: animals }, { image: base }], },
 ];
