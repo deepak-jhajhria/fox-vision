@@ -10,9 +10,9 @@ const Footer = () => {
     const pathName = useLocation().pathname
     return (
         <footer className='px-6 bg-blackPearl relative z-[1]'>
-            <img src={footerLeftEllipse} alt="ellipse1" className='absolute left-0 top-0 z-[-1]' />
-            <img src={footerRightEllipse} alt="ellipse2" className='absolute right-0 bottom-0 z-[-1]' />
-            <div className={`container max-w-[1140px] pt-56 relative ${pathName === '/contact-us' && "!pt-20"}`}>
+            <img src={footerLeftEllipse} alt="ellipse1" className='absolute left-0 top-0 z-[-1] pointer-events-none' />
+            <img src={footerRightEllipse} alt="ellipse2" className='absolute right-0 bottom-0 z-[-1] pointer-events-none' />
+            <div className={`container max-w-[1140px] pt-56 relative z-10 ${pathName === '/contact-us' && "!pt-20"}`}>
                 <div className="flex flex-row flex-wrap mb-10 -mx-3 sm:mb-16 md:mb-20 lg:mb-24">
                     <div className="w-full px-3 mb-10 lg:w-5/12 lg:mb-0">
                         <div className='flex justify-center lg:block'><img src={footerLogo} alt="logo" className='mb-4' /></div>
