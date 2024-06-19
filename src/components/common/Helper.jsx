@@ -10,18 +10,18 @@ import portCard8 from '../../assets/images/webp/portfolio/portCard8.webp'
 import portCard9 from '../../assets/images/webp/portfolio/portCard9.webp'
 import portCard10 from '../../assets/images/webp/portfolio/portCard10.webp'
 import portCard11 from '../../assets/images/webp/portfolio/portCard11.webp'
-import watch from "../../assets/images/png/watch.png";
-import things from "../../assets/images/png/things.png";
-import shopping from "../../assets/images/png/shopping.png";
-import quality from "../../assets/images/png/quality.png";
-import boodie from "../../assets/images/png/boodie.png";
-import beauty from "../../assets/images/png/beauty.png";
-import cartoons from "../../assets/images/png/cartoons.png";
-import dogy from "../../assets/images/png/dogy.png";
-import animals from "../../assets/images/png/animals.png";
-import women from "../../assets/images/png/women.png";
-import frute from "../../assets/images/png/frute.png";
-import base from "../../assets/images/png/base.png";
+import watch from "../../assets/images/webp/what-we/watch.webp";
+import things from "../../assets/images/webp/what-we/things.webp";
+import shopping from "../../assets/images/webp/what-we/shopping.webp";
+import quality from "../../assets/images/webp/what-we/quality.webp";
+import boodie from "../../assets/images/webp/what-we/boodie.webp";
+import beauty from "../../assets/images/webp/what-we/beauty.webp";
+import cartoons from "../../assets/images/webp/what-we/cartoons.webp";
+import dogy from "../../assets/images/webp/what-we/dogy.webp";
+import animals from "../../assets/images/webp/what-we/animals.webp";
+import women from "../../assets/images/webp/what-we/women.webp";
+import frute from "../../assets/images/webp/what-we/frute.webp";
+import base from "../../assets/images/webp/what-we/base.webp";
 
 // accordion list
 export const accordionList = [
