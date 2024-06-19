@@ -11,7 +11,7 @@ const Arrow = () => {
 
   )
 }
-const ResultsDriven = ({imgClassName}) => {
+const ResultsDriven = ({imgClassName,margin}) => {
   return (
     <div className="relative flex flex-row flex-wrap justify-between -mx-3">
       <div className="absolute xl:top-[14%] lg:top-[18%] lg:block hidden xl:right-[44%] right-[48%]">
@@ -35,7 +35,7 @@ const ResultsDriven = ({imgClassName}) => {
         </div>
       </div>
       <div className="flex items-end justify-end w-full px-3 pt-3 md:w-1/2 md:mb-3 md:pt-0">
-        <div className="lg:mb-11">
+        <div className={`mb-0 ${margin}`}>
           <Description
             className="lg:max-w-[481px] max-md:text-center md:text-xl sm:text-lg text-base !text-opacity-70 !leading-150"
             description={
