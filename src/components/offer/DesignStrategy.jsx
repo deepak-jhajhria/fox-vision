@@ -16,7 +16,7 @@ const DesignStrategy = () => {
           </div>
           <div className="min-[450px]:pl-[23px] flex flex-col items-center">
             {strategyCardData.map((item, i) => (
-              <StrategyCard key={i} class={` ${i === 3 ? "!mb-0" : ""}`} number={i + 1} title={item.head} para={item.discription} />
+              <StrategyCard key={i} class={` ${i === 3 ? "!mb-[17px]" : ""}`} number={i + 1} title={item.head} para={item.discription} />
             ))}
           </div>
         </div>
