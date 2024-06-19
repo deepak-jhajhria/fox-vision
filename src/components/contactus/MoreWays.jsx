@@ -66,7 +66,7 @@ const MoreWays = () => {
             <div className=' flex flex-row flex-wrap -mx-3 justify-center'>
                     {
                         ContactCardData.map((item, i) => (
-                          <div className=' lg:w-1/3 sm:w-1/2 w-full px-3 flex justify-center sm:block mb-6 lg:mb-0'>
+                          <div key={i} className=' lg:w-1/3 sm:w-1/2 w-full px-3 flex justify-center sm:block mb-6 lg:mb-0'>
                        <a href={item.link} target='blank' rel='norefferer noopener'>
                          <ContactCard index={i} icons={item.icons} title={item.title} value={item.value} class={`${
                           i === 2 ? " !py-7 !mb-0":"py-10"
