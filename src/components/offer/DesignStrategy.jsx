@@ -1,6 +1,6 @@
 import React from "react";
 import { H2 } from "../common/Heading";
-import uiuxImg from "../../assets/images/webp/uiuxImg.webp";
+import uiuxImg from "../../assets/images/webp/strategy-design/uiuxImg.webp";
 import { StrategyCard } from "./StrategyCard";
 export const strategyCardData = [
   {
