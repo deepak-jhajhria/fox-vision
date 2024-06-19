@@ -10,7 +10,8 @@ const AboutUs = () => {
       <DesignMastery />
       <HowWeWork
         padding="lg:!pt-24 lg:!mt-2 lg:!pb-32 lg:!mb-[2px]"
-        imgClassName="lg:!max-w-[467px] xl:-mt-2 max-md:!max-w-[360px] !mt-0 lg:!max-h-[363px]"
+        margin="lg:mb-11"
+        imgClassName="lg:!max-w-[467px] xl:-mt-4 max-md:!max-w-[360px] !mt-0 lg:!max-h-[363px]"
       />
       <Customer />
     </>
