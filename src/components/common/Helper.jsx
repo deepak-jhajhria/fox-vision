@@ -1,4 +1,15 @@
 import { EmailIcon, PhoneIcon, VisitIcon } from "./Icons"
+import portCard1 from '../../assets/images/webp/portfolio/portCard1.webp'
+import portCard2 from '../../assets/images/webp/portfolio/portCard2.webp'
+import portCard3 from '../../assets/images/webp/portfolio/portCard3.webp'
+import portCard4 from '../../assets/images/webp/portfolio/portCard4.webp'
+import portCard5 from '../../assets/images/webp/portfolio/portCard5.webp'
+import portCard6 from '../../assets/images/webp/portfolio/portCard6.webp'
+import portCard7 from '../../assets/images/webp/portfolio/portCard7.webp'
+import portCard8 from '../../assets/images/webp/portfolio/portCard8.webp'
+import portCard9 from  '../../assets/images/webp/portfolio/portCard9.webp'
+import portCard10 from  '../../assets/images/webp/portfolio/portCard10.webp'
+import portCard11 from  '../../assets/images/webp/portfolio/portCard11.webp'
 
 // accordion list
 export const accordionList = [
@@ -70,3 +81,61 @@ export const strategyCardData = [
     { head: "Wireframing and Prototyping", discription: "We create wireframes and interactive prototypes to map out the layout and functionality of your project.", },
     { head: "User Testing", discription: "Real users provide invaluable feedback to refine the design, ensuring it aligns with user expectations.", },
 ];
+// portfolio card data
+export const portCardData = [
+    {
+        img: portCard1,
+        head: 'Anton Paloka',
+        discription: 'Facility Management'
+    },
+    {
+        img: portCard2,
+        head: 'Gut versichert ins leben.',
+        discription: "Wir helfen ihnen dabei"
+    },
+    {
+        img: portCard3,
+        head: 'Anton Paloka',
+        discription: "Geschäftsführer"
+    },
+    {
+        img: portCard4,
+        head: 'Mhill Paloka',
+        discription: 'Leiter Administration',
+    },
+    {
+        img: portCard5,
+        head: 'Id nisi elementum',
+        discription: 'Lorem ipsum dolor  consectetur.',
+    },
+    {
+        img: portCard6,
+        head: 'Augue tincidunt ipsum',
+        discription: 'Ipsum dolor sit amet.',
+    },
+    {
+        img: portCard7,
+        head: 'Amet consectetur Consequat',
+        discription: 'Lorem sit amet consectetur.',
+    },
+    {
+        img: portCard8,
+        head: 'Lorem sit amet consectetur.',
+        discription: 'dolor sit amet consectetur.',
+    },
+    {
+        img: portCard9,
+        head: "Egestas faucs aliquam libero",
+        discription: 'Lorem ipsum dolor ',
+    },
+    {
+        img: portCard10,
+        head: 'Amet consectetur Consequat',
+        discription: 'Lorem ipsum.'
+    },
+    {
+        img: portCard11,
+        head: 'Nunc tellus sed auctor  nulla',
+        discription: 'Lorem ipsum consectetur.'
+    }
+]
