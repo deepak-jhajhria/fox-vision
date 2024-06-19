@@ -42,7 +42,7 @@ const LogoDesign = () => {
   return (
     <div className=' bg-blue pt-[193px] sm:pb-[60px] pb-10  px-6'>
       <div className="container max-w-[1140px]">
-        <div className="flex flex-col-reverse flex-wrap  mb-24 -mx-3 lg:flex-row">
+        <div className="flex flex-col-reverse flex-wrap sm:mb-16 mb-10  md:mb-24 -mx-3 lg:flex-row">
           <div className="w-full px-3 lg:w-1/2">
             <div className="flex bg-white w-[93.15px] h-[93.15px] mx-auto lg:mx-0 justify-center items-center rounded-[7.59px] mb-[29px]">
               <DesignIcon />
@@ -52,15 +52,15 @@ const LogoDesign = () => {
           </div>
           <div className=" min-[500px]:flex gap-[22.88px] justify-center lg:justify-normal  w-full px-3 lg:w-1/2 relative z-[1]">
           <img src={designWhiteEllipse} alt="ellipse1" className=' absolute max-[500px]:hidden z-[-1] max-w-[414.46px] w-full bottom-[6%] right-[4%] sm:right-[7%] min-[900px]:right-[16%] lg:right-[2%]' />
-          <img src={designBoy1} alt="boy1" className='absolute min-[500px]:top-[-26%] top-[-19%] left-[28%]  min-[500px]:left-[48%] lg:left-[36%] max-w-[194.67px]' />
+          <img src={designBoy1} alt="boy1" className='absolute min-[500px]:top-[-26%] top-[-19%] left-[28%]  min-[500px]:left-[48%] lg:left-[36%] max-w-[194.67px] z-[1]' />
           <div className=' flex flex-col max-[500px]:items-center gap-5 min-[500px]:gap-[26.5px]'>
-<img src={designCard1} alt="designcard1" className='max-w-[203.39px] border border-solid border-transparent hover:border-blue duration-300 rounded-[12.52px] shadow-designCard
+<img src={designCard1} alt="designcard1" className='max-w-[203.39px] border border-solid border-transparent hover:border-blue duration-300 rounded-[12.52px] hover:scale-105 shadow-designCard
 ' />
-<img src={designCard2} alt="designCard2" className='max-w-[203.39px] border border-solid border-transparent hover:border-blue duration-300 rounded-[12.52px]' />
+<img src={designCard2} alt="designCard2" className='max-w-[203.39px] border border-solid border-transparent hover:border-blue duration-300 rounded-[12.52px] hover:scale-105' />
           </div>
           <div className=' flex flex-col max-[500px]:items-center gap-5 min-[500px]:gap-[28.68px] mt-5 min-[500px]:mt-10'>
-            <img src={designCard3} alt="designCard3" className='max-w-[203.39px]  border border-solid border-transparent hover:border-blue duration-300 rounded-[12.52px]' />
-            <img src={designCard4} alt="designCard4" className='max-w-[203.39px] border border-solid border-transparent hover:border-blue duration-300 rounded-[12.52px] shadow-designCard' />
+            <img src={designCard3} alt="designCard3" className='max-w-[203.39px]  border border-solid border-transparent hover:border-blue duration-300 rounded-[12.52px] hover:scale-105' />
+            <img src={designCard4} alt="designCard4" className='max-w-[203.39px] border border-solid border-transparent hover:border-blue duration-300 rounded-[12.52px] hover:scale-105 shadow-designCard' />
           </div>
           </div>
         </div>

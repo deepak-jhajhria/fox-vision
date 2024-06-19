@@ -2,32 +2,8 @@ import React from "react";
 import { H2 } from "../common/Heading";
 import uiuxImg from "../../assets/images/webp/strategy-design/uiuxImg.webp";
 import { StrategyCard } from "./StrategyCard";
-export const strategyCardData = [
-  {
-    num: "1.",
-    head: "Understanding Your Vision",
-    discription:
-      "We start by deeply understanding your goals, brand identity, and the needs of your target audience.",
-  },
-  {
-    num: "2.",
-    head: "Research and Analysis",
-    discription:
-      "Our team conducts thorough research, including market and competitor analysis, to inform our design decisions.",
-  },
-  {
-    num: "3.",
-    head: "Wireframing and Prototyping",
-    discription:
-      "We create wireframes and interactive prototypes to map out the layout and functionality of your project.",
-  },
-  {
-    num: "4.",
-    head: "User Testing",
-    discription:
-      "Real users provide invaluable feedback to refine the design, ensuring it aligns with user expectations.",
-  },
-];
+import { strategyCardData } from "../common/Helper";
+
 const DesignStrategy = () => {
   return (
     <div className="pt-10 sm:pt-16 md:pt-20 lg:pt-[150px] px-6">
