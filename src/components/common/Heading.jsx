@@ -8,7 +8,7 @@ export const H3 = ({ heading, className }) => {
     return <h3 className={`font-montserrat font-semibold text-blackPearl text-2xl sm:text-3xl md:text-4xl lg:text-custom-4xl lg:leading-[48px] ${className}`}>{heading}</h3>
 }
 export const H4 = ({ heading, className }) => {
-    return <h4 className={`font-poppins font-semibold text-blackPearl text-lg sm:text-xl lg:text-2xl leading-9 ${className}`}>{heading}</h4>
+    return <h4 className={`font-poppins font-semibold text-blackPearl text-lg sm:text-xl lg:text-2xl lg:leading-9 ${className}`}>{heading}</h4>
 }
 export const H5 = ({ title, className }) => {
     return <h5 className={`font-poppins font-bold text-blackPearl text-base md:text-lg lg:text-xl leading-normal lg:!leading-[30px] ${className}`}>{title}</h5>

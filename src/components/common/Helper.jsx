@@ -1,3 +1,5 @@
+import { EmailIcon, PhoneIcon, VisitIcon } from "./Icons"
+
 // accordion list
 export const accordionList = [
     { title: "Dolor sit amet consectetur. In sapien donec quisque sodales at.", content: "Scelerisque lacus non ut diam auctor elementum suspendisse. Erat feugiat tincidunt aliquam phasellus nulla diam. Id id eget risus nisi viverra varius non. Venenatis augue id lacus diam sed pellentesque amet senectus nunc." },
@@ -37,3 +39,34 @@ export const footerLinkList = [
         ],
     }
 ]
+
+// more ways contact card data
+
+export const contactCardData = [
+    {
+        icons: <PhoneIcon />,
+        title: 'Call Us',
+        value: '+41 725 61 00',
+        link: "tel:+41 725 61 00"
+    },
+    {
+        icons: <EmailIcon />,
+        title: 'Email Us',
+        value: 'info@foxvision.ch',
+        link: "mailto:info@foxvision.ch",
+    },
+    {
+        icons: <VisitIcon />,
+        title: 'Visit Us',
+        value: 'Fox Vision GmbH Badstrasse 50 CH-5200 Brugg',
+        link: "https://www.google.com/maps/place/Fox+Vision+GmbH/@47.109919,8.500001,17z/data=!3m1!4b1!4m5!3m4!1s0x4790000000000000:0x00000000000"
+    }
+]
+
+// design strategy card data 
+export const strategyCardData = [
+    { head: "Understanding Your Vision", discription: "We start by deeply understanding your goals, brand identity, and the needs of your target audience.", },
+    { head: "Research and Analysis", discription: "Our team conducts thorough research, including market and competitor analysis, to inform our design decisions.", },
+    { head: "Wireframing and Prototyping", discription: "We create wireframes and interactive prototypes to map out the layout and functionality of your project.", },
+    { head: "User Testing", discription: "Real users provide invaluable feedback to refine the design, ensuring it aligns with user expectations.", },
+];
