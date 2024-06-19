@@ -193,16 +193,10 @@ export const Logo = () => {
 
 const WhatWeDo = () => {
   return (
-    <section className="py-10 sm:py-16 md:py-20 lg:pt-[238px] lg:pb-[258px] px-6 overflow-hidden">
-      <div className="container px-0 max-w-[1140px] relative">
-        <H5
-          className="uppercase !leading-150 lg:text-start text-center"
-          title="A RESULTS-DRIVEN AGENCY"
-        />
-        <H2
-          className="md:mt-3 lg:text-start text-center"
-          heading="What we do"
-        />
+    <section className="py-10 sm:py-16 md:py-20 lg:pt-[239px] lg:pb-[258px] px-6 overflow-hidden">
+      <div className="container px-0 max-w-[1140px] relative py-1">
+        <H5 className="uppercase !leading-150 lg:text-start text-center" title="A RESULTS-DRIVEN AGENCY" />
+        <H2 className="text-center md:mt-3 lg:text-start" heading="What we do" />
         <div className="flex items-center mt-3 max-lg:flex-col max-sm:gap-3 max-lg:gap-5 xl:items-end lg:mt-10">
           <img
             className="w-full max-w-[750px] lg:max-w-[500px] xl:max-w-[590px] lg:h-[378px] h-full mt-2"
@@ -210,36 +204,13 @@ const WhatWeDo = () => {
             alt="cardimage"
           />
           <div className="flex flex-col lg:items-start items-center lg:ml-10 lg:max-w-[512px] max-w-[650px]">
-            <Description
-              className="lg:text-start text-center my-0.5"
-              description={
-                <>
-                  We define the intangible assets of your brand and subsequently
-                  increase{" "}
-                  {
-                    <span className="text-electricViolet">
-                      {" "}
-                      trust and loyalty to your brand
-                    </span>
-                  }
-                  . Uniqueness, value proposition, clearly understandablie core
-                  messages and an innovative design result in a brand
-                  personality that will be. We then transfer this genetic code
-                  to the relevant target groups cross-media via relevant
-                  channels. And we will reposition you profitably
-                </>
-              }
-            />
+            <Description className="lg:text-start text-center my-0.5 text-opacity-70" description={<> We define the intangible assets of your brand and subsequently increase{" "} {<span className="text-electricViolet">{" "}trust and loyalty to your brand</span>}. Uniqueness, value proposition, clearly understandablie core messages and an innovative design result in a brand personality that will be. We then transfer this genetic code to the relevant target groups cross-media via relevant channels. And we will reposition you profitably</>} />
             <CommonButton className="mt-8 md:mt-10" name="Contact" />
           </div>
         </div>
         <div className="flex lg:flex-row flex-col xl:gap-[94px] lg:gap-10 justify-between items-center xl:items-start xl:mt-[185px] md:mt-24 sm:mt-20 mt-12 relative">
-          <img
-            className="absolute pointer-events-none lg:max-w-[307px] md:max-w-[280px] max-w-[250px] right-[-10%] sm:bottom-[-7%] bottom-0"
-            src={moon}
-            alt="moon"
-          />
-          <div className="flex flex-col lg:items-start items-center lg:max-w-[512px] relative">
+          <img className="absolute pointer-events-none lg:max-w-[307px] md:max-w-[280px] max-w-[250px] right-[-10%] sm:bottom-[-7%] bottom-0" src={moon} alt="moon" />
+          <div className="flex flex-col lg:items-start items-center lg:max-w-[512px] relative mt-2 sm:mt-3">
             <div className="w-[93px] h-[93px] bg-blueChalk flex justify-center items-center rounded-[7.58px] shadow-painIcon">
               <Paint />
             </div>
@@ -303,7 +274,7 @@ const WhatWeDo = () => {
               </div>
             ))}
           </div>
-          <div className="flex flex-col lg:items-start items-center lg:max-w-[512px] relative">
+          <div className="flex flex-col lg:items-start items-center lg:max-w-[512px] relative mt-2 sm:mt-3">
             <div className="w-[93px] h-[93px] bg-bubbles flex justify-center items-center rounded-[7.58px] shadow-graphicIcon">
               <Graphic />
             </div>
