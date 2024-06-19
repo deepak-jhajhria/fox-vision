@@ -15,7 +15,7 @@ const NavBar = () => {
   }, [isOpen])
 
   return (
-    <nav className="py-5">
+    <nav className="py-3 sm:py-5">
       <div className="container px-6 md:px-8 lg:px-[50px] bg-white max-w-[1240px] py-[9px] lg:py-[11px] rounded-full">
         <div className="flex items-center justify-between w-full gap-10">
           <Link rel="noopener noreferrer" to="/"><NavLogo /></Link>
