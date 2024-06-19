@@ -1,3 +1,4 @@
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
@@ -23,7 +24,10 @@ module.exports = {
         noble: "#b3b3b3",
         silver: "#a6a6a6",
         alabaster: "#f9f9f9",
-        violet:"#815DED"
+        violet:"#815DED",
+        selago:"#EFEAFD",
+        lightGrey:"#0000001A",
+        comet:"#525E74"
       },
       lineHeight: {
         107: "107%",
@@ -46,6 +50,10 @@ module.exports = {
         graphicIcon: "0px 10px 20px 0px #05D5FB29",
         addCards: "0px 16.7px 41.74px 0px #3B3E430D",
         nav: "0px 0px 13px 0px #00000024",
+        contactbox :"0px 11.57px 27px 0px #4B17E61A",
+        contactCard:"0px 4px 27px 0px #4B17E614",
+        designCard:"0px 16.7px 41.74px 0px #3B3E430D",
+        
       },
     },
   },

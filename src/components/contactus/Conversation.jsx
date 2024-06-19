@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import conversation from "../../assets/images/webp/conversation.webp";
 import captcha from "../../assets/images/svg/captcha.svg";
 import Button from "../common/Button";
@@ -250,7 +250,7 @@ const Conversation = () => {
                         checked={formData.box}
                         onChange={handleChange}
                       />
-                      <span className="ml-2 text-sm md:text-base font-normal text-black opacity-70">
+                      <span className="ml-2 text-sm font-normal text-black md:text-base opacity-70">
                         I’m not a robot
                       </span>
                     </div>
@@ -272,7 +272,7 @@ const Conversation = () => {
                   {formErrors.box}
                 </p>
               )}
-              <div className="flex lg:justify-start justify-center">
+              <div className="flex justify-center lg:justify-start">
                 <Button
                   type="submit"
                   className="md:!px-[99px]"

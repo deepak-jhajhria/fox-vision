@@ -1,11 +1,11 @@
 import { Description, H4 } from '../common/Heading'
-import designCard1 from '../../assets/images/webp/designCard1.webp'
-import designCard2 from '../../assets/images/webp/designCard2.webp'
-import designCard3 from '../../assets/images/webp/designCard3.webp'
-import designCard4 from '../../assets/images/webp/designCard4.webp'
-import designBoy1 from '../../assets/images/webp/designBoy1.webp'
-import digitalImg from '../../assets/images/webp/digitalImg.webp'
-import designWhiteEllipse from '../../assets/images/webp/designWhiteEllipse.webp'
+import designCard1 from '../../assets/images/webp/logo-design/designCard1.webp'
+import designCard2 from '../../assets/images/webp/logo-design/designCard2.webp'
+import designCard3 from '../../assets/images/webp/logo-design/designCard3.webp'
+import designCard4 from '../../assets/images/webp/logo-design/designCard4.webp'
+import designBoy1 from '../../assets/images/webp/logo-design/designBoy1.webp'
+import digitalImg from '../../assets/images/webp/logo-design/digitalImg.webp'
+import designWhiteEllipse from '../../assets/images/webp/logo-design/designWhiteEllipse.webp'
 
 export const DesignIcon = () => {
   return (
@@ -54,13 +54,13 @@ const LogoDesign = () => {
           <img src={designWhiteEllipse} alt="ellipse1" className=' absolute max-[500px]:hidden z-[-1] max-w-[414.46px] w-full bottom-[6%] right-[4%] sm:right-[7%] min-[900px]:right-[16%] lg:right-[2%]' />
           <img src={designBoy1} alt="boy1" className='absolute min-[500px]:top-[-26%] top-[-19%] left-[28%]  min-[500px]:left-[48%] lg:left-[36%] max-w-[194.67px]' />
           <div className=' flex flex-col max-[500px]:items-center gap-5 min-[500px]:gap-[26.5px]'>
-<img src={designCard1} alt="designcard1" className='max-w-[203.39px] border border-solid border-transparent hover:border-blue duration-300 rounded-[12.52px] shadow-[0px_16.7px_41.74px_0px_#3B3E430D]
+<img src={designCard1} alt="designcard1" className='max-w-[203.39px] border border-solid border-transparent hover:border-blue duration-300 rounded-[12.52px] shadow-designCard
 ' />
 <img src={designCard2} alt="designCard2" className='max-w-[203.39px] border border-solid border-transparent hover:border-blue duration-300 rounded-[12.52px]' />
           </div>
           <div className=' flex flex-col max-[500px]:items-center gap-5 min-[500px]:gap-[28.68px] mt-5 min-[500px]:mt-10'>
             <img src={designCard3} alt="designCard3" className='max-w-[203.39px]  border border-solid border-transparent hover:border-blue duration-300 rounded-[12.52px]' />
-            <img src={designCard4} alt="designCard4" className='max-w-[203.39px] border border-solid border-transparent hover:border-blue duration-300 rounded-[12.52px] shadow-[0px_16.7px_41.74px_0px_#3B3E430D]' />
+            <img src={designCard4} alt="designCard4" className='max-w-[203.39px] border border-solid border-transparent hover:border-blue duration-300 rounded-[12.52px] shadow-designCard' />
           </div>
           </div>
         </div>

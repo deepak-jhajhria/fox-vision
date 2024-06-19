@@ -30,7 +30,7 @@ const Customer = () => {
                 alt="Pc_persons"
               />
               <img
-                className="w-12 h-12 sm:h-20 sm:w-20 pointer-events-none lg:w-[98px] lg:h-[98px] absolute right-[42%] sm:top-12 lg:right-[45%] top-5 md:right-[36%] md:top-11 lg:top-18"
+                className="w-12 h-12 sm:h-20 sm:w-20 pointer-events-none lg:w-[98px] lg:h-[98px] absolute right-[42%] sm:top-12 lg:right-[43%] top-5 md:right-[36%] md:top-11 lg:top-20"
                 src={Avtar}
                 alt="avtar"
               />
