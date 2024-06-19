@@ -41,15 +41,15 @@ const ProjectAgency = () => {
           className="md:mt-2 !leading-120 max-md:text-center max-md:mx-auto max-w-[498px]"
           heading="Design Project Agency"
         />
-        <div className="flex items-center max-md:flex-col max-sm:gap-3 max-lg:gap-5 xl:items-end ">
+        <div className="flex items-center max-md:flex-col justify-between max-sm:gap-3 max-lg:gap-5 xl:items-end ">
           <img
-            className="w-full max-w-[380px] md:max-w-[450px] lg:max-w-[524px] mt-3 lg:mt-10 xl:max-w-[590px] lg:h-[328px] h-full"
+            className="w-full max-w-[380px] md:max-w-[450px] lg:max-w-[524px] mt-3 lg:mt-10 xl:max-w-[564px] lg:h-[328px] h-full"
             src={cardImage}
             alt="cardimage"
           />
           <div className="flex relative flex-col items-start md:translate-y-[-16%] lg:ml-8 lg:max-w-[523px]">
             <Description
-              className="max-md:text-center max-sm:mt-28"
+              className="max-md:text-center max-w-[512px] max-sm:mt-28"
               description={
                 <>
                   As a design agency, we create a contemporary and{" "}
@@ -65,12 +65,12 @@ const ProjectAgency = () => {
               className="mt-8 max-md:mx-auto md:mt-10"
               name="Contact"
             />
-            <span className="absolute right-[45%] sm:right-4 top-0 sm:-top-24">
+            <span className="absolute right-[45%] sm:right-2 top-0 sm:-top-24">
               <Logo />
             </span>
           </div>
         </div>
-        <span className="absolute max-sm:hidden top-[49%] md:-top-9 lg:top-0 xl:top-20 -left-10 md:left-[41%]">
+        <span className="absolute max-md:hidden top-[49%] md:-top-9 lg:top-0 xl:top-20 -left-10 md:left-[41%]">
           <Vector />
         </span>
       </div>

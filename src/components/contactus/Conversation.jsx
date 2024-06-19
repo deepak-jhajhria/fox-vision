@@ -108,19 +108,19 @@ const Conversation = () => {
     <div className="pt-12 md:pt-14 lg:pt-[126px]">
       <div className="container xl:max-w-[1164px] px-3 mx-auto">
         <div className="flex flex-wrap flex-row justify-between">
-          <div className="w-full px-3 lg:w-[46%]">
+          <div className="w-full px-3 md:w-[46%]">
             <H5 className="max-md:text-center" title="Contact With FoxVision" />
             <H2
-              className="md:mt-3 !leading-120 max-md:text-center max-md:mx-auto max-w-[498px]"
+              className="md:mt-3 !leading-120 max-md:text-center max-lg:mx-auto max-w-[498px]"
               heading="Let's Start a Conversation"
             />
             <img
-              className="w-full max-sm:w-[80%] lg:w-[483px] pt-5 lg:h-[350px] max-lg:mx-auto max-md:mb-7"
+              className="w-full max-md:w-[80%] max-md:pb-8 lg:w-[483px] pt-5 lg:h-[350px] max-lg:mx-auto max-md:mb-7"
               src={conversation}
               alt="conversation_Image"
             />
           </div>
-          <div className="w-full px-3 lg:pt-11 lg:w-[53%]">
+          <div className="w-full px-3 lg:pt-11 md:w-[53%]">
             <form className="lg:mt-[10px]" onSubmit={handleSubmit}>
               <div className="flex sm:flex-row flex-col sm:gap-4">
                 <div className="lg:max-w-[297px] w-full mb-3 sm:mb-[14px]">
@@ -217,10 +217,10 @@ const Conversation = () => {
                   </p>
                 )}
               </div>
-              <div className="w-full mb-3 xl:min-h-[159] sm:mb-[14px] lg:mb-[18px]">
+              <div className="w-full mb-3  xl:min-h-[159] sm:mb-[14px] lg:mb-[18px]">
                 <textarea
                   required
-                  className="resize-none text-sm md:text-base !text-black h-[159px] placeholder:text-black placeholder:!text-opacity-50 !text-opacity-50 font-poppins font-normal p-3 sm:p-[15px] outline-none w-full border-solid border border-lightBlue shadow-[0px_0px_5px_-2px_#4B17E666]"
+                  className="resize-none text-sm md:text-base !text-black h-[110px] lg:h-[159px] placeholder:text-black placeholder:!text-opacity-50 !text-opacity-50 font-poppins font-normal p-3 sm:p-[15px] outline-none w-full border-solid border border-lightBlue shadow-[0px_0px_5px_-2px_#4B17E666]"
                   placeholder="Tell us more about your projects"
                   id="message"
                   name="message"

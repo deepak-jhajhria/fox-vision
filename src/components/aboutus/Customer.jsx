@@ -5,12 +5,12 @@ import Avtar from "../../assets/images/svg/customerAvtar.svg";
 
 const Customer = () => {
   return (
-    <div className="bg-blue pt-12 md:pt-[82px] pb-40 md:pb-[190px] lg:pb-[240px]">
+    <div className="bg-blue pt-12 md:pt-[94px] md:pb-[190px] pb-40 lg:pb-[240px]">
       <div className="container max-w-[1140px] px-3 mx-auto">
         <div className="flex flex-wrap justify-center items-center flex-row -mx-3 pb-2 md:pb-[78px]">
           <div className="w-full px-3 md:w-1/2">
             <Description
-              className="!text-white text-center !font-bold md:text-start md:mb-3"
+              className="!text-white text-center !leading-150 !font-bold md:text-start md:mb-3"
               description="FOX philosophy"
             />
             <H2
@@ -18,7 +18,7 @@ const Customer = () => {
               heading="Customer Focus"
             />
             <Description
-              className="!text-white max-w-[481px] text-center md:text-start mx-auto md:mx-0 leading-150 !font-normal mb-3"
+              className="!text-white max-w-[481px] text-center md:text-start mx-auto md:mx-0 !leading-150 !font-normal mb-3"
               description="The customer is our focus. We do everything we can to provide our customers with individual, needs-based advice."
             />
           </div>
@@ -36,7 +36,7 @@ const Customer = () => {
               />
             </div>
           </div>
-        </div>{" "}
+        </div>
         <img
           className="w-[60px] pointer-events-none h-[60px] sm:w-[90px] sm:h-[100px] md:w-[140px] md:h-[171px] mx-auto"
           src={angebotLogo}
