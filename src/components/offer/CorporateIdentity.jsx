@@ -143,8 +143,8 @@ const CorporateIdentity = () => {
         <div className="flex flex-row mt-[2px] flex-wrap -mx-3">
           {corporateCardData.map((obj, i) => (
             <div key={i} className="md:w-1/4 sm:w-1/2 w-full px-[11px]">
-              <div className="p-[22px_10px] md:max-w-[268px] rounded-md max-md:mt-4 md:max-h-[262px] hover:bg-bubbles duration-300 shadow-[0px_4px_27px_0px_#4B17E614] bg-white">
-                <img src={obj.img} alt="wireframe" />
+              <div className="p-[22px_10px] md:max-w-[268px] rounded-md max-md:mt-4 md:max-h-[262px] shadow-[0px_4px_27px_0px_#4B17E614] bg-white">
+                <div className="overflow-hidden"><img src={obj.img} alt="wireframe" className="hover:scale-110 duration-300" /></div>
                 <H5
                   className="text-center pt-3 lg:!leading-120"
                   title={obj.title}
