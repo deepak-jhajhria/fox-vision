@@ -41,13 +41,13 @@ const ProjectAgency = () => {
           className="md:mt-2 !leading-120 max-md:text-center max-md:mx-auto max-w-[498px]"
           heading="Design Project Agency"
         />
-        <div className="flex items-center mt-3 max-md:flex-col max-sm:gap-3 max-lg:gap-5 xl:items-end lg:mt-10">
+        <div className="flex items-center max-md:flex-col max-sm:gap-3 max-lg:gap-5 xl:items-end ">
           <img
-            className="w-full max-w-[380px] md:max-w-[450px] lg:max-w-[524px] xl:max-w-[590px] lg:h-[328px] h-full mt-2"
+            className="w-full max-w-[380px] md:max-w-[450px] lg:max-w-[524px] mt-3 lg:mt-10 xl:max-w-[590px] lg:h-[328px] h-full"
             src={cardImage}
             alt="cardimage"
           />
-          <div className="flex relative flex-col items-start md;translate-y-[-19%] lg:ml-8 lg:max-w-[523px]">
+          <div className="flex relative flex-col items-start md:translate-y-[-16%] lg:ml-8 lg:max-w-[523px]">
             <Description
               className="max-md:text-center max-sm:mt-28"
               description={
