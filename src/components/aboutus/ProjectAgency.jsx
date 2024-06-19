@@ -8,13 +8,38 @@ const ProjectAgency = () => {
     <section className="py-10 sm:py-16 md:pt-20 lg:pb-0 lg:pt-[126px] px-6 overflow-hidden">
       <div className="container px-0 max-w-[1140px] relative">
         <H5 className="uppercase max-md:text-center" title="FOX VISION" />
-        <H2 className="md:mt-2 !leading-120 max-md:text-center max-md:mx-auto max-w-[498px]" heading="Design Project Agency" />
+        <H2
+          className="md:mt-2 !leading-120 max-md:text-center max-md:mx-auto max-w-[498px]"
+          heading="Design Project Agency"
+        />
         <div className="flex items-center max-md:flex-col max-sm:gap-3 max-lg:gap-5 xl:items-end ">
-          <img className="w-full max-w-[380px] md:max-w-[450px] lg:max-w-[524px] mt-3 lg:mt-[29px] xl:max-w-[590px] lg:h-[328px] h-full" src={cardImage} alt="cardimage" />
+          <img
+            className="w-full max-w-[380px] md:max-w-[400px] lg:max-w-[524px] mt-4 sm:mt-0 lg:mt-[29px] xl:max-w-[590px] lg:h-[328px] h-full"
+            src={cardImage}
+            alt="cardimage"
+          />
           <div className="flex relative flex-col items-start md:translate-y-[-16%] lg:ml-8 lg:max-w-[523px]">
-            <Description className="max-md:text-center max-sm:mt-28" description={<> As a design agency, we create a contemporary and{" "} {<span className="text-skyBlue">distinctive appearance</span>}{" "} for you. Style is more in demand than ever. We help you show your best side to your customers. you{" "} {<span className="text-skyBlue">Strong branding sets</span>}{" "} apart from your competition and creates trust and seriousness.</>} />
-            <CommonButton className="mt-8 max-md:mx-auto md:mt-10" name="Contact" />
-            <span className="absolute right-[45%] sm:right-4 top-0 sm:-top-24">
+            <Description
+              className="max-md:text-center max-sm:mt-28"
+              description={
+                <>
+                  {" "}
+                  As a design agency, we create a contemporary and{" "}
+                  {
+                    <span className="text-skyBlue">distinctive appearance</span>
+                  }{" "}
+                  for you. Style is more in demand than ever. We help you show
+                  your best side to your customers. you{" "}
+                  {<span className="text-skyBlue">Strong branding sets</span>}{" "}
+                  apart from your competition and creates trust and seriousness.
+                </>
+              }
+            />
+            <CommonButton
+              className="mt-8 max-md:mx-auto md:mt-10"
+              name="Contact"
+            />
+            <span className="absolute right-[40%] sm:right-4 top-0 sm:-top-24">
               <WhatWeSecLogo />
             </span>
           </div>
