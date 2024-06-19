@@ -1,4 +1,4 @@
-import { EmailIcon, PhoneIcon, VisitIcon } from "./Icons"
+import { AppIcon, EmailIcon, PhoneIcon, SoftwareIcon, TeachIcon, VisitIcon } from "./Icons"
 import portCard1 from '../../assets/images/webp/portfolio/portCard1.webp'
 import portCard2 from '../../assets/images/webp/portfolio/portCard2.webp'
 import portCard3 from '../../assets/images/webp/portfolio/portCard3.webp'
@@ -22,6 +22,11 @@ import animals from "../../assets/images/png/animals.png";
 import women from "../../assets/images/png/women.png";
 import frute from "../../assets/images/png/frute.png";
 import base from "../../assets/images/png/base.png";
+import wireFraming from "../../assets/images/webp/wireFraming.webp";
+import webImg from "../../assets/images/webp/webDesigning.webp";
+import logoImg from "../../assets/images/webp/logoDesign.webp";
+import appImg from "../../assets/images/webp/appDesign.webp";
+
 
 // accordion list
 export const accordionList = [
@@ -32,6 +37,7 @@ export const accordionList = [
     { title: "quisque aliquam Mi ullamcorper lectus orci purus felis scelerisque.", content: "Scelerisque lacus non ut diam auctor elementum suspendisse. Erat feugiat tincidunt aliquam phasellus nulla diam. Id id eget risus nisi viverra varius non. Venenatis augue id lacus diam sed pellentesque amet senectus nunc." },
     { title: "Iaculis odio vitae morbi magna enim dictum viverra habitasse.", content: "Scelerisque lacus non ut diam auctor elementum suspendisse. Erat feugiat tincidunt aliquam phasellus nulla diam. Id id eget risus nisi viverra varius non. Venenatis augue id lacus diam sed pellentesque amet senectus nunc." },
 ]
+
 // nav data list
 export const navLinkList = [
     { title: "Home", src: "/" },
@@ -39,8 +45,8 @@ export const navLinkList = [
     { title: "Angebot", src: "/offer" },
     { title: "Portfolio", src: "/portfolio" },
 ];
-// footer list
 
+// footer list
 export const footerLinkList = [
     {
         title: 'Home',
@@ -70,7 +76,6 @@ export const footerLinkList = [
 ]
 
 // more ways contact card data
-
 export const contactCardData = [
     { icons: <PhoneIcon />, title: 'Call Us', value: '+41 725 61 00', link: "tel:+41 725 61 00" },
     { icons: <EmailIcon />, title: 'Email Us', value: 'info@foxvision.ch', link: "mailto:info@foxvision.ch", },
@@ -84,6 +89,7 @@ export const strategyCardData = [
     { head: "Wireframing and Prototyping", discription: "We create wireframes and interactive prototypes to map out the layout and functionality of your project.", },
     { head: "User Testing", discription: "Real users provide invaluable feedback to refine the design, ensuring it aligns with user expectations.", },
 ];
+
 // portfolio card data
 export const portCardData = [
     {
@@ -144,7 +150,6 @@ export const portCardData = [
 ]
 
 // homepage what we do data
-
 export const uiUxDesignList = [
     { image: watch },
     { image: things },
@@ -153,8 +158,46 @@ export const uiUxDesignList = [
     { image: boodie },
     { image: beauty },
 ];
+
 export const graphicDesignList = [
     { col: [{ image: cartoons }, { image: women }], },
     { col: [{ image: dogy }, { image: frute }], },
     { col: [{ image: animals }, { image: base }], },
 ];
+
+// offer corporate identity 
+export const corporateCardData = [
+  {
+    img: wireFraming,
+    title: "Wireframing",
+  },
+  {
+    img: webImg,
+    title: "Web Design",
+  },
+  {
+    img: logoImg,
+    title: "Logo Design",
+  },
+  {
+    img: appImg,
+    title: "App Design",
+  },
+];
+
+// how we work
+ export const WorkData = [
+  {
+    icons: <AppIcon />,
+    tittle: "App Platform Intergration",
+  },
+  {
+    icons: <SoftwareIcon />,
+    tittle: "Software Tools Development",
+  },
+  {
+    icons: <TeachIcon />,
+    tittle: "Teach Website Solution",
+  },
+];
+
