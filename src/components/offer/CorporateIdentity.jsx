@@ -146,7 +146,7 @@ const CorporateIdentity = () => {
               <div className="p-[22px_10px] md:max-w-[268px] rounded-md max-md:mt-4 md:max-h-[262px] hover:bg-bubbles duration-300 shadow-[0px_4px_27px_0px_#4B17E614] bg-white">
                 <img src={obj.img} alt="wireframe" />
                 <H5
-                  className="text-center pt-3 !leading-120"
+                  className="text-center pt-3 lg:!leading-120"
                   title={obj.title}
                 />
               </div>
