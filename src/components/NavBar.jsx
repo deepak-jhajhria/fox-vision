@@ -2,14 +2,9 @@ import { Link, NavLink } from "react-router-dom";
 import { useState, useEffect } from "react";
 import CommonButton from "./common/CommonButton";
 import { CallIcon, MailIcon, NavLogo } from "./common/Icons";
+import { navLinkList } from "./common/Helper";
 
 const NavBar = () => {
-  const navLinkList = [
-    { title: "Home", src: "/" },
-    { title: "Über uns", src: "/about-us" },
-    { title: "Angebot", src: "/offer" },
-    { title: "Portfolio", src: "/portfolio" },
-  ];
   const [isOpen, setIsOpen] = useState(false);
   useEffect(() => {
     if (isOpen === true) {
