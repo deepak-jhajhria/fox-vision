@@ -1,7 +1,7 @@
 import { Description, H1 } from "./common/Heading";
 import headerpc from "../assets/images/webp/hero-pc.webp";
 import NavBar from "./NavBar";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { RightIcon } from "./common/Icons";
 
 const HeroSec = () => {
@@ -22,9 +22,9 @@ const HeroSec = () => {
           <img className="max-w-[621px] w-full mx-auto max-h-[469px]" src={headerpc} alt="header-pc" />
         </div>}
         {location.pathname !== '/' && <div className="flex items-center gap-4 pb-[30px]">
-          <p className="text-base font-medium text-white font-poppins">Home</p>
+          <Link to='/' className="text-base font-medium text-white font-poppins">Home</Link>
           <RightIcon />
-          <p className="text-base font-medium text-white capitalize font-poppins">{location.pathname.replace(/[\/-]/g, ' ')}</p>
+          <Link to={location.pathname} className="text-base font-medium text-white capitalize font-poppins">{location.pathname.replace(/[\/-]/g, ' ')}</Link>
         </div>}
       </div>
     </div>
