@@ -18,8 +18,8 @@ const Footer = () => {
                         <div className='flex justify-center lg:block'><img src={footerLogo} alt="logo" className='mb-4' /></div>
                         <p className=' font-poppins text-base text-white text-opacity-70 max-w-[311px] mb-[30px] text-center lg:text-start mx-auto lg:mx-0'>Libero morbi pharetra sollicitudin enim praesent nulla velit sitonec leodui.</p>
                         <div className="flex justify-center gap-4 lg:justify-start">
-                            <Link to="https://www.facebook.com/" target='blank' rel='noopener norefferer'><span className='flex items-center justify-center w-10 h-10 duration-300 border border-white border-solid rounded-full group hover:border-blue'><FacebookIcon /></span></Link>
-                            <Link to="https://www.instagram.com/" target='blank' rel='noopener norefferer'><span className='flex items-center justify-center w-10 h-10 duration-300 border border-white border-solid rounded-full group hover:border-blue'><InstaIcon /></span></Link>
+                            <Link to="https://www.facebook.com/" target='blank' rel='noopener norefferer'><span className='flex items-center justify-center w-10 h-10 duration-300 border border-white border-solid rounded-full group hover:border-turquoise'><FacebookIcon /></span></Link>
+                            <Link to="https://www.instagram.com/" target='blank' rel='noopener norefferer'><span className='flex items-center justify-center w-10 h-10 duration-300 border border-white border-solid rounded-full group hover:border-turquoise'><InstaIcon /></span></Link>
                         </div>
                     </div>
                     <div className="flex justify-center w-full px-3 lg:w-7/12 lg:justify-end">

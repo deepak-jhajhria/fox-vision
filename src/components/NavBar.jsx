@@ -28,8 +28,8 @@ const NavBar = () => {
               ))}
             </ul>
             <div className="flex items-center gap-4 max-lg:flex-col">
-              <Link className="flex items-center justify-center duration-300 border rounded-full w-9 h-9 border-blackPearl group hover:border-turquoise"><CallIcon /></Link>
-              <Link className="flex items-center justify-center duration-300 border rounded-full w-9 h-9 border-blackPearl group hover:border-turquoise"><MailIcon /></Link>
+              <Link to="tel:+1234567890" rel="noopener noreferrer"  className="flex items-center justify-center duration-300 border rounded-full w-9 h-9 border-blackPearl group hover:border-turquoise"><CallIcon /></Link>
+              <Link to="mailto:example@example.com" rel="noopener noreferrer"  className="flex items-center justify-center duration-300 border rounded-full w-9 h-9 border-blackPearl group hover:border-turquoise"><MailIcon /></Link>
               <CommonButton name="Kontakt" className='py-[11px]' />
             </div>
           </div>
