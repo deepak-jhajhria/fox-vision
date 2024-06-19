@@ -34,16 +34,16 @@ export const Vector = () => {
 };
 const ProjectAgency = () => {
   return (
-    <section className="py-10 sm:py-16 md:pt-20 lg:pb-0 lg:pt-[126px] px-6 overflow-hidden">
+    <section className="py-10 sm:py-12 md:pt-20 lg:pb-0 lg:pt-[126px] px-6 overflow-hidden">
       <div className="container px-0 max-w-[1140px] relative">
-        <H5 className="uppercase max-md:text-center" title="FOX VISION" />
+        <H5 className="uppercase max-md:text-center " title="FOX VISION" />
         <H2
-          className="md:mt-2 !leading-120 mb-2 max-md:text-center max-md:mx-auto max-w-[498px]"
+          className="mt-2 !leading-120 mb-2 max-md:text-center max-md:mx-auto max-w-[498px]"
           heading="Design Project Agency"
         />
         <div className="flex items-center max-md:flex-col justify-between max-sm:gap-3 max-lg:gap-5 xl:items-end ">
           <img
-            className="w-full max-w-[380px] md:max-w-[450px] lg:max-w-[524px] mt-3 lg:mt-10 xl:max-w-[564px] lg:h-[328px] h-full"
+            className="w-full max-w-[380px] md:max-w-[410px] lg:max-w-[524px] lg:mt-10 xl:max-w-[564px] lg:h-[328px] h-full"
             src={cardImage}
             alt="cardimage"
           />
@@ -65,7 +65,7 @@ const ProjectAgency = () => {
               className="mt-8 max-md:mx-auto md:mt-10"
               name="Contact"
             />
-            <span className="absolute right-[45%] sm:right-2 top-0 sm:-top-28">
+            <span className="absolute right-[38%] sm:right-2 top-0 sm:-top-28">
               <Logo />
             </span>
           </div>

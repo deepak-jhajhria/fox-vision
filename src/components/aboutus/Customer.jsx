@@ -10,11 +10,11 @@ const Customer = () => {
         <div className="flex flex-wrap justify-center items-center flex-row -mx-3 pb-2 md:pb-[78px]">
           <div className="w-full px-3 md:w-1/2">
             <Description
-              className="!text-white text-center !leading-150 !font-bold md:text-start md:mb-3"
+              className="!text-white text-center !leading-150 !font-bold md:text-start mb-3"
               description="FOX philosophy"
             />
             <H2
-              className="!text-white mb-2 md:mb-5 text-center md:text-start"
+              className="!text-white mb-3 md:mb-5 text-center md:text-start"
               heading="Customer Focus"
             />
             <Description

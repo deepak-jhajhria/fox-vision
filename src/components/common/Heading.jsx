@@ -32,14 +32,8 @@ export const H3 = ({ heading, className }) => {
   );
 };
 export const H4 = ({ heading, className }) => {
-  return (
-    <h4
-      className={`font-poppins font-semibold text-blackPearl text-lg sm:text-xl lg:text-2xl leading-9 ${className}`}
-    >
-      {heading}
-    </h4>
-  );
-};
+    return <h4 className={`font-poppins font-semibold text-blackPearl text-lg sm:text-xl lg:text-2xl lg:leading-9 ${className}`}>{heading}</h4>
+}
 export const H5 = ({ title, className }) => {
   return (
     <h5
