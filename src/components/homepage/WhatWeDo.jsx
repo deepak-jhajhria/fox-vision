@@ -17,7 +17,7 @@ const WhatWeDo = () => {
         <div className="flex items-center mt-3 max-lg:flex-col max-sm:gap-3 max-lg:gap-5 xl:items-end lg:mt-10">
           <img className="w-full max-w-[750px] lg:max-w-[500px] xl:max-w-[590px] lg:h-[378px] h-full mt-2" src={cardImage} alt="cardimage" />
           <div className="flex flex-col lg:items-start items-center lg:ml-10 lg:max-w-[512px] max-w-[650px]">
-            <Description className="lg:text-start text-center my-0.5" description={<> We define the intangible assets of your brand and subsequently increase{" "} {<span className="text-electricViolet">{" "}trust and loyalty to your brand</span>}. Uniqueness, value proposition, clearly understandablie core messages and an innovative design result in a brand personality that will be. We then transfer this genetic code to the relevant target groups cross-media via relevant channels. And we will reposition you profitably</>} />
+            <Description className="lg:text-start text-center my-0.5 text-opacity-70" description={<> We define the intangible assets of your brand and subsequently increase{" "} {<span className="text-electricViolet">{" "}trust and loyalty to your brand</span>}. Uniqueness, value proposition, clearly understandablie core messages and an innovative design result in a brand personality that will be. We then transfer this genetic code to the relevant target groups cross-media via relevant channels. And we will reposition you profitably</>} />
             <CommonButton className="mt-8 md:mt-10" name="Contact" />
           </div>
         </div>
