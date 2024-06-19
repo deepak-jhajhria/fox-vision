@@ -50,7 +50,7 @@ const LogoDesign = () => {
             <H4 heading="Logo Design" className="!text-white text-center !leading-150 lg:text-start !mb-2" />
             <Description description="Logo design is a specialized discipline within the realm of graphic design, focused on creating unique and memorable visual symbols that represent a brand, company, or organization." className="!text-white !leading-150 !text-opacity-70 text-center mx-auto lg:mx-0 lg:text-start max-w-[421px]" />
           </div>
-          <div className=" min-[500px]:flex gap-[22.88px] justify-center lg:justify-normal  w-full px-3 lg:w-1/2 relative z-[1] mb-10 lg:mb-0">
+          <div className=" min-[500px]:flex gap-[22.88px] justify-center lg:justify-normal  w-full px-3 lg:w-1/2 relative z-[1]">
           <img src={designWhiteEllipse} alt="ellipse1" className=' absolute max-[500px]:hidden z-[-1] max-w-[414.46px] w-full bottom-[6%] right-[4%] sm:right-[7%] min-[900px]:right-[16%] lg:right-[2%]' />
           <img src={designBoy1} alt="boy1" className='absolute min-[500px]:top-[-26%] top-[-19%] left-[28%]  min-[500px]:left-[48%] lg:left-[36%] max-w-[194.67px] z-[1]' />
           <div className=' flex flex-col max-[500px]:items-center gap-5 min-[500px]:gap-[26.5px]'>
