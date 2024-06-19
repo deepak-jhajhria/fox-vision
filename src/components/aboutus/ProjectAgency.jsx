@@ -38,7 +38,7 @@ const ProjectAgency = () => {
       <div className="container px-0 max-w-[1140px] relative">
         <H5 className="uppercase max-md:text-center" title="FOX VISION" />
         <H2
-          className="md:mt-2 !leading-120 max-md:text-center max-md:mx-auto max-w-[498px]"
+          className="md:mt-2 !leading-120 mb-2 max-md:text-center max-md:mx-auto max-w-[498px]"
           heading="Design Project Agency"
         />
         <div className="flex items-center max-md:flex-col justify-between max-sm:gap-3 max-lg:gap-5 xl:items-end ">
@@ -65,12 +65,12 @@ const ProjectAgency = () => {
               className="mt-8 max-md:mx-auto md:mt-10"
               name="Contact"
             />
-            <span className="absolute right-[45%] sm:right-2 top-0 sm:-top-24">
+            <span className="absolute right-[45%] sm:right-2 top-0 sm:-top-28">
               <Logo />
             </span>
           </div>
         </div>
-        <span className="absolute max-md:hidden top-[49%] md:-top-9 lg:top-0 xl:top-20 -left-10 md:left-[41%]">
+        <span className="absolute max-md:hidden top-[49%] md:-top-9 lg:top-0 xl:top-[70px] -left-10 md:left-[41%]">
           <Vector />
         </span>
       </div>

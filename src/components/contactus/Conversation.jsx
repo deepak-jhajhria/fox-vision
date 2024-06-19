@@ -115,7 +115,7 @@ const Conversation = () => {
               heading="Let's Start a Conversation"
             />
             <img
-              className="w-full max-md:w-[80%] max-md:pb-8 lg:w-[483px] pt-5 lg:h-[350px] max-lg:mx-auto max-md:mb-7"
+              className="w-full max-md:w-[80%] max-md:pb-8 lg:w-[483px] pt-5 lg:h-[358px] max-lg:mx-auto max-md:mb-7"
               src={conversation}
               alt="conversation_Image"
             />
@@ -123,10 +123,10 @@ const Conversation = () => {
           <div className="w-full px-3 lg:pt-11 md:w-[53%]">
             <form className="lg:mt-[10px]" onSubmit={handleSubmit}>
               <div className="flex sm:flex-row flex-col sm:gap-4">
-                <div className="lg:max-w-[297px] w-full mb-3 sm:mb-[14px]">
+                <div className="lg:max-w-[297px] w-full mb-3">
                   <input
                     required
-                    className="text-sm md:text-base !text-black placeholder:text-black placeholder:!text-opacity-50 !text-opacity-50 h-[55px] font-poppins font-normal p-3 sm:p-[15px] outline-none w-full border-solid border border-lightBlue shadow-[0px_0px_5px_-2px_#4B17E666]"
+                    className="text-sm md:text-base !text-black placeholder:text-black placeholder:!text-opacity-50 !text-opacity-50 h-[55px] font-poppins font-normal p-3 sm:p-[15px] !outline-0 w-full border-solid border border-lightBlue shadow-[0px_0px_5px_-2px_#4B17E666]"
                     type="text"
                     placeholder="First Name"
                     id="name"
@@ -141,10 +141,10 @@ const Conversation = () => {
                     </p>
                   )}
                 </div>
-                <div className="lg:max-w-[297px] w-full mb-3 sm:mb-[14px]">
+                <div className="lg:max-w-[297px] w-full mb-3">
                   <input
                     required
-                    className="text-sm md:text-base !text-black placeholder:text-black placeholder:!text-opacity-50 !text-opacity-50 h-[55px] font-poppins font-normal p-3 sm:p-[15px] outline-none w-full border-solid border border-lightBlue shadow-[0px_0px_5px_-2px_#4B17E666]"
+                    className="text-sm md:text-base !text-black placeholder:text-black placeholder:!text-opacity-50 !text-opacity-50 h-[55px] font-poppins font-normal p-3 sm:p-[15px] !outline-0 w-full border-solid border border-lightBlue shadow-[0px_0px_5px_-2px_#4B17E666]"
                     type="text"
                     placeholder="Last Name"
                     id="lastname"
@@ -161,10 +161,10 @@ const Conversation = () => {
                 </div>
               </div>
               <div className="flex sm:flex-row flex-col sm:gap-4">
-                <div className="lg:max-w-[297px] w-full mb-3 sm:mb-[14px]">
+                <div className="lg:max-w-[297px] w-full mb-3">
                   <input
                     required
-                    className="text-sm md:text-base !text-black placeholder:text-black placeholder:!text-opacity-50 !text-opacity-50 h-[55px] font-poppins font-normal p-3 sm:p-[15px] outline-none w-full border-solid border border-lightBlue shadow-[0px_0px_5px_-2px_#4B17E666]"
+                    className="text-sm md:text-base !text-black placeholder:text-black placeholder:!text-opacity-50 !text-opacity-50 h-[55px] font-poppins font-normal p-3 sm:p-[15px] !outline-0 w-full border-solid border border-lightBlue shadow-[0px_0px_5px_-2px_#4B17E666]"
                     type="text"
                     placeholder="Subject"
                     id="subject"
@@ -179,10 +179,10 @@ const Conversation = () => {
                     </p>
                   )}
                 </div>
-                <div className="lg:max-w-[297px] w-full mb-3 sm:mb-[14px]">
+                <div className="lg:max-w-[297px] w-full mb-3">
                   <input
                     required
-                    className="text-sm md:text-base !text-black placeholder:text-black placeholder:!text-opacity-50 !text-opacity-50 h-[55px] font-poppins font-normal p-3 sm:p-[15px] outline-none w-full border-solid border border-lightBlue shadow-[0px_0px_5px_-2px_#4B17E666]"
+                    className="text-sm md:text-base !text-black placeholder:text-black placeholder:!text-opacity-50 !text-opacity-50 h-[55px] font-poppins font-normal p-3 sm:p-[15px] !outline-0 w-full border-solid border border-lightBlue shadow-[0px_0px_5px_-2px_#4B17E666]"
                     type="number"
                     placeholder="Mobile Number"
                     id="number"
@@ -199,10 +199,10 @@ const Conversation = () => {
                   )}
                 </div>
               </div>
-              <div className="w-full mb-3 sm:mb-[14px]">
+              <div className="w-full mb-3">
                 <input
                   required
-                  className="text-sm md:text-base !text-black placeholder:text-black placeholder:!text-opacity-50 !text-opacity-50 h-[55px] font-poppins font-normal p-3 sm:p-[15px] outline-none w-full border-solid border border-lightBlue shadow-[0px_0px_5px_-2px_#4B17E666]"
+                  className="text-sm md:text-base !text-black placeholder:text-black placeholder:!text-opacity-50 !text-opacity-50 h-[55px] font-poppins font-normal p-3 sm:p-[15px] !outline-0 w-full border-solid border border-lightBlue shadow-[0px_0px_5px_-2px_#4B17E666]"
                   type="text"
                   placeholder="Email"
                   id="email"
@@ -217,10 +217,10 @@ const Conversation = () => {
                   </p>
                 )}
               </div>
-              <div className="w-full mb-3  xl:min-h-[159] sm:mb-[14px] lg:mb-[18px]">
+              <div className="w-full mb-3  xl:min-h-[159] lg:mb-[18px]">
                 <textarea
                   required
-                  className="resize-none text-sm md:text-base !text-black h-[110px] lg:h-[159px] placeholder:text-black placeholder:!text-opacity-50 !text-opacity-50 font-poppins font-normal p-3 sm:p-[15px] outline-none w-full border-solid border border-lightBlue shadow-[0px_0px_5px_-2px_#4B17E666]"
+                  className="resize-none text-sm md:text-base !text-black h-[110px] lg:h-[159px] placeholder:text-black placeholder:!text-opacity-50 !text-opacity-50 font-poppins font-normal p-3 sm:p-[15px] !outline-0 w-full border-solid border border-lightBlue shadow-[0px_0px_5px_-2px_#4B17E666]"
                   placeholder="Tell us more about your projects"
                   id="message"
                   name="message"

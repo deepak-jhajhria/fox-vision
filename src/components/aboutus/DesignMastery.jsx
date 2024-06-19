@@ -3,14 +3,14 @@ import mhillPolka from "../../assets/images/webp/mhillPolaka.webp";
 
 const DesignMastery = () => {
   return (
-    <section className="pt-10 sm:py-16 md:py-14 lg:pt-[150px] lg:pb-1.5 overflow-hidden">
+    <section className="pt-10 sm:py-16 md:py-14 lg:pt-[138px] lg:pb-0 overflow-hidden">
       <div className="container max-lg:px-3 max-w-[1140px] relative">
         <H5
           className="text-center text-blackPearl"
           title="FOX VISION - Friendly and reliable"
         />
         <H2
-          className="mb-2 sm:mb-6 text-center md:mt-3 md:mb-10 lg:mb-14 text-blackPearl"
+          className="mb-2 sm:mb-6 text-center md:mt-3 md:mb-10 lg:mb-[60px] text-blackPearl"
           heading="Design Mastery in Our Genes"
         />
 
