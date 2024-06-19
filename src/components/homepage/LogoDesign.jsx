@@ -8,7 +8,6 @@ import digitalImg from '../../assets/images/webp/logo-design/digitalImg.webp'
 import designWhiteEllipse from '../../assets/images/webp/logo-design/designWhiteEllipse.webp'
 import { DesignIcon, StrategyIcon } from '../common/Icons'
 
-
 const LogoDesign = () => {
   return (
     <div className=' bg-blue pt-[193px] sm:pb-[60px] pb-10  px-6'>
