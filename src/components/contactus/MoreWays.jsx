@@ -40,17 +40,20 @@ export const PhoneIcon = () => {
     {
         icons:<PhoneIcon/>,
         title:'Call Us',
-        value:'+41 725 61 00'
+        value:'+41 725 61 00',
+        link:"tel:+41 725 61 00"
     },
     {
       icons:<EmailIcon/>,
       title:'Email Us',
-      value:'info@foxvision.ch'
+      value:'info@foxvision.ch',
+      link:"mailto:info@foxvision.ch",
     },
     {
       icons:<VisitIcon/>,
       title:'Visit Us',
-      value:'Fox Vision GmbH Badstrasse 50 CH-5200 Brugg'
+      value:'Fox Vision GmbH Badstrasse 50 CH-5200 Brugg',
+      link:"https://www.google.com/maps/place/Fox+Vision+GmbH/@47.109919,8.500001,17z/data=!3m1!4b1!4m5!3m4!1s0x4790000000000000:0x00000000000"
     }
 ]
 
@@ -64,9 +67,11 @@ const MoreWays = () => {
                     {
                         ContactCardData.map((item, i) => (
                           <div className=' lg:w-1/3 sm:w-1/2 w-full px-3 flex justify-center sm:block mb-6 lg:mb-0'>
-                       <ContactCard index={i} icons={item.icons} title={item.title} value={item.value} class={`${
-                        i === 2 ? " !py-7 !mb-0":"py-10"
-                       }`}/>
+                       <a href={item.link} target='blank' rel='norefferer noopener'>
+                         <ContactCard index={i} icons={item.icons} title={item.title} value={item.value} class={`${
+                          i === 2 ? " !py-7 !mb-0":"py-10"
+                         }`}/>
+                       </a>
                      </div>
                         ))
                     }
