@@ -1,9 +1,9 @@
 import { useState } from "react";
 import conversation from "../../assets/images/webp/conversation.webp";
-import captcha from "../../assets/images/svg/captcha.svg";
 import Button from "../common/Button";
 import { H2, H5 } from "../common/Heading";
 import Swal from "sweetalert2";
+import CustomCheckbox from "../../components/contactus/Checkboxlayout";
 
 const Conversation = () => {
   const [formData, setFormData] = useState({
@@ -28,7 +28,6 @@ const Conversation = () => {
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
     if (name === "number") {
-      // Allow only digits and restrict to 10 characters
       if (!/^\d*$/.test(value) || value.length > 10) {
         return;
       }
@@ -37,6 +36,14 @@ const Conversation = () => {
     setFormData((prevFormData) => ({
       ...prevFormData,
       [name]: type === "checkbox" ? checked : value,
+    }));
+  };
+
+  const handleCheckboxChange = (event) => {
+    const isChecked = event.target.checked;
+    setFormData((prevFormData) => ({
+      ...prevFormData,
+      box: isChecked,
     }));
   };
 
@@ -70,8 +77,7 @@ const Conversation = () => {
       errors.message = "Message is invalid.";
     }
     if (!formData.box) {
-      errors.box =
-        "You must agree to the terms of services and privacy policy.";
+      errors.box = "You must agree to the terms.";
     }
     setFormErrors(errors);
     if (Object.keys(errors).length === 0) {
@@ -139,7 +145,7 @@ const Conversation = () => {
                     autoComplete="off"
                   />
                   {formErrors.name && (
-                    <p className="error-message font-plusJkarta">
+                    <p className="error-message font-plusJkarta text-red-500">
                       {formErrors.name}
                     </p>
                   )}
@@ -157,7 +163,7 @@ const Conversation = () => {
                     autoComplete="off"
                   />
                   {formErrors.lastname && (
-                    <p className="error-message font-plusJkarta">
+                    <p className="error-message font-plusJkarta text-red-500">
                       {formErrors.lastname}
                     </p>
                   )}
@@ -177,7 +183,7 @@ const Conversation = () => {
                     autoComplete="off"
                   />
                   {formErrors.subject && (
-                    <p className="error-message font-plusJkarta">
+                    <p className="error-message font-plusJkarta text-red-500">
                       {formErrors.subject}
                     </p>
                   )}
@@ -186,7 +192,7 @@ const Conversation = () => {
                   <input
                     required
                     className="text-sm md:text-base !text-black placeholder:text-black placeholder:!text-opacity-50 !text-opacity-50 h-[45px] md:h-[55px] font-poppins font-normal p-3 sm:p-[15px] !outline-0 w-full border-solid border border-lightBlue shadow-[0px_0px_5px_-2px_#4B17E666]"
-                    type="number"
+                    type="text"
                     placeholder="Mobile Number"
                     id="number"
                     name="number"
@@ -196,7 +202,7 @@ const Conversation = () => {
                     maxLength={10}
                   />
                   {formErrors.number && (
-                    <p className="error-message font-plusJkarta">
+                    <p className="error-message font-plusJkarta text-red-500">
                       {formErrors.number}
                     </p>
                   )}
@@ -207,7 +213,7 @@ const Conversation = () => {
                   required
                   className="text-sm md:text-base !text-black placeholder:text-black placeholder:!text-opacity-50 !text-opacity-50 h-[45px] md:h-[55px] font-poppins font-normal p-3 sm:p-[15px] !outline-0 w-full border-solid border border-lightBlue shadow-[0px_0px_5px_-2px_#4B17E666]"
                   type="text"
-                  placeholder="Email"
+                  placeholder="Your Email"
                   id="email"
                   name="email"
                   value={formData.email}
@@ -215,71 +221,44 @@ const Conversation = () => {
                   autoComplete="off"
                 />
                 {formErrors.email && (
-                  <p className="error-message font-plusJkarta">
+                  <p className="error-message font-plusJkarta text-red-500">
                     {formErrors.email}
                   </p>
                 )}
               </div>
-              <div className="w-full mb-3  xl:min-h-[159] lg:mb-[18px]">
+              <div className="w-full mb-3">
                 <textarea
                   required
-                  className="resize-none text-sm md:text-base !text-black h-[110px] lg:h-[159px] placeholder:text-black placeholder:!text-opacity-50 !text-opacity-50 font-poppins font-normal p-3 sm:p-[15px] !outline-0 w-full border-solid border border-lightBlue shadow-[0px_0px_5px_-2px_#4B17E666]"
-                  placeholder="Tell us more about your projects"
+                  className="resize-none text-sm md:text-base !text-black h-[110px] placeholder:text-black lg:h-[159px] placeholder:!text-opacity-50 !text-opacity-50 font-poppins font-normal p-3 sm:p-[15px] outline-none w-full border-solid border border-lightBlue shadow-[0px_0px_5px_-2px_#4B17E666]"
+                  placeholder="Your Message"
                   id="message"
                   name="message"
                   value={formData.message}
                   onChange={handleChange}
                   autoComplete="off"
-                />
+                ></textarea>
                 {formErrors.message && (
-                  <p className="error-message font-plusJkarta">
+                  <p className="error-message font-plusJkarta text-red-500">
                     {formErrors.message}
                   </p>
                 )}
               </div>
-              <div className="flex items-center mb-4">
-                <div
-                  htmlFor="box"
-                  className="flex justify-between items-center max-[450px]:w-full w-[250px] lg:w-[302px] py-2 px-3 rounded-md border border-noble bg-alabaster"
-                >
-                  <label className="flex w-[70%] cursor-pointer">
-                    <div className="flex items-center">
-                      <input
-                        required
-                        type="checkbox"
-                        id="box"
-                        name="box"
-                        className="custom-checkbox"
-                        checked={formData.box}
-                        onChange={handleChange}
-                      />
-                      <span className="ml-2 text-sm font-normal text-black md:text-base opacity-70">
-                        I’m not a robot
-                      </span>
-                    </div>
-                  </label>
-                  <div className="flex flex-col items-center">
-                    <img
-                      className="w-[49px] pointer-events-none h-[45px]"
-                      src={captcha}
-                      alt="captcha_image"
-                    />
-                    <p className="text-silver !flex-nowrap font-normal font-poppins leading-[12px] text-[8px]">
-                      Privacy - Terms
-                    </p>
-                  </div>
-                </div>
+              <div className="w-full mb-6 mt-4 flex items-center gap-3">
+                <CustomCheckbox
+                  checked={formData.box}
+                  onChange={handleCheckboxChange}
+                />
               </div>
               {formErrors.box && (
-                <p className="error-message font-plusJkarta">
+                <p className="error-message font-plusJkarta text-red-500">
                   {formErrors.box}
                 </p>
               )}
-              <div className="flex justify-center md:justify-start">
+              <div className="max-md:mx-auto max-md:flex max-md:justify-center">
                 <Button
-                  type="submit"
-                  className="md:!px-[99px]"
+                  className="lg:!px-[91px] lg:w-[302px]"
                   content="Send Message"
+                  text="Send Message"
                 />
               </div>
             </form>
