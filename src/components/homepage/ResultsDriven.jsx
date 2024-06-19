@@ -44,8 +44,7 @@ const ResultsDriven = ({imgClassName,margin}) => {
                 their companies. Regardless of what the goal is, whether to
                 increase sales, increase brand awareness or attract new
                 employees. We always look for the{" "}
-                {
-                  <span className="text-opacity-100 text-skyBlue">
+                {<span className="text-opacity-100 text-skyBlue">
                     right solution for your company
                   </span>
                 }{" "}
