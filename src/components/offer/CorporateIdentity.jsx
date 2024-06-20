@@ -6,7 +6,7 @@ import { CorporateArrow, CorporateIcon } from "../common/Icons";
 
 const CorporateIdentity = () => {
   return (
-    <div className="px-4 pt-10 xl:pt-32 lg:pt-24 md:pt-16 sm:pt-12">
+    <div className="px-3 pt-10 xl:pt-32 lg:pt-24 md:pt-16 sm:pt-12">
       <div className="container max-w-[1140px]">
         <div className="relative flex flex-row flex-wrap items-center mb-10 -mx-3 xl:mb-32 lg:mb-24 md:mb-16 sm:mb-12">
           <div className="absolute top-[2%] lg:block hidden left-[34%]">
