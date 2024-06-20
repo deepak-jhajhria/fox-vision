@@ -5,11 +5,11 @@ import { ProjectArrow, WhatWeSecLogo, WhatWeSecVector } from "../common/Icons";
 
 const ProjectAgency = () => {
   return (
-    <section className="py-10 sm:py-16 md:pb-5 md:pt-20 lg:pb-0 lg:pt-[126px] px-6 overflow-hidden">
+    <section className="py-10 sm:py-12 md:py-16 lg:py-24 xl:pb-0 xl:pt-[126px] px-6 overflow-hidden">
       <div className="container px-0 max-w-[1140px] relative">
         <H5 className="uppercase max-md:text-center" title="FOX VISION" />
         <H2
-          className="md:mt-2 !leading-120 max-md:text-center max-md:mx-auto max-w-[498px]"
+          className="md:mt-2 !leading-120 max-md:text-center max-md:mx-auto md:max-w-[440px] lg:max-w-[498px]"
           heading="Design Project Agency"
         />
         <div className="flex items-center max-md:flex-col max-sm:gap-3 max-lg:gap-5 xl:items-end ">
@@ -44,7 +44,7 @@ const ProjectAgency = () => {
             </span>
           </div>
         </div>
-        <span className="absolute max-sm:hidden top-[49%] md:-top-9 lg:top-0 xl:top-[70px] -left-10 md:left-[42%]">
+        <span className="absolute top-[52%] sm:top-[44%] md:top-0 lg:left-[39%] md:left-[39%] lg:top-10 xl:top-[81px] -left-1 xl:left-[42%]">
           <ProjectArrow />
         </span>
       </div>

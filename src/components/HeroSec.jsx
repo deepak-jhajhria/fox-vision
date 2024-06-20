@@ -7,7 +7,7 @@ import { CloudBottom, CloudTop, RightIcon } from "./common/Icons";
 const HeroSec = () => {
   const location = useLocation()
   return (
-    <div className="px-6 bg-blue">
+    <div className="px-3 sm:px-6 bg-blue">
       <NavBar />
       <div className="max-w-[1140px] container">
         <div className={`${location.pathname === '/' ? "pt-11" : "pt-10 pb-14 sm:pt-12 sm:pb-16 lg:pt-[56px] lg:pb-[100px]"}`}>
@@ -17,13 +17,13 @@ const HeroSec = () => {
           {location.pathname === '/portfolio' && <H1 heading='Portfolio' className="max-w-[948px] text-center mx-auto" />}
           {location.pathname === '/offer' && <H1 heading='Offer' className="max-w-[948px] text-center mx-auto" />}
         </div>
-        {location.pathname === '/' && <Description className='pt-9 text-center text-white lg:!text-2xl' description='Kreativagentur für Branding, Social Media & digitale Lösungen.' />}
+        {location.pathname === '/' && <Description className='pt-3 sm:pt-5 px-5 lg:pt-9 text-center text-white lg:!text-2xl' description='Kreativagentur für Branding, Social Media & digitale Lösungen.' />}
         {location.pathname === '/' && <div className="relative pt-1 pb-[59px]">
           <div className="relative flex justify-center mx-auto">
-            <div className="absolute right-[69%] top-[5%]">
+            <div className="absolute right-[69%] top-[5%] max-sm:hidden">
               <CloudTop />
             </div>
-            <div className="absolute left-[73%] bottom-[10%]"><CloudBottom className="absolute bottom-0" /></div>
+            <div className="absolute left-[73%] bottom-[10%] max-sm:hidden"><CloudBottom className="absolute bottom-0" /></div>
             <img className="max-w-[621px] w-full max-h-[469px]" src={headerpc} alt="header-pc" />
           </div>
         </div>}

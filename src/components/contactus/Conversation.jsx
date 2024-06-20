@@ -116,7 +116,7 @@ const Conversation = () => {
         <div className="flex flex-row flex-wrap justify-between">
           <div className="w-full px-3 md:w-[46%]">
             <H5
-              className="mb-3 max-md:text-center"
+              className="mb-2 lg:mb-3 max-md:text-center"
               title="Contact With FoxVision"
             />
             <H2
