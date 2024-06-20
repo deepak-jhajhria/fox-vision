@@ -6,8 +6,8 @@ import { howWeWorkCardlist } from "../common/Helper";
 
 const Angebot = () => {
   return (
-    <div className="bg-blue pt-10 -mt-[1px] md:pt-16 sm:pt-12 lg:pt-24 xl:pt-[122px] pb-36 md:pb-[170px] lg:pb-[190px] xl:pb-[238px]">
-      <div className="container max-w-[1164px] mx-auto px-6 md:px-3">
+    <div className="bg-blue px-3 sm:px-6 pt-10 -mt-[1px] md:pt-16 sm:pt-12 lg:pt-24 xl:pt-[122px] pb-36 md:pb-[170px] lg:pb-[190px] xl:pb-[238px]">
+      <div className="container max-w-[1164px] mx-auto">
         <H5
           className="!text-white  text-center mb-2 md:mb-3"
           title="A RESULTS-DRIVEN AGENCY"
