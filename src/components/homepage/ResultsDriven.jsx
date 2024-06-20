@@ -6,7 +6,7 @@ import { ArrowResultDriven } from "../common/Icons";
 const ResultsDriven = ({ imgClassName, margin }) => {
   return (
     <div className="relative flex flex-row flex-wrap justify-between -mx-3">
-      <div className="absolute xl:top-[14%] lg:top-[18%] lg:block hidden xl:right-[44%] right-[48%]">
+      <div className="absolute xl:top-[14%] lg:top-[20%] z-[-1] lg:block hidden xl:right-[44%] right-[50%]">
         <ArrowResultDriven />
       </div>
       <div className="w-full px-3 md:w-1/2">

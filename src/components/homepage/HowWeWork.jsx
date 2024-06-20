@@ -9,7 +9,7 @@ const HowWeWork = ({ imgClassName }) => {
         <ResultsDriven imgClassName={imgClassName} />
         <div className="flex flex-row flex-wrap justify-center py-12 -mx-3 lg:py-28 sm:py-16 md:py-20 xl:my-3">
           {howWeWorkList.map((obj, i) => (
-            <div key={i} className="flex justify-center w-full px-2 md:w-1/3 sm:w-1/2">
+            <div key={i} className="flex justify-center w-full px-2 lg:w-1/3 md:w-1/2">
               <WorkCard icons={obj.icons} tittle={obj.tittle} />
             </div>
           ))}
