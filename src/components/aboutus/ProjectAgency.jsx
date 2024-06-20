@@ -21,7 +21,7 @@ const ProjectAgency = () => {
             />
             <div className="flex relative flex-col items-start md:translate-y-[-16%] lg:ml-8 ">
               <Description
-                className="max-lg:text-center max-sm:mt-28 md:mt-5 xl:max-w-[523px]"
+                className="max-lg:text-center max-sm:mt-28 md:mt-5 xl:max-w-[523px] !text-opacity-70"
                 description={
                   <>
       
