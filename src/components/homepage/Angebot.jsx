@@ -6,14 +6,14 @@ import { howWeWorkCardlist } from "../common/Helper";
 
 const Angebot = () => {
   return (
-    <div className="bg-blue pt-12 -mt-[1px] md:pt-20 sm:pt-16 lg:pt-[122px] pb-40 md:pb-[190px] lg:pb-[238px]">
+    <div className="bg-blue pt-10 -mt-[1px] md:pt-16 sm:pt-12 lg:pt-24 xl:pt-[122px] pb-36 md:pb-[170px] lg:pb-[190px] xl:pb-[238px]">
       <div className="container max-w-[1164px] mx-auto px-6 md:px-3">
         <H5
           className="!text-white  text-center mb-2 md:mb-3"
           title="A RESULTS-DRIVEN AGENCY"
         />
         <H2
-          className="!text-white  text-center mb-2 sm:mb-5 lg:mb-10 xl:mb-[76px]"
+          className="!text-white  text-center mb-2 sm:mb-5 lg:mb-6 xl:mb-[76px]"
           heading="Angebot"
         />
 
