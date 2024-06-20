@@ -13,15 +13,15 @@ const ProjectAgency = () => {
             className="mt-1 lg:mt-2 !leading-120 max-lg:text-center max-lg:mx-auto md:max-w-[440px] lg:max-w-[498px]"
             heading="Design Project Agency"
           />
-          <div className="flex items-center max-lg:flex-col max-sm:gap-3 max-lg:gap-5 xl:items-end ">
+          <div className="flex items-center max-lg:flex-col max-sm:gap-3 max-lg:gap-5 lg:items-end ">
             <img
-              className="w-full max-w-[380px] lg:max-w-[400px]  mt-4 sm:mt-0 md:mt-4 lg:mt-[29px] xl:max-w-[590px] lg:h-[328px] h-full"
+              className="w-full max-w-[380px] lg:max-w-[500px]  mt-4 sm:mt-0 md:mt-4 lg:mt-[29px] xl:max-w-[590px] lg:h-[328px] h-full"
               src={cardImage}
               alt="cardimage"
             />
             <div className="flex relative flex-col items-start md:translate-y-[-16%] lg:ml-8 ">
               <Description
-                className="max-lg:text-center max-sm:mt-28 md:mt-5 lg:max-w-[523px]"
+                className="max-lg:text-center max-sm:mt-28 md:mt-5 xl:max-w-[523px]"
                 description={
                   <>
       
@@ -45,7 +45,7 @@ const ProjectAgency = () => {
               </span>
             </div>
           </div>
-          <span className="absolute top-[52%] max-lg:hidden sm:top-[44%] md:top-0 lg:left-[39%] md:left-[39%] lg:top-10 xl:top-[81px] -left-1 xl:left-[42%]">
+          <span className="absolute top-[52%] max-lg:hidden sm:top-[44%] md:top-0 lg:left-[39%] md:left-[39%] lg:top-8 xl:top-[81px] -left-1 xl:left-[42%]">
             <ProjectArrow />
           </span>
         </div>
