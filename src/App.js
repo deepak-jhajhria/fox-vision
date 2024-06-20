@@ -11,7 +11,7 @@ import ScrollToTop from "./components/common/ScrollToTop";
 
 function App() {
   return (
-    <div className="max-w-[1920px] mx-auto">
+    <div className="mx-auto">
       <HeroSec />
       <Routes>
         <Route path="/" element={<Homepage />} />

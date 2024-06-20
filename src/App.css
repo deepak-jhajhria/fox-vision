@@ -3,19 +3,6 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-.error-message {
-  color: red;
-  font-size: 12px;
-  margin-top: 5px;
-}
-.custom-checkbox {
-  display: inline-block;
-  position: relative;
-  padding-left: 25px;
-  cursor: pointer;
-  font-size: 16px;
-  user-select: none;
-}
 
 .custom-checkbox input {
   position: absolute;

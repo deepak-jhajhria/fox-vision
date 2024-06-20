@@ -3,14 +3,14 @@ import CommonButton from "../common/CommonButton";
 import { GraphicIcon, PaintIcon, WhatWeSecLogo, WhatWeSecVector } from "../common/Icons";
 import { graphicDesignList, uiUxDesignList } from "../common/Helper";
 import cardImage from "../../assets/images/webp/what-we/what-we-card.webp";
-import moon from "../../assets/images/png/blue-moon.png";
-import skyMoon from "../../assets/images/png/sky-moon.png";
-import vectorBottom from "../../assets/images/png/vector-bottom.png";
-import vectortop from "../../assets/images/png/vector-top.png";
+import moon from "../../assets/images/webp/what-we/blue-moon.webp";
+import skyMoon from "../../assets/images/webp/what-we/sky-moon.webp";
+import vectorBottom from "../../assets/images/webp/what-we/vector-bottom.webp";
+import vectortop from "../../assets/images/webp/what-we/vector-top.webp";
 
 const WhatWeDo = () => {
   return (
-    <section className="py-10 sm:py-16 md:py-20 lg:pt-[239px] lg:pb-[258px] px-6 overflow-hidden">
+    <section className="py-12 sm:py-16 md:py-20 lg:pt-[239px] lg:pb-[258px] px-6 overflow-hidden">
       <div className="container px-0 max-w-[1140px] relative py-1">
         <H5 className="uppercase !leading-150 lg:text-start text-center" title="A RESULTS-DRIVEN AGENCY" />
         <H2 className="text-center md:mt-3 lg:text-start" heading="What we do" />

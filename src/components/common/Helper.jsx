@@ -1,4 +1,4 @@
-import { AppIcon, EmailIcon, PhoneIcon, SoftwareIcon, TeachIcon, VisitIcon } from "./Icons"
+import { AppIcon, Beschriftungen, Design, Druck, EmailIcon, Identity, Marketing, PhoneIcon, Redesign, SoftwareIcon, TeachIcon, VisitIcon } from "./Icons"
 import portCard1 from '../../assets/images/webp/portfolio/portCard1.webp'
 import portCard2 from '../../assets/images/webp/portfolio/portCard2.webp'
 import portCard3 from '../../assets/images/webp/portfolio/portCard3.webp'
@@ -10,23 +10,22 @@ import portCard8 from '../../assets/images/webp/portfolio/portCard8.webp'
 import portCard9 from '../../assets/images/webp/portfolio/portCard9.webp'
 import portCard10 from '../../assets/images/webp/portfolio/portCard10.webp'
 import portCard11 from '../../assets/images/webp/portfolio/portCard11.webp'
-import watch from "../../assets/images/png/watch.png";
-import things from "../../assets/images/png/things.png";
-import shopping from "../../assets/images/png/shopping.png";
-import quality from "../../assets/images/png/quality.png";
-import boodie from "../../assets/images/png/boodie.png";
-import beauty from "../../assets/images/png/beauty.png";
-import cartoons from "../../assets/images/png/cartoons.png";
-import dogy from "../../assets/images/png/dogy.png";
-import animals from "../../assets/images/png/animals.png";
-import women from "../../assets/images/png/women.png";
-import frute from "../../assets/images/png/frute.png";
-import base from "../../assets/images/png/base.png";
+import watch from "../../assets/images/webp/what-we/watch.webp";
+import things from "../../assets/images/webp/what-we/things.webp";
+import shopping from "../../assets/images/webp/what-we/shopping.webp";
+import quality from "../../assets/images/webp/what-we/quality.webp";
+import boodie from "../../assets/images/webp/what-we/boodie.webp";
+import beauty from "../../assets/images/webp/what-we/beauty.webp";
+import cartoons from "../../assets/images/webp/what-we/cartoons.webp";
+import dogy from "../../assets/images/webp/what-we/dogy.webp";
+import animals from "../../assets/images/webp/what-we/animals.webp";
+import women from "../../assets/images/webp/what-we/women.webp";
+import frute from "../../assets/images/webp/what-we/frute.webp";
+import base from "../../assets/images/webp/what-we/base.webp";
 import wireFraming from "../../assets/images/webp/wireFraming.webp";
 import webImg from "../../assets/images/webp/webDesigning.webp";
 import logoImg from "../../assets/images/webp/logoDesign.webp";
 import appImg from "../../assets/images/webp/appDesign.webp";
-
 
 // accordion list
 export const accordionList = [
@@ -165,39 +164,77 @@ export const graphicDesignList = [
     { col: [{ image: animals }, { image: base }], },
 ];
 
-// offer corporate identity 
-export const corporateCardData = [
-  {
-    img: wireFraming,
-    title: "Wireframing",
-  },
-  {
-    img: webImg,
-    title: "Web Design",
-  },
-  {
-    img: logoImg,
-    title: "Logo Design",
-  },
-  {
-    img: appImg,
-    title: "App Design",
-  },
+// homepage how we work data
+
+export const howWeWorkCardlist = [
+    {
+        svg: <Identity />,
+        title: "Corporate Identity",
+        description: "Viele verbinden damit in erster Linie Logo und Farben. Corporate Identity ist weitaus mehr...",
+        link: "Mehr",
+    },
+    {
+        svg: <Redesign />,
+        title: "Redesign",
+        description: "Sie haben durch Ihren Service und Ihre Dienstleistungen bereits einen hohen Bekanntheitsgrad erreicht und möchten...",
+        link: "Mehr",
+    },
+    {
+        svg: <Design />,
+        title: "Web design",
+        description: "Zeitgemässe und schönes Design macht Kunden neugierig und weckt bereits innert kurzer Zeit mehr Vertrauen....",
+        link: "Mehr",
+    },
+    {
+        svg: <Marketing />,
+        title: "Digital Marketing",
+        description: "Digitales Auftreten war für Unternehmen noch nie wichtiger als jetzt. Kunden, Partner und Lieferanten setzen von Tag zu Tag auf digitale Lösungen...",
+        link: "Mehr",
+    },
+    {
+        svg: <Druck />,
+        title: "Arbeitsbekleidungen - Druck & Stick",
+        description: "Visual graphic design is the art of using visual elements, such as images, typography, color, and layout.",
+        link: "Mehr",
+    },
+    {
+        svg: <Beschriftungen />,
+        title: "Beschriftungen",
+        description: "Lorem ipsum dolor sit amet consectetur. Urna feugiat et morbi risus nibh in sed. Felis nisl bibendum ut velit amet pharetra.",
+        link: "Mehr",
+    },
+];
+export const howWeWorkList = [
+    {
+        icons: <AppIcon />,
+        tittle: "App Platform Intergration",
+    },
+    {
+        icons: <SoftwareIcon />,
+        tittle: "Software Tools Development",
+    },
+    {
+        icons: <TeachIcon />,
+        tittle: "Teach Website Solution",
+    },
 ];
 
-// how we work
- export const WorkData = [
-  {
-    icons: <AppIcon />,
-    tittle: "App Platform Intergration",
-  },
-  {
-    icons: <SoftwareIcon />,
-    tittle: "Software Tools Development",
-  },
-  {
-    icons: <TeachIcon />,
-    tittle: "Teach Website Solution",
-  },
+// offer section data
+export const corporateCardList = [
+    {
+        img: wireFraming,
+        title: "Wireframing",
+    },
+    {
+        img: webImg,
+        title: "Web Design",
+    },
+    {
+        img: logoImg,
+        title: "Logo Design",
+    },
+    {
+        img: appImg,
+        title: "App Design",
+    },
 ];
-
