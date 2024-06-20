@@ -5,7 +5,7 @@ import { strategyCardData } from "../common/Helper";
 
 const DesignStrategy = () => {
   return (
-    <div className="xl:pt-[150px] lg:pt-16 md:pt-11 sm:pt-10 pt-8 px-6">
+    <div className="xl:pt-[150px] lg:pt-24 md:pt-16 sm:pt-12 pt-10 px-6">
       <div className="container max-w-[1140px]">
         <div className="gap-6 xl:flex ">
           <div className="flex flex-col items-center mb-5 xl:mb-0">

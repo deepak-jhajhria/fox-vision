@@ -8,10 +8,10 @@ import { contactCardData } from '../common/Helper'
 
 const MoreWays = () => {
   return (
-    <div className='lg:pt-[118px] py-10 sm:py-16 md:py-20 lg:pb-[165px] px-6'>
+    <div className='xl:pt-[118px] py-10 md:py-16 lg:py-24 xl:pb-[165px] px-6'>
       <div className='container max-w-[1140px] '>
         <H5 title="FOX VISION - Friendly and reliable" className="text-center !leading-150 mb-3" />
-        <H2 heading="More Ways to Reach Out" className="text-center !leading-121 mb-[30px] sm:mb-10 md:mb-[50px] lg:mb-[88px]" />
+        <H2 heading="More Ways to Reach Out" className="text-center !leading-121 mb-6 sm:mb-10 lg:mb-[50px] xl:mb-[88px]" />
         <div className='flex flex-row flex-wrap justify-center -mx-3'>
           {
             contactCardData.map((item, i) => (
