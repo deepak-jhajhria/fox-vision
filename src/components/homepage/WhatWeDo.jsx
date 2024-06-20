@@ -23,7 +23,7 @@ const WhatWeDo = () => {
         </div>
         <div className="flex lg:flex-row flex-col-reverse xl:gap-[94px] lg:gap-10 justify-between items-center xl:items-start xl:mt-[185px] mt-8 sm:mt-12 md:mt-16 lg:mt-24 relative">
           <img className="absolute pointer-events-none lg:max-w-[307px] md:max-w-[280px] max-w-[250px] right-[-10%] sm:top-[-7%] top-0" src={moon} alt="moon" />
-          <div className="flex flex-col lg:items-start items-center lg:max-w-[512px] relative lg:mt-2 mt-8 sm:mt-12 md:mt-24">
+          <div className="flex flex-col lg:items-start items-center lg:max-w-[512px] relative lg:mt-2 mt-8 sm:mt-16 md:mt-24">
             <div className="w-[93px] h-[93px] bg-blueChalk flex justify-center items-center rounded-[7.58px] shadow-painIcon">
               <PaintIcon />
             </div>
