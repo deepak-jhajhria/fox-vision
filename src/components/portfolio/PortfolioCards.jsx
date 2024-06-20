@@ -8,7 +8,7 @@ const PortfolioCards = () => {
             <div className='container max-w-[1140px]'>
                 <div className='flex flex-row flex-wrap -mx-3 mb-4 md:mb-[26px] justify-center  lg:justify-normal'>
                     {portCardData.map((item, i) => (
-                        <div className={`lg:w-1/3 sm:w-1/2 w-full px-3 flex justify-center ${1 <= 9 ? "mb-6" : "mb-0"}`}>
+                        <div key={i} className={`lg:w-1/3 sm:w-1/2 w-full px-3 flex justify-center ${1 <= 9 ? "mb-6" : "mb-0"}`}>
                             <PortfolioCardLayout index={i} img={item.img} head={item.head} discription={item.discription} />
                         </div>
                     ))}
