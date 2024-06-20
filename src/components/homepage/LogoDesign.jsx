@@ -10,11 +10,11 @@ import { DesignIcon, StrategyIcon } from '../common/Icons'
 
 const LogoDesign = () => {
   return (
-    <div className=' bg-blue pt-[90px] md:pt-36 lg:pt-[160px]  xl:pt-[193px] pb-8 sm:pb-10 md:pb-11 lg:pb-16 xl:pb-[60px] px-6'>
+    <div className=' bg-blue pt-[90px] md:pt-36 lg:pt-[160px]  xl:pt-[193px] pb-10 sm:12  md:pb-[60px] px-6'>
       <div className="container max-w-[1140px]">
-        <div className="flex flex-col-reverse flex-wrap mb-10 -mx-3 sm:mb-10 lg:mb-16 xl:mb-24 lg:flex-row">
+        <div className="flex flex-col-reverse flex-wrap mb-10 -mx-3 sm:mb-7 lg:mb-10 xl:mb-24 lg:flex-row">
           <div className="w-full px-3 lg:w-1/2">
-            <div className="flex bg-white w-[72px]  h-[72px] md:w-[93.15px] md:h-[93.15px] mx-auto lg:mx-0 justify-center items-center rounded-[7.59px] mb-[29px]">
+            <div className="flex bg-white w-[72px]  h-[72px] md:w-[93.15px] md:h-[93.15px] mx-auto lg:mx-0 justify-center items-center rounded-[7.59px] mb-3 md:mb-[29px]">
               <DesignIcon />
             </div>
             <H4 heading="Logo Design" className="!text-white text-center !leading-150 lg:text-start !mb-2" />
@@ -22,7 +22,7 @@ const LogoDesign = () => {
           </div>
           <div className="flex gap-[22.88px] justify-center lg:justify-normal mb-10 lg:mb-0  w-full px-3 lg:w-1/2 relative z-[1]">
           <img src={designWhiteEllipse} alt="ellipse1" className=' absolute max-[500px]:hidden z-[-1] max-w-[414.46px] w-full bottom-[6%] right-[4%] sm:right-[7%] min-[900px]:right-[16%] lg:right-[2%]' />
-          <img src={designBoy1} alt="boy1" className='absolute lg:-top-[25.5%] -top-[18%] right-[18%] md:right-[32%] md:top-[-22%] sm:right-[29%] sm:top-[-13%] lg:left-[36%] lg:max-w-[194.67px] md:max-w-[170px] sm:max-w-[150px] max-w-[120px] z-[1]' />
+          <img src={designBoy1} alt="boy1" className='absolute lg:-top-[25.5%] min-[500px]:right-[27%] min-[500px]:top-[-13%] -top-[18%] right-[18%] md:right-[32%] md:top-[-22%] sm:right-[29%] sm:top-[-13%] lg:left-[36%] lg:max-w-[194.67px] md:max-w-[170px] sm:max-w-[150px] max-w-[120px] z-[1]' />
           <div className='flex flex-col max-[500px]:items-center gap-5 min-[500px]:gap-[26.5px]'>
 <img src={designCard1} alt="designcard1" className='max-w-[203.39px] border border-solid border-transparent hover:border-blue duration-300 w-full rounded-[12.52px] hover:scale-105 shadow-designCard
 ' />
@@ -40,7 +40,7 @@ const LogoDesign = () => {
           </div>
           <div className="w-full px-3 lg:w-1/2 lg:flex lg:justify-end">
             <div>
-              <div className="flex bg-white w-[72px]  h-[72px] md:w-[93.15px] md:h-[93.15px]  mx-auto lg:mx-0 justify-center items-center rounded-[7.59px] mb-[29px]">
+              <div className="flex bg-white w-[72px]  h-[72px] md:w-[93.15px] md:h-[93.15px]  mx-auto lg:mx-0 justify-center items-center rounded-[7.59px] mb-3 md:mb-[29px]">
                 <StrategyIcon />
               </div>
               <H4 heading="Strategy & Digital Marketing" className="!text-white !mb-2 text-center !leading-150 lg:text-start" />

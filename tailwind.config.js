@@ -38,6 +38,8 @@ module.exports = {
         121:"121%"
       },
       fontSize: {
+        "custom-2xl": "28px",
+        "custom-3xl": "32px",
         "custom-4xl": "40px",
         "custom-6xl": "64px",
         "custom-8xl": "88.41px",

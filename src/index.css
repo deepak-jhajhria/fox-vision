@@ -21,6 +21,9 @@
   .custom-checkbox {
     @apply inline-block relative pl-[25px] cursor-pointer text-base select-none
   }
+  .hamburger-react{
+    @apply !w-11 !h-11 -mt-1
+  }
 }
 
 ::-webkit-scrollbar-track {
