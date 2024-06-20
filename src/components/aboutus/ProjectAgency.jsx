@@ -1,7 +1,7 @@
 import { Description, H2, H5 } from "../common/Heading";
 import CommonButton from "../common/CommonButton";
 import cardImage from "../../assets/images/webp/projectAgency.webp";
-import { WhatWeSecLogo, WhatWeSecVector } from "../common/Icons";
+import { ProjectArrow, WhatWeSecLogo, WhatWeSecVector } from "../common/Icons";
 
 const ProjectAgency = () => {
   return (
@@ -26,11 +26,11 @@ const ProjectAgency = () => {
                   
                   As a design agency, we create a contemporary and
                   {
-                    <span className="text-skyBlue">distinctive appearance</span>
+                    <span className="text-turquoise"> distinctive appearance </span>
                   }
                   for you. Style is more in demand than ever. We help you show
                   your best side to your customers. you
-                  {<span className="text-skyBlue">Strong branding sets</span>}
+                  {<span className="text-turquoise"> Strong branding sets </span>}
                   apart from your competition and creates trust and seriousness.
                 </>
               }
@@ -45,7 +45,7 @@ const ProjectAgency = () => {
           </div>
         </div>
         <span className="absolute max-sm:hidden top-[49%] md:-top-9 lg:top-0 xl:top-[70px] -left-10 md:left-[42%]">
-          <WhatWeSecVector />
+          <ProjectArrow />
         </span>
       </div>
     </section>

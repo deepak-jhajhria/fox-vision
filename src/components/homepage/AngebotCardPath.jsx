@@ -8,7 +8,7 @@ const AngebotCardPath = (props) => {
     >
       <div>
         <div
-          className={`sm:mb-[27px] mb-5 sm:w-[85.27px] sm:h-[85.27px] w-[65px] h-[65px] rounded-[6.94px] shadow-[0px_10px_20px_0px_#4B17E62B] flex justify-center items-center ${
+          className={`sm:mb-[27px] mb-5 md:w-[75px] lg::w-[85.27px] md:h-[75px] lg::h-[85.27px] w-[65px] h-[65px] rounded-[6.94px] shadow-[0px_10px_20px_0px_#4B17E62B] flex justify-center items-center ${
             props.cardBox
               ? "shadow-[0px_11.57px_23.15px_0px_#05D5FB29] bg-bubbles"
               : " bg-blueChalk"
