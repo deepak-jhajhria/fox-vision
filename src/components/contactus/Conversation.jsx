@@ -243,7 +243,7 @@ const Conversation = () => {
                   </p>
                 )}
               </div>
-              <div className="flex items-center w-full mt-[15px] my-[18px]">
+              <div className="flex items-center w-full mt-[15px] mb-[17px]">
                 <CustomCheckbox
                   checked={formData.box}
                   onChange={handleCheckboxChange}
