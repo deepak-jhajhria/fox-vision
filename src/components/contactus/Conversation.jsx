@@ -213,7 +213,7 @@ const Conversation = () => {
                   required
                   className="text-sm md:text-base !text-black placeholder:text-black placeholder:!text-opacity-50 !text-opacity-50 h-[45px] md:h-[55px] font-poppins font-normal p-3 sm:p-[15px] !outline-0 w-full border-solid border border-lightBlue shadow-[0px_0px_5px_-2px_#4B17E666]"
                   type="text"
-                  placeholder="Your Email"
+                  placeholder="Email"
                   id="email"
                   name="email"
                   value={formData.email}
@@ -230,7 +230,7 @@ const Conversation = () => {
                 <textarea
                   required
                   className="resize-none text-sm md:text-base !text-black h-[110px] placeholder:text-black lg:h-[159px] placeholder:!text-opacity-50 !text-opacity-50 font-poppins font-normal p-3 sm:p-[15px] outline-none w-full border-solid border border-lightBlue shadow-[0px_0px_5px_-2px_#4B17E666]"
-                  placeholder="Your Message"
+                  placeholder="Tell us more about your projects"
                   id="message"
                   name="message"
                   value={formData.message}

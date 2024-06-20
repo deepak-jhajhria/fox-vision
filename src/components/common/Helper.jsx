@@ -68,7 +68,7 @@ export const footerLinkList = [
         links: [
             { link: 'Imprint', path: '#imprint' },
             { link: 'Data protection', path: '#data', },
-            { link: 'Copyright', path: '#copyright' },
+            { link: 'Copyright', path: '#' },
         ],
     }
 ]
