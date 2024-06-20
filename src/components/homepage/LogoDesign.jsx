@@ -10,7 +10,7 @@ import { DesignIcon, StrategyIcon } from '../common/Icons'
 
 const LogoDesign = () => {
   return (
-    <div className=' bg-blue py-12 sm:py-16 md:py-20 lg:pt-[193px] lg:pb-[60px] px-6'>
+    <div className=' bg-blue pb-12 pt-28 md:pt-36 sm:pb-16 md:py-20 lg:pt-[193px] lg:pb-[60px] px-6'>
       <div className="container max-w-[1140px]">
         <div className="flex flex-col-reverse flex-wrap mb-10 -mx-3 sm:mb-16 md:mb-24 lg:flex-row">
           <div className="w-full px-3 lg:w-1/2">
@@ -22,7 +22,7 @@ const LogoDesign = () => {
           </div>
           <div className="flex gap-[22.88px] justify-center lg:justify-normal mb-10 lg:mb-0  w-full px-3 lg:w-1/2 relative z-[1]">
           <img src={designWhiteEllipse} alt="ellipse1" className=' absolute max-[500px]:hidden z-[-1] max-w-[414.46px] w-full bottom-[6%] right-[4%] sm:right-[7%] min-[900px]:right-[16%] lg:right-[2%]' />
-          <img src={designBoy1} alt="boy1" className='absolute lg:-top-[25.5%] -top-[10%] right-[0%] lg:left-[36%] lg:max-w-[194.67px] md:max-w-[170px] sm:max-w-[150px] max-w-[120px] z-[1]' />
+          <img src={designBoy1} alt="boy1" className='absolute lg:-top-[25.5%] -top-[18%] right-[18%] md:right-[32%] md:top-[-22%] sm:right-[29%] sm:top-[-13%] lg:left-[36%] lg:max-w-[194.67px] md:max-w-[170px] sm:max-w-[150px] max-w-[120px] z-[1]' />
           <div className='flex flex-col max-[500px]:items-center gap-5 min-[500px]:gap-[26.5px]'>
 <img src={designCard1} alt="designcard1" className='max-w-[203.39px] border border-solid border-transparent hover:border-blue duration-300 w-full rounded-[12.52px] hover:scale-105 shadow-designCard
 ' />
