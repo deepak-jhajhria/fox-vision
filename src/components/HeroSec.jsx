@@ -10,7 +10,7 @@ const HeroSec = () => {
     <div className="px-6 bg-blue">
       <NavBar />
       <div className="max-w-[1140px] container">
-        <div className={`${location.pathname === '/' ? "pt-11 min-h-[610px]" : "pt-10 pb-14 sm:pt-12 sm:pb-16 lg:pt-[56px] lg:pb-[100px]"}`}>
+        <div className={`${location.pathname === '/' ? "pt-11" : "pt-10 pb-14 sm:pt-12 sm:pb-16 lg:pt-[56px] lg:pb-[100px]"}`}>
           {location.pathname === '/' && <H1 boldHeadingBefore="FOX" heading={<>Vision <br /> Ihre Design Agentur!</>} className="max-w-[948px] text-center mx-auto" />}
           {location.pathname === '/about-us' && <H1 boldHeadingBefore="About" heading='Us' className="max-w-[948px] text-center mx-auto" />}
           {location.pathname === '/contact-us' && <H1 heading='Contact' boldHeadingAfter="Us" className="max-w-[948px] text-center mx-auto" />}
