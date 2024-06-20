@@ -14,7 +14,7 @@ const MoreWays = () => {
             contactCardData.map((item, i) => (
               <div key={i} className={`lg:w-1/3 sm:w-1/2 w-full px-3 max-sm:flex justify-center mb-6 lg:mb-0 ${i === 2 ? "!mb-0" : ""}`}>
                 <a href={item.link} target='blank' rel='norefferer noopener' className='justify-center w-full max-sm:flex'>
-                  <ContactCard index={i} icons={item.icons} title={item.title} value={item.value} class={`${i === 2 ? "!py-7 !mb-0" : "py-10"
+                  <ContactCard index={i} icons={item.icons} title={item.title} value={item.value} class={`${i === 2 ? "!py-5 md:!py-7 !mb-0" : "md:py-10 py-6"
                     }`} />
                 </a>
               </div>
