@@ -26,7 +26,7 @@ const NavBar = () => {
         <div className="container px-6 md:px-8 lg:px-[50px] bg-white max-w-[1240px] py-2 lg:py-[11px] rounded-full">
           <div className="flex items-center justify-between w-full gap-10">
             <Link rel="noopener noreferrer" to="/"><NavLogo /></Link>
-            <div className={` ${isOpen ? "right-0" : "-right-full"} flex items-center xl:gap-[153px] lg:gap-12 max-lg:gap-8 max-lg:fixed max-lg:top-0 max-lg:bg-white md:bg-full bg-cover max-lg:h-full max-lg:w-full max-lg:z-30 max-lg:duration-300 max-lg:flex-col justify-center`}>
+            <div className={` ${isOpen ? "right-0" : "-right-full"} flex items-center xl:gap-[153px] lg:gap-12 max-lg:gap-4 max-lg:fixed max-lg:top-0 max-lg:bg-white md:bg-full bg-cover max-lg:h-full max-lg:w-full max-lg:z-30 max-lg:duration-300 max-lg:flex-col justify-center`}>
               <ul className={`flex max-lg:flex-col xl:gap-10 md:gap-7 gap-5 items-center justify-center`}>
                 {navLinkList.map((item, index) => (
                   <li key={index}>
@@ -35,8 +35,10 @@ const NavBar = () => {
                 ))}
               </ul>
               <div className="flex items-center gap-4 max-lg:flex-col">
-                <Link to="tel:+1234567890" rel="noopener noreferrer" className="flex items-center justify-center duration-300 border rounded-full w-9 h-9 border-blackPearl group hover:border-turquoise"><CallIcon /></Link>
-                <Link to="mailto:example@example.com" rel="noopener noreferrer" className="flex items-center justify-center duration-300 border rounded-full w-9 h-9 border-blackPearl group hover:border-turquoise"><MailIcon /></Link>
+                <div className="flex items-center gap-4">
+                  <Link to="tel:+1234567890" rel="noopener noreferrer" className="flex items-center justify-center duration-300 border rounded-full w-9 h-9 border-blackPearl group hover:border-turquoise"><CallIcon /></Link>
+                  <Link to="mailto:example@example.com" rel="noopener noreferrer" className="flex items-center justify-center duration-300 border rounded-full w-9 h-9 border-blackPearl group hover:border-turquoise"><MailIcon /></Link>
+                </div>
                 <CommonButton name="Kontakt" className='py-[11px]' />
               </div>
             </div>
