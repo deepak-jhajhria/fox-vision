@@ -9,7 +9,7 @@ const ProjectAgency = () => {
       <div className="container px-0 max-w-[1140px] relative">
         <H5 className="uppercase max-md:text-center" title="FOX VISION" />
         <H2
-          className="md:mt-2 !leading-120 max-md:text-center max-md:mx-auto md:max-w-[440px] lg:max-w-[498px]"
+          className="mt-1 md:mt-2 !leading-120 max-md:text-center max-md:mx-auto md:max-w-[440px] lg:max-w-[498px]"
           heading="Design Project Agency"
         />
         <div className="flex items-center max-md:flex-col max-sm:gap-3 max-lg:gap-5 xl:items-end ">

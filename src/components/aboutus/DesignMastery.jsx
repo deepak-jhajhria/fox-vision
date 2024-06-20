@@ -10,7 +10,7 @@ const DesignMastery = () => {
           title="FOX VISION - Friendly and reliable"
         />
         <H2
-          className="mb-6 text-center mt-2 lg:mt-3 md:mb-10 lg:mb-14 text-blackPearl"
+          className="mb-6 text-center mt-1 sm:mt-2 lg:mt-3 md:mb-10 lg:mb-14 text-blackPearl"
           heading="Design Mastery in Our Genes"
         />
         <div className="flex flex-col md:flex-row gap-5 justify-between items-center bg-transparent overflow-hidden shadow-[0px_-51px_68px_-51px_#00000012] p-5 md:p-6 lg:p-[35px]">
