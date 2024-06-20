@@ -11,7 +11,7 @@ import ScrollToTop from "./components/common/ScrollToTop";
 
 function App() {
   return (
-    <div className="mx-auto">
+    <main className="mx-auto">
       <HeroSec />
       <Routes>
         <Route path="/" element={<Homepage />} />
@@ -22,7 +22,7 @@ function App() {
       </Routes>
       <Footer />
       <ScrollToTop />
-    </div>
+    </main>
   );
 }
 
