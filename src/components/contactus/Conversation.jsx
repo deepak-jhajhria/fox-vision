@@ -114,7 +114,7 @@ const Conversation = () => {
     <div className="pt-12 md:pt-14 lg:pt-[126px]">
       <div className="container xl:max-w-[1164px] px-3 mx-auto">
         <div className="flex flex-row flex-wrap justify-between">
-          <div className="w-full px-3 md:w-[46%]">
+          <div className="w-full px-3 md:w-[42%]">
             <H5
               className="mb-2 lg:mb-3 max-md:text-center"
               title="Contact With FoxVision"
@@ -129,8 +129,8 @@ const Conversation = () => {
               alt="conversation_Image"
             />
           </div>
-          <div className="w-full px-3 lg:pt-11 md:w-[53%]">
-            <form className="lg:mt-[10px]" onSubmit={handleSubmit}>
+          <div className="w-full px-3 lg:pt-11 md:w-[55%]">
+            <form className="lg:mt-3" onSubmit={handleSubmit}>
               <div className="flex flex-col sm:flex-row sm:gap-4">
                 <div className="lg:max-w-[297px] w-full mb-3">
                   <input
@@ -243,7 +243,7 @@ const Conversation = () => {
                   </p>
                 )}
               </div>
-              <div className="flex items-center w-full gap-3 mt-4 mb-6">
+              <div className="flex items-center w-full mt-[15px] mb-[17px]">
                 <CustomCheckbox
                   checked={formData.box}
                   onChange={handleCheckboxChange}
