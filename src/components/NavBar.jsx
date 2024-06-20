@@ -6,9 +6,9 @@ import { navLinkList } from "./common/Helper";
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const handleOpen = () => {
-    setIsOpen(!isOpen);
-  }
+  // const handleOpen = () => {
+  //   setIsOpen(!isOpen);
+  // }
   useEffect(() => {
     if (isOpen === true) {
       document.body.classList.add("max-lg:overflow-hidden")
@@ -26,7 +26,7 @@ const NavBar = () => {
             <ul className={`flex max-lg:flex-col xl:gap-10 md:gap-7 gap-5 items-center justify-center`}>
               {navLinkList.map((item, index) => (
                 <li key={index}>
-                  <NavLink rel="noopener noreferrer" className={({ isActive }) => `font-normal font-poppins text-blackPearl text-base relative after:absolute after:bg-blue after:h-[3px] after:w-0 after:rounded-full after:-bottom-1 after:left-1/2 after:-translate-x-1/2 duration-300 after:duration-300 ${isActive && "after:!w-[26px] navLinkStroke"}`} to={item.src} onClick={handleOpen()}>{item.title}</NavLink>
+                  <NavLink rel="noopener noreferrer" className={({ isActive }) => `font-normal font-poppins text-blackPearl text-base relative after:absolute after:bg-blue after:h-[3px] after:w-0 after:rounded-full after:-bottom-1 after:left-1/2 after:-translate-x-1/2 duration-300 after:duration-300 ${isActive && "after:!w-[26px] navLinkStroke"}`} to={item.src} >{item.title}</NavLink>
                 </li>
               ))}
             </ul>
