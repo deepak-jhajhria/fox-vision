@@ -51,6 +51,6 @@ const LogoDesign = () => {
       </div>
     </div>
   )
-}
+}  
 
 export default LogoDesign
