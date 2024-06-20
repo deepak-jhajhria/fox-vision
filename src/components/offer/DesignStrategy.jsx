@@ -9,7 +9,7 @@ const DesignStrategy = () => {
       <div className="container max-w-[1140px]">
         <div className="gap-6 xl:flex ">
           <div className="flex flex-col items-center mb-5 xl:mb-0">
-            <H2 heading="UI/UX Design Strategy" className="!leading-121 max-w-[459px] text-center xl:text-start mb-3 md:mb-5" />
+            <H2 heading="UI/UX Design Strategy" className="!leading-121 xl:max-w-[459px] text-center xl:text-start mb-3 md:mb-5" />
             <p className="md:text-xl text-base font-poppins leading-183 font-normal text-blackPearl text-center xl:text-start text-opacity-70 mb-3 md:mb-[45px] max-w-[484px]">Our design process is a
               <span className="text-turquoise text-opacity-70"> well-thought-out journey </span>that combines innovation, strategy, and collaboration to produce outstanding results.</p>
             <img src={uiuxImg} alt="uiuxImg" className="max-w-[451px] w-full max-h-[358px]" />
