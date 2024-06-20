@@ -4,7 +4,7 @@ import { portCardData } from '../common/Helper'
 
 const PortfolioCards = () => {
     return (
-        <div className='lg:pt-[123px] md:pt-20 sm:pt-16 pt-10 pb-[185px] md:pb-[227px] xl:pb-[293px] px-6'>
+        <div className='xl:pt-[123px] lg:pt-24 md:pt-16 sm:pt-12 pt-10 pb-[185px] md:pb-[227px] xl:pb-[293px] sm:px-6 px-3'>
             <div className='container max-w-[1140px]'>
                 <div className='flex flex-row flex-wrap -mx-3 mb-4 md:mb-[26px] justify-center  lg:justify-normal'>
                     {portCardData.map((item, i) => (
