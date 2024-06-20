@@ -61,13 +61,6 @@ input::-webkit-inner-spin-button {
   left: 0;
   height: 20px;
   width: 20px;
-  background-color: #fff;
-  border: 2px solid #b3b3b3 !important;
-}
-
-.custom-checkbox input:checked ~ .checkmark {
-  background-color: #fff;
-  border: 2px solid #b3b3b3 !important;
 }
 
 .custom-checkbox .checkmark:after {
