@@ -14,7 +14,7 @@ const Footer = () => {
                 <img src={footerLeftEllipse} alt="ellipse1" className='absolute left-0 top-0 z-[-1] pointer-events-none' />
                 <img src={footerRightEllipse} alt="ellipse2" className='absolute right-0 bottom-0 z-[-1] pointer-events-none' />
                 <div className={`container max-w-[1140px] pt-32 sm:pt-36 md:pt-40 xl:pt-56 relative z-10 ${pathName === '/contact-us' && "!pt-20"}`}>
-                    <div className="flex flex-row flex-wrap pb-8 sm:mb-10 md:mb-12 lg:mb-16 xl:mb-24">
+                    <div className="flex flex-row flex-wrap sm:mb-10 md:mb-12 lg:mb-16 xl:mb-24">
                         <div className="w-full mb-6 sm:px-3 sm:mb-10 lg:w-5/12 lg:mb-0">
                             <div className='flex justify-center lg:block'><img src={footerLogo} alt="logo" className='mb-4' /></div>
                             <p className=' font-poppins text-base text-white text-opacity-70 max-w-[311px] mb-6 sm:mb-[30px] text-center lg:text-start mx-auto lg:mx-0'>Libero morbi pharetra sollicitudin enim praesent nulla velit sitonec leodui.</p>
