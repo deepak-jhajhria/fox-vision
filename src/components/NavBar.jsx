@@ -22,7 +22,7 @@ const NavBar = () => {
 
   return (
     <nav>
-      <div className="py-3  sm:py-5">
+      <div className="py-3 sm:py-5">
         <div className="container px-6 md:px-8 lg:px-[50px] bg-white max-w-[1240px] py-2 lg:py-[11px] rounded-full">
           <div className="flex items-center justify-between w-full gap-10">
             <Link rel="noopener noreferrer" to="/"><NavLogo /></Link>
@@ -30,7 +30,7 @@ const NavBar = () => {
               <ul className={`flex max-lg:flex-col xl:gap-10 md:gap-7 gap-5 items-center justify-center`}>
                 {navLinkList.map((item, index) => (
                   <li key={index}>
-                    <NavLink rel="noopener noreferrer" className={({ isActive }) => `font-normal font-poppins text-blackPearl text-base relative after:absolute after:bg-blue after:h-[3px] after:w-0 after:rounded-full after:-bottom-1 after:left-1/2 after:-translate-x-1/2 duration-300 after:duration-300 ${isActive && "after:!w-[26px] navLinkStroke"}`} to={item.src} onClick={() => handleOpen()}>{item.title}</NavLink>
+                    <NavLink rel="noopener noreferrer" className={({ isActive }) => `font-normal font-poppins text-blackPearl text-base relative after:absolute after:bg-blue after:h-[3px] after:w-0 after:rounded-full after:-bottom-1 after:left-1/2 after:-translate-x-1/2 duration-300 after:duration-300 ${isActive && "after:!w-[26px] navLinkStroke"} hover:after:!w-[26px] navLinkStrokeOnHover`} to={item.src} onClick={() => handleOpen()}>{item.title}</NavLink>
                   </li>
                 ))}
               </ul>

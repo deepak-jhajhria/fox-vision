@@ -7,6 +7,10 @@
 .navLinkStroke {
   stroke: 0.5px #071838;
   -webkit-text-stroke: 0.5px #071838;
+  transition: -webkit-text-stroke 5s;
+}
+.navLinkStrokeOnHover:hover {
+  -webkit-text-stroke: 0.5px #071838;
 }
 
 @layer components {
