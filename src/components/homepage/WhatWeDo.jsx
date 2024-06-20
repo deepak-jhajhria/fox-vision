@@ -10,7 +10,7 @@ import vectortop from "../../assets/images/webp/what-we/vector-top.webp";
 
 const WhatWeDo = () => {
   return (
-    <section className="py-10 sm:py-12 md:py-16 xl:py-24 lg:pt-[239px] lg:pb-[258px] px-3 sm:px-6 overflow-hidden">
+    <div className="py-10 sm:py-12 md:py-16 xl:py-24 lg:pt-[239px] lg:pb-[258px] px-3 sm:px-6 overflow-hidden">
       <div className="container max-w-[1140px] relative py-1">
         <H5 className="uppercase !leading-150 lg:text-start text-center" title="A RESULTS-DRIVEN AGENCY" />
         <H2 className="mt-1 text-center md:mt-3 lg:text-start" heading="What we do" />
@@ -67,7 +67,7 @@ const WhatWeDo = () => {
         <span className="absolute right-0 max-lg:hidden top-5 lg:top-10"><WhatWeSecLogo /></span>
         <span className="absolute left-0 max-lg:hidden -bottom-[12%] z-10"><WhatWeSecLogo /></span>
       </div>
-    </section>
+    </div>
   );
 };
 
