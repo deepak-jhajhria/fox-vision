@@ -6,6 +6,9 @@ import { navLinkList } from "./common/Helper";
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const handleOpen = () => {
+    setIsOpen(!isOpen);
+  }
   useEffect(() => {
     if (isOpen === true) {
       document.body.classList.add("max-lg:overflow-hidden")
@@ -23,13 +26,13 @@ const NavBar = () => {
             <ul className={`flex max-lg:flex-col xl:gap-10 md:gap-7 gap-5 items-center justify-center`}>
               {navLinkList.map((item, index) => (
                 <li key={index}>
-                  <NavLink rel="noopener noreferrer" className={({ isActive }) => `font-normal font-poppins text-blackPearl text-base relative after:absolute after:bg-blue after:h-[3px] after:w-0 after:rounded-full after:-bottom-1 after:left-1/2 after:-translate-x-1/2 duration-300 after:duration-300 ${isActive && "after:!w-[26px] navLinkStroke"}`} to={item.src} onClick={() => setIsOpen(!isOpen)}>{item.title}</NavLink>
+                  <NavLink rel="noopener noreferrer" className={({ isActive }) => `font-normal font-poppins text-blackPearl text-base relative after:absolute after:bg-blue after:h-[3px] after:w-0 after:rounded-full after:-bottom-1 after:left-1/2 after:-translate-x-1/2 duration-300 after:duration-300 ${isActive && "after:!w-[26px] navLinkStroke"}`} to={item.src} onClick={handleOpen()}>{item.title}</NavLink>
                 </li>
               ))}
             </ul>
             <div className="flex items-center gap-4 max-lg:flex-col">
-              <Link to="tel:+1234567890" rel="noopener noreferrer"  className="flex items-center justify-center duration-300 border rounded-full w-9 h-9 border-blackPearl group hover:border-turquoise"><CallIcon /></Link>
-              <Link to="mailto:example@example.com" rel="noopener noreferrer"  className="flex items-center justify-center duration-300 border rounded-full w-9 h-9 border-blackPearl group hover:border-turquoise"><MailIcon /></Link>
+              <Link to="tel:+1234567890" rel="noopener noreferrer" className="flex items-center justify-center duration-300 border rounded-full w-9 h-9 border-blackPearl group hover:border-turquoise"><CallIcon /></Link>
+              <Link to="mailto:example@example.com" rel="noopener noreferrer" className="flex items-center justify-center duration-300 border rounded-full w-9 h-9 border-blackPearl group hover:border-turquoise"><MailIcon /></Link>
               <CommonButton name="Kontakt" className='py-[11px]' />
             </div>
           </div>
