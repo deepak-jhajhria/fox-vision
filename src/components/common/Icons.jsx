@@ -573,7 +573,7 @@ export const Arrow = () => {
 };
 export const AppIcon = () => {
     return (
-        <svg className='max-md:w-[40px] max-md:h-[40px]'
+        <svg className='max-lg:w-[40px] max-lg:h-[40px]'
             width="55"
             height="56"
             viewBox="0 0 55 56"
@@ -610,7 +610,7 @@ export const AppIcon = () => {
 export const SoftwareIcon = () => {
     return (
         <svg
-            className="max-md:w-[37px] max-md:h-[36px]"
+            className="max-lg:w-[37px] max-lg:h-[36px]"
             width="47"
             height="46"
             viewBox="0 0 47 46"
@@ -651,7 +651,7 @@ export const SoftwareIcon = () => {
 export const TeachIcon = () => {
     return (
         <svg
-            className="max-md:w-[40px] max-md:h-[32px]"
+            className="max-lg:w-[40px] max-lg:h-[32px]"
             width="51"
             height="43"
             viewBox="0 0 51 43"
