@@ -25,7 +25,7 @@ const Customer = () => {
           <div className="w-full px-3 md:w-1/2">
             <div className="relative">
               <img
-                className="mx-auto md:mx-0 md:!max-w-[556px] pointer-events-none md:!max-h-[371px] w-[70%] md:w-full"
+                className="mx-auto md:mx-0 md:!max-w-[556px] pointer-events-none md:!max-h-[371px] w-[90%] sm:w-[70%] md:w-full"
                 src={pcmember}
                 alt="Pc_persons"
               />

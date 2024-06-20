@@ -7,14 +7,11 @@ const PortfolioCards = () => {
         <div className='lg:pt-[123px] md:pt-20 sm:pt-16 pt-10 pb-[185px] md:pb-[227px] xl:pb-[293px] px-6'>
             <div className='container max-w-[1140px]'>
                 <div className='flex flex-row flex-wrap -mx-3 mb-[26px] justify-center  lg:justify-normal'>
-                    {
-                portCardData.map((item, i) => (
-                            <div className={`lg:w-1/3 md:w-1/2 w-full px-3 flex justify-center ${1 <= 9 ? "mb-6":"mb-0"
-                                }`}>
-                                <PortfolioCardLayout index={i} img={item.img} head={item.head} discription={item.discription} />
-                            </div>
-                        ))
-                    }
+                    {portCardData.map((item, i) => (
+                        <div className={`lg:w-1/3 md:w-1/2 w-full px-3 flex justify-center ${1 <= 9 ? "mb-6" : "mb-0"}`}>
+                            <PortfolioCardLayout index={i} img={item.img} head={item.head} discription={item.discription} />
+                        </div>
+                    ))}
                 </div>
                 <div className='flex justify-center'>
                     <CommonButton name="See More" />

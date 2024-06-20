@@ -1,4 +1,5 @@
 import { H5 } from '../common/Heading'
+
 export const StrategyCard = (props) => {
   return (
     <div className={`${props.class} max-w-[609px] lg:max-h-[150px] min-[450px]:flex gap-[83px] items-center sm:items-end w-full shadow-contactCard z-[1] after:z-[-1] px-3 py-5 sm:p-[27px_15px_26px_14px] after:h-[166px] after:w-[134px] after:hidden min-[450px]:after:block relative after:absolute after:left-[-23px] after:top-0 after:content-[url(./assets/images/svg/strategyCardTag.svg)] mb-6 min-[450px]:mb-[50px]`}>

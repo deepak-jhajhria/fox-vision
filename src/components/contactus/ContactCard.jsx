@@ -1,4 +1,3 @@
-import React from "react";
 import { H4 } from "../common/Heading";
 
 export const ContactCard = (props) => {
@@ -9,7 +8,7 @@ export const ContactCard = (props) => {
           {props.icons}
         </div>
       </div>
-      <H4 heading={props.title} className="!leading-150 text-center mb-[15px]"/>
+      <H4 heading={props.title} className="!leading-150 text-center mb-[15px]" />
       <p className={`font-poppins text-black text-sm lg:text-base font-normal text-center max-w-[304px] mx-auto`}>
         {props.value}
       </p>

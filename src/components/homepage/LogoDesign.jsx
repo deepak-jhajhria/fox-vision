@@ -47,7 +47,6 @@ const LogoDesign = () => {
               <Description description="Strategy in digital marketing is the foundation upon which successful online campaigns are built. It involves setting clear objectives, identifying target audiences." className="!text-white text-center !leading-150 lg:text-start mx-auto lg:mx-0 max-w-[445px]" />
             </div>
           </div>
-
         </div>
       </div>
     </div>
