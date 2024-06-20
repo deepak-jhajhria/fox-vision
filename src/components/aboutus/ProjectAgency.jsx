@@ -1,7 +1,7 @@
 import { Description, H2, H5 } from "../common/Heading";
 import CommonButton from "../common/CommonButton";
 import cardImage from "../../assets/images/webp/projectAgency.webp";
-import { ProjectArrow, WhatWeSecLogo, WhatWeSecVector } from "../common/Icons";
+import { ProjectArrow, WhatWeSecLogo } from "../common/Icons";
 
 const ProjectAgency = () => {
   return (
