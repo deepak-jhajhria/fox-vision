@@ -6,9 +6,9 @@ export const RightIcon = () => {
         </svg>
     )
 }
-export const NavLogo = () => {
+export const NavLogo = ({ className }) => {
     return (
-        <svg className="w-28 h-7 sm:w-32 md:w-36 lg:w-[208px]" height="29" viewBox="0 0 208 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg className={`w-28 h-7 sm:w-32 md:w-36 lg:w-[208px] ${className}`} viewBox="0 0 208 29" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clipPath="url(#clip0_1_390)">
                 <path d="M19.7477 14.8189L14.3015 10.7602L11.5651 8.71754L0.109375 0.16748V18.8703L1.70964 20.1515L11.6618 28.0827L23.0232 18.8606V17.2604L19.7477 14.8189ZM3.38243 6.69425L8.82865 10.7602L7.25014 11.9326L5.26552 13.4144L3.38243 14.8189V6.69425ZM11.6448 23.8814L4.42429 18.1258L5.98588 16.963L9.99138 13.9752L11.5651 12.8028L18.7227 18.1354L11.6448 23.8814ZM13.1412 7.54031L15.8776 9.59503L19.7477 6.69425V12.4692L23.0232 14.9131V0.16748L13.1412 7.54031Z" fill="url(#paint0_linear_1_390)" />
                 <path d="M47.02 5.57031V8.29222H33.8166V13.5088H45.8766V16.2307H33.8166V23.1757H30.8916V5.57031H47.02Z" fill="black" />
