@@ -2,7 +2,6 @@ import { AppIcon, Beschriftungen, Design, Druck, EmailIcon, Identity, Marketing,
 import portCard1 from '../../assets/images/webp/portfolio/portCard1.webp'
 import portCard2 from '../../assets/images/webp/portfolio/portCard2.webp'
 import portCard3 from '../../assets/images/webp/portfolio/portCard3.webp'
-import portCard4 from '../../assets/images/webp/portfolio/portCard4.webp'
 import portCard5 from '../../assets/images/webp/portfolio/portCard5.webp'
 import portCard6 from '../../assets/images/webp/portfolio/portCard6.webp'
 import portCard7 from '../../assets/images/webp/portfolio/portCard7.webp'
@@ -106,7 +105,7 @@ export const portCardData = [
         discription: "Geschäftsführer"
     },
     {
-        img: portCard4,
+        img: portCard3,
         head: 'Mhill Paloka',
         discription: 'Leiter Administration',
     },
@@ -127,7 +126,7 @@ export const portCardData = [
     },
     {
         img: portCard8,
-        head: 'Lorem sit amet consectetur.',
+        head: 'Nunc tellus sed auctor nulla',
         discription: 'dolor sit amet consectetur.',
     },
     {
