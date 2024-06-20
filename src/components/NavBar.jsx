@@ -15,7 +15,7 @@ const NavBar = () => {
   }, [isOpen])
 
   return (
-    <nav className="py-5">
+    <nav className="py-3 sm:py-5">
       <div className="container px-6 md:px-8 lg:px-[50px] bg-white max-w-[1240px] py-[9px] lg:py-[11px] rounded-full">
         <div className="flex items-center justify-between w-full gap-10">
           <Link rel="noopener noreferrer" to="/"><NavLogo /></Link>
@@ -28,8 +28,8 @@ const NavBar = () => {
               ))}
             </ul>
             <div className="flex items-center gap-4 max-lg:flex-col">
-              <Link className="flex items-center justify-center border rounded-full w-9 h-9 border-blackPearl"><CallIcon /></Link>
-              <Link className="flex items-center justify-center border rounded-full w-9 h-9 border-blackPearl"><MailIcon /></Link>
+              <Link to="tel:+1234567890" rel="noopener noreferrer"  className="flex items-center justify-center duration-300 border rounded-full w-9 h-9 border-blackPearl group hover:border-turquoise"><CallIcon /></Link>
+              <Link to="mailto:example@example.com" rel="noopener noreferrer"  className="flex items-center justify-center duration-300 border rounded-full w-9 h-9 border-blackPearl group hover:border-turquoise"><MailIcon /></Link>
               <CommonButton name="Kontakt" className='py-[11px]' />
             </div>
           </div>

@@ -1,9 +1,9 @@
 import { useState } from "react";
 import conversation from "../../assets/images/webp/conversation.webp";
-import Button from "../common/Button";
 import { H2, H5 } from "../common/Heading";
 import Swal from "sweetalert2";
 import CustomCheckbox from "../../components/contactus/Checkboxlayout";
+import CommonButton from "../common/CommonButton";
 
 const Conversation = () => {
   const [formData, setFormData] = useState({
@@ -113,10 +113,10 @@ const Conversation = () => {
   return (
     <div className="pt-12 md:pt-14 lg:pt-[126px]">
       <div className="container xl:max-w-[1164px] px-3 mx-auto">
-        <div className="flex flex-wrap flex-row justify-between">
+        <div className="flex flex-row flex-wrap justify-between">
           <div className="w-full px-3 md:w-[46%]">
             <H5
-              className="max-md:text-center mb-3"
+              className="mb-3 max-md:text-center"
               title="Contact With FoxVision"
             />
             <H2
@@ -131,7 +131,7 @@ const Conversation = () => {
           </div>
           <div className="w-full px-3 lg:pt-11 md:w-[53%]">
             <form className="lg:mt-[10px]" onSubmit={handleSubmit}>
-              <div className="flex sm:flex-row flex-col sm:gap-4">
+              <div className="flex flex-col sm:flex-row sm:gap-4">
                 <div className="lg:max-w-[297px] w-full mb-3">
                   <input
                     required
@@ -145,7 +145,7 @@ const Conversation = () => {
                     autoComplete="off"
                   />
                   {formErrors.name && (
-                    <p className="error-message font-plusJkarta text-red-500">
+                    <p className="text-red-500 error-message font-plusJkarta">
                       {formErrors.name}
                     </p>
                   )}
@@ -163,13 +163,13 @@ const Conversation = () => {
                     autoComplete="off"
                   />
                   {formErrors.lastname && (
-                    <p className="error-message font-plusJkarta text-red-500">
+                    <p className="text-red-500 error-message font-plusJkarta">
                       {formErrors.lastname}
                     </p>
                   )}
                 </div>
               </div>
-              <div className="flex sm:flex-row flex-col sm:gap-4">
+              <div className="flex flex-col sm:flex-row sm:gap-4">
                 <div className="lg:max-w-[297px] w-full mb-3">
                   <input
                     required
@@ -183,7 +183,7 @@ const Conversation = () => {
                     autoComplete="off"
                   />
                   {formErrors.subject && (
-                    <p className="error-message font-plusJkarta text-red-500">
+                    <p className="text-red-500 error-message font-plusJkarta">
                       {formErrors.subject}
                     </p>
                   )}
@@ -202,7 +202,7 @@ const Conversation = () => {
                     maxLength={10}
                   />
                   {formErrors.number && (
-                    <p className="error-message font-plusJkarta text-red-500">
+                    <p className="text-red-500 error-message font-plusJkarta">
                       {formErrors.number}
                     </p>
                   )}
@@ -213,7 +213,7 @@ const Conversation = () => {
                   required
                   className="text-sm md:text-base !text-black placeholder:text-black placeholder:!text-opacity-50 !text-opacity-50 h-[45px] md:h-[55px] font-poppins font-normal p-3 sm:p-[15px] !outline-0 w-full border-solid border border-lightBlue shadow-[0px_0px_5px_-2px_#4B17E666]"
                   type="text"
-                  placeholder="Your Email"
+                  placeholder="Email"
                   id="email"
                   name="email"
                   value={formData.email}
@@ -221,7 +221,7 @@ const Conversation = () => {
                   autoComplete="off"
                 />
                 {formErrors.email && (
-                  <p className="error-message font-plusJkarta text-red-500">
+                  <p className="text-red-500 error-message font-plusJkarta">
                     {formErrors.email}
                   </p>
                 )}
@@ -230,7 +230,7 @@ const Conversation = () => {
                 <textarea
                   required
                   className="resize-none text-sm md:text-base !text-black h-[110px] placeholder:text-black lg:h-[159px] placeholder:!text-opacity-50 !text-opacity-50 font-poppins font-normal p-3 sm:p-[15px] outline-none w-full border-solid border border-lightBlue shadow-[0px_0px_5px_-2px_#4B17E666]"
-                  placeholder="Your Message"
+                  placeholder="Tell us more about your projects"
                   id="message"
                   name="message"
                   value={formData.message}
@@ -238,27 +238,26 @@ const Conversation = () => {
                   autoComplete="off"
                 ></textarea>
                 {formErrors.message && (
-                  <p className="error-message font-plusJkarta text-red-500">
+                  <p className="text-red-500 error-message font-plusJkarta">
                     {formErrors.message}
                   </p>
                 )}
               </div>
-              <div className="w-full mb-6 mt-4 flex items-center gap-3">
+              <div className="flex items-center w-full gap-3 mt-4 mb-6">
                 <CustomCheckbox
                   checked={formData.box}
                   onChange={handleCheckboxChange}
                 />
               </div>
               {formErrors.box && (
-                <p className="error-message font-plusJkarta text-red-500">
+                <p className="text-red-500 error-message font-plusJkarta">
                   {formErrors.box}
                 </p>
               )}
               <div className="max-md:mx-auto max-md:flex max-md:justify-center">
-                <Button
+                <CommonButton
                   className="lg:!px-[91px] lg:w-[302px]"
-                  content="Send Message"
-                  text="Send Message"
+                  name="Send Message"
                 />
               </div>
             </form>
