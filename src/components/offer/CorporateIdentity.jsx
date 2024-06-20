@@ -6,9 +6,9 @@ import { CorporateArrow, CorporateIcon } from "../common/Icons";
 
 const CorporateIdentity = () => {
   return (
-    <div className="px-6 pt-12 xl:pt-32 lg:pt-28 md:pt-16">
+    <div className="px-6 pt-10 xl:pt-32 lg:pt-24 md:pt-16 sm:pt-12">
       <div className="container max-w-[1140px]">
-        <div className="relative flex flex-row flex-wrap items-center mb-12 -mx-3 xl:mb-32 lg:mb-28 md:mb-16">
+        <div className="relative flex flex-row flex-wrap items-center mb-10 -mx-3 xl:mb-32 lg:mb-24 md:mb-16 sm:mb-12">
           <div className="absolute top-[2%] lg:block hidden left-[34%]">
             <CorporateArrow />
           </div>
@@ -61,12 +61,12 @@ const CorporateIdentity = () => {
         <div className="flex flex-row mt-[2px] flex-wrap -mx-3">
           {corporateCardList.map((obj, i) => (
             <div key={i} className="md:w-1/4 sm:w-1/2 w-full px-[11px]">
-              <div className="p-[22px_10px] md:max-w-[268px] rounded-md max-md:mt-4 md:max-h-[262px] shadow-[0px_4px_27px_0px_#4B17E614] bg-white">
+              <div className="p-[22px_10px] md:max-w-[268px] max-sm:max-w-[400px] max-sm:mx-auto group rounded-md max-md:mt-4 md:max-h-[262px] shadow-[0px_4px_27px_0px_#4B17E614] bg-white">
                 <div className="overflow-hidden">
                   <img
                     src={obj.img}
                     alt="wireframe"
-                    className="hover:scale-110 duration-300"
+                    className="group-hover:scale-110 duration-300"
                   />
                 </div>
                 <H5
