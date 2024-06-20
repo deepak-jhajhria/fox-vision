@@ -21,9 +21,9 @@ const WhatWeDo = () => {
             <CommonButton className="mt-6 sm:mt-8 md:mt-10" name="Contact" />
           </div>
         </div>
-        <div className="flex lg:flex-row flex-col-reverse xl:gap-[94px] lg:gap-10 justify-between items-center xl:items-start xl:mt-[185px] mt-10 sm:mt-12 md:mt-16 lg:mt-24 relative">
-          <img className="absolute pointer-events-none lg:max-w-[307px] md:max-w-[280px] max-w-[250px] right-[-10%] sm:bottom-[-7%] bottom-0" src={moon} alt="moon" />
-          <div className="flex flex-col lg:items-start items-center lg:max-w-[512px] relative lg:mt-2 sm:mt-24">
+        <div className="flex lg:flex-row flex-col-reverse xl:gap-[94px] lg:gap-10 justify-between items-center xl:items-start xl:mt-[185px] mt-8 sm:mt-12 md:mt-16 lg:mt-24 relative">
+          <img className="absolute pointer-events-none lg:max-w-[307px] md:max-w-[280px] max-w-[250px] right-[-10%] sm:top-[-7%] top-0" src={moon} alt="moon" />
+          <div className="flex flex-col lg:items-start items-center lg:max-w-[512px] relative lg:mt-2 mt-8 sm:mt-12 md:mt-24">
             <div className="w-[93px] h-[93px] bg-blueChalk flex justify-center items-center rounded-[7.58px] shadow-painIcon">
               <PaintIcon />
             </div>
@@ -39,8 +39,8 @@ const WhatWeDo = () => {
             ))}
           </div>
         </div>
-        <div className="flex lg:flex-row flex-col lg:gap-[59px] justify-between items-center xl:mt-[243px] md:mt-24 sm:mt-20 mt-12 relative">
-          <img className="absolute pointer-events-none lg:max-w-[307px] md:max-w-[280px] max-w-[250px] left-[-9.1%] lg:top-0 bottom-0 " src={skyMoon} alt="moon" />
+        <div className="flex lg:flex-row flex-col lg:gap-[59px] justify-between items-center xl:mt-[243px] lg:mt-24 sm:mt-16 mt-12 relative">
+          <img className="absolute pointer-events-none lg:max-w-[307px] md:max-w-[280px] max-w-[250px] left-[-9.1%] top-0" src={skyMoon} alt="moon" />
           <div className="grid sm:grid-cols-3 grid-cols-1 items-center gap-y-4 sm:gap-x-[22px] sm:gap-y-[25px] lg:mt-0 mt-10 relative">
             <img className="absolute pointer-events-none sm:max-w-[123px] max-w-[100px] w-full lg:left-1/2 sm:-translate-x-1/2 lg:top-[-8%] md:top-[-8%] top-0 md:right-[-5%] right-0 z-10" src={vectorBottom} alt="vector-bottom" />
             {graphicDesignList.map((obj, index) => (
@@ -55,7 +55,7 @@ const WhatWeDo = () => {
               </div>
             ))}
           </div>
-          <div className="flex flex-col lg:items-start items-center lg:max-w-[512px] relative mt-2 sm:mt-3">
+          <div className="flex flex-col lg:items-start items-center lg:max-w-[512px] relative lg:mt-2 mt-8 sm:mt-20">
             <div className="w-[93px] h-[93px] bg-bubbles flex justify-center items-center rounded-[7.58px] shadow-graphicIcon">
               <GraphicIcon />
             </div>
