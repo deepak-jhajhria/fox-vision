@@ -12,7 +12,7 @@ const CheckboxLayout = ({ checked, onChange }) => {
             checked={checked}
             onChange={onChange}
           />
-          <span className="w-[22px] h-[22px] border-[2.5px] border-grey rounded-sm flex-shrink-0 flex justify-center items-center mr-2">
+          <span className="w-[22px] h-[22px] border-[2.5px] border-noble rounded-sm flex-shrink-0 flex justify-center items-center mr-2">
             {checked && <CheckedIcon />}
           </span>
           <span className="text-sm font-normal text-black cursor-pointer select-none font-poppins opacity-70 sm:text-base ">
