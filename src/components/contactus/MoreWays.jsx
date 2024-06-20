@@ -3,9 +3,6 @@ import { ContactCard } from './ContactCard'
 import { H2, H5 } from '../common/Heading'
 import { contactCardData } from '../common/Helper'
 
-
-
-
 const MoreWays = () => {
   return (
     <div className='xl:pt-[118px] py-10 md:py-16 lg:py-24 xl:pb-[165px] px-6'>
