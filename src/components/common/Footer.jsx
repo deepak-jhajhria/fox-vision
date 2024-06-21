@@ -31,7 +31,7 @@ const Footer = () => {
                                             <li className='font-poppins text-base font-semibold text-white mb-3 sm:mb-[14px]'>{item.title}</li>
                                             {item.links.map((data, i) => (
                                                 <li key={i} className='mb-[10px] sm:mb-3'>
-                                                    <Link to={data.path} className={`text-base font-normal text-white font-poppins footerLinkHover text-opacity-70 text-nowrap ${data.link === "Copyright" && '!cursor-auto hover:!text-opacity-70 hover:after:!w-0'}`}>{data.link}</Link>
+                                                    <Link to={data.path} className={`text-base font-normal text-white font-poppins footerLinkHover text-opacity-70 text-nowrap ${data.link === "Copyright"  && '!cursor-auto hover:!text-opacity-70 hover:after:!w-0'}`}>{data.link}</Link>
                                                 </li>
                                             ))}
                                         </ul>

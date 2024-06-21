@@ -11,14 +11,14 @@ import vectortop from "../../assets/images/webp/what-we/vector-top.webp";
 const WhatWeDo = () => {
   return (
     <section>
-      <div className="py-10 sm:py-12 md:py-16 xl:py-24 lg:pt-[239px] lg:pb-[258px] px-3 sm:px-6 overflow-hidden">
+      <div className="py-10 sm:py-12 md:py-16 lg:pt-24 xl:pt-[239px] lg:pb-[258px] px-3 sm:px-6 overflow-hidden">
         <div className="container max-w-[1140px] relative py-1">
           <H5 className="uppercase !leading-150 lg:text-start text-center" title="A RESULTS-DRIVEN AGENCY" />
           <H2 className="mt-1 text-center md:mt-3 lg:text-start" heading="What we do" />
           <div className="flex items-center mt-3 max-lg:flex-col max-sm:gap-3 max-lg:gap-5 xl:items-end lg:mt-10">
-            <img className="w-full max-w-[750px] lg:max-w-[500px] xl:max-w-[590px] lg:h-[378px] h-full mt-2" src={cardImage} alt="cardimage" />
-            <div className="flex flex-col lg:items-start items-center lg:ml-10 lg:max-w-[512px] max-w-[650px]">
-              <Description className="lg:text-start text-center my-0.5" description={<> We define the intangible assets of your brand and subsequently increase{" "} {<span className="text-electricViolet">{" "}trust and loyalty to your brand</span>}. Uniqueness, value proposition, clearly understandablie core messages and an innovative design result in a brand personality that will be. We then transfer this genetic code to the relevant target groups cross-media via relevant channels. And we will reposition you profitably</>} />
+            <img className="w-full max-w-[750px] lg:max-w-[500px] xl:max-w-[590px] lg:h-[378px] h-full mt-2 object-contain" src={cardImage} alt="cardimage" />
+            <div className="flex flex-col lg:items-start items-center lg:ml-[35px] lg:max-w-[512px] max-w-[650px]">
+              <Description className="lg:text-start text-center my-0.5 !text-opacity-70" description={<> We define the intangible assets of your brand and subsequently increase{" "} {<span className="text-electricViolet">{" "}trust and loyalty to your brand</span>}. Uniqueness, value proposition, clearly understandablie core messages and an innovative design result in a brand personality that will be. We then transfer this genetic code to the relevant target groups cross-media via relevant channels. And we will reposition you profitably</>} />
               <CommonButton className="mt-6 sm:mt-8 md:mt-10" name="Contact" />
             </div>
           </div>
@@ -64,7 +64,7 @@ const WhatWeDo = () => {
               <Description className="pt-2 lg:max-w-[420px] max-w-[650px] lg:text-start !leading-150 text-center opacity-70" description="Visual graphic design is the art of using visual elements, such as images, typography, color, and layout, to convey a message, tell a story, or evoke emotions." />
             </div>
           </div>
-          <span className="absolute max-lg:hidden top-0 xl:top-12 left-[39%]"><WhatWeSecVector /></span>
+          <span className="absolute max-xl:hidden top-0 xl:top-12 left-[39%]"><WhatWeSecVector /></span>
           <span className="absolute right-0 max-lg:hidden top-5 lg:top-10"><WhatWeSecLogo /></span>
           <span className="absolute left-0 max-lg:hidden -bottom-[12%] z-10"><WhatWeSecLogo /></span>
         </div>

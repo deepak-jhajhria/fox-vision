@@ -11,7 +11,7 @@ import { DesignIcon, StrategyIcon } from '../common/Icons'
 const LogoDesign = () => {
   return (
     <section>
-      <div className=' bg-blue pt-[90px] md:pt-36 lg:pt-[160px]  xl:pt-[193px] pb-10 sm:12  md:pb-[60px] px-3 sm:px-6'>
+      <div className=' bg-blue pt-[100px] md:pt-[150px] lg:pt-[185px]  xl:pt-[193px] pb-10 sm:pb-12 md:pb-16 lg:pb-24  xl:pb-[60px] px-3 sm:px-6'>
         <div className="container max-w-[1140px]">
           <div className="flex flex-col-reverse flex-wrap mb-10 -mx-3 sm:mb-7 lg:mb-10 xl:mb-24 lg:flex-row">
             <div className="w-full px-3 lg:w-1/2">
@@ -45,7 +45,7 @@ const LogoDesign = () => {
                   <StrategyIcon />
                 </div>
                 <H4 heading="Strategy & Digital Marketing" className="!text-white !mb-2 text-center !leading-150 lg:text-start" />
-                <Description description="Strategy in digital marketing is the foundation upon which successful online campaigns are built. It involves setting clear objectives, identifying target audiences." className="!text-white text-center !leading-150 lg:text-start mx-auto lg:mx-0 max-w-[445px]" />
+                <Description description="Strategy in digital marketing is the foundation upon which successful online campaigns are built. It involves setting clear objectives, identifying target audiences." className="!text-white !text-opacity-70 text-center !leading-150 lg:text-start mx-auto lg:mx-0 max-w-[445px]" />
               </div>
             </div>
           </div>
