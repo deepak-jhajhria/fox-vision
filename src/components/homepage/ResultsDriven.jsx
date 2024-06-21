@@ -3,10 +3,12 @@ import cardImage from "../../assets/images/webp/how-we/workImg.webp";
 import CommonButton from "../common/CommonButton";
 import { ArrowResultDriven } from "../common/Icons";
 
-const ResultsDriven = ({ imgClassName, margin }) => {
+const ResultsDriven = ({ imgClassName, margin, arrowPosition }) => {
   return (
     <div className="relative flex flex-row z-[1] flex-wrap justify-between -mx-3">
-      <div className="absolute xl:top-[14%] lg:top-[20%] z-[-1] lg:block hidden xl:right-[44%] right-[50%]">
+      <div
+        className={`absolute xl:top-[14%] lg:top-[21%] z-[-1] lg:block hidden xl:right-[44%] right-[50%] ${arrowPosition}`}
+      >
         <ArrowResultDriven />
       </div>
       <div className="w-full px-3 lg:w-1/2">
