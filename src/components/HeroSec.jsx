@@ -19,7 +19,7 @@ const HeroSec = () => {
             {location.pathname === '/offer' && <H1 heading='Offer' className="max-w-[948px] text-center mx-auto" />}
           </div>
           {location.pathname === '/' && <Description className='pt-3 sm:pt-5 px-5 lg:pt-9 text-center text-white lg:!text-2xl' description='Kreativagentur für Branding, Social Media & digitale Lösungen.' />}
-          {location.pathname === '/' && <div className="relative pt-1 pb-10 md:pb-[59px]">
+          {location.pathname === '/' && <div className="relative pt-1 pb-10 sm:pb-12 md:pb-16 lg:pb-[59px]">
             <div className="relative flex justify-center mx-auto">
               <div className="absolute right-[69%] top-[5%] max-sm:hidden">
                 <CloudTop />
