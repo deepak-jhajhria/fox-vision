@@ -6,9 +6,9 @@ import Avtar from "../../assets/images/svg/customerAvtar.svg";
 const Customer = () => {
   return (
     <section>
-      <div className="bg-blue pt-10 md:pt-16 lg:pt-24 xl:pt-[77px] md:pb-[190px] pb-40 lg:pb-[240px]">
-        <div className="container max-w-[1140px] px-3 mx-auto">
-          <div className="flex flex-wrap justify-center items-center flex-row -mx-3 pb-2 md:pb-12 lg:pb-[78px]">
+      <div className="bg-blue pt-10 md:pt-16 lg:pt-24 xl:pt-[77px] md:pb-[190px] pb-40 lg:pb-[200px] xl:pb-[240px]">
+        <div className="container max-w-[1140px] px-6 xl:px-3 mx-auto">
+          <div className="flex flex-wrap justify-center items-center flex-row -mx-3 pb-2 md:pb-12 lg:pb-10 xl:pb-[78px]">
             <div className="w-full px-3 md:w-1/2">
               <Description
                 className="!text-white text-center !leading-150 !font-bold md:text-start mb-1 sm:mb-3"

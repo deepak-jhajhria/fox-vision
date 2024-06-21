@@ -17,10 +17,10 @@ const Angebot = () => {
             className="!text-white  text-center mb-2 sm:mb-5 lg:mb-6 xl:mb-[76px]"
             heading="Angebot"
           />
-          <div className="flex flex-row -mx-3 pb-6 md:pb-16 lg:pb-[77px] justify-center flex-wrap ">
+          <div className="flex flex-row -mx-3 pb-6 md:pb-16 lg:pb-[77px] xl:items-center justify-center flex-wrap ">
             {howWeWorkCardlist.map((obj, index) => (
               <div
-                className="lg:w-4/12 md:1/2 pt-4 md:pt-[22px] !px-[11.5px] sm:w-[49%] w-full"
+                className="lg:w-4/12 md:1/2 pt-4 md:pt-4 xl:pt-7 !px-2 sm:w-[49%] w-full flex flex-col items-center justify-center"
                 key={index}
               >
                 <Corporate
