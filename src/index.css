@@ -23,9 +23,6 @@
     @apply text-red-600 text-xs mt-[5px]
   }
 
-  .custom-checkbox {
-    @apply inline-block relative pl-[25px] cursor-pointer text-base select-none
-  }
   .hamburger-react{
     @apply !w-11 !h-11 -mt-1
   }
@@ -50,40 +47,4 @@ input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
-}
-
-.custom-checkbox input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
-}
-
-.custom-checkbox .checkmark {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 20px;
-  width: 20px;
-}
-
-.custom-checkbox .checkmark:after {
-  content: "";
-  position: absolute;
-  display: none;
-}
-
-.custom-checkbox input:checked ~ .checkmark:after {
-  display: block;
-}
-
-.custom-checkbox .checkmark:after {
-  left: 5px;
-  top: 1px;
-  width: 8px;
-  height: 15px;
-  border: solid #b3b3b3 !important;
-  border-width: 0 3px 3px 0;
-  transform: rotate(45deg);
 }

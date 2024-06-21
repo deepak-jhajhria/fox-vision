@@ -26,7 +26,7 @@ const CheckboxLayout = ({ checked, onChange }) => {
             Privacy - Terms
           </p>
         </div>
-      </label>{" "}
+      </label>
     </div>
   );
 };

@@ -40,7 +40,7 @@ const LogoDesign = () => {
               <img src={digitalImg} alt="digitalImg" className='w-full max-w-[495px]' />
             </div>
             <div className="w-full px-3 lg:w-1/2 lg:flex lg:justify-end">
-              <div>
+              <div className='flex flex-col'>
                 <div className="flex bg-white w-[72px]  h-[72px] md:w-[93.15px] md:h-[93.15px]  mx-auto lg:mx-0 justify-center items-center rounded-[7.59px] mb-3 md:mb-[29px]">
                   <StrategyIcon />
                 </div>
