@@ -41,7 +41,7 @@ export const navLinkList = [
     { title: "Home", src: "/" },
     { title: "Über uns", src: "/about-us" },
     { title: "Angebot", src: "/offer" },
-    { title: "Portfolio", src: "/portfolio" },
+    { title: "Portfolio", src: "/portfolios" },
 ];
 
 // footer list

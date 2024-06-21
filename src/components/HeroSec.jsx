@@ -15,7 +15,7 @@ const HeroSec = () => {
             {location.pathname === '/' && <H1 boldHeadingBefore="FOX" heading={<>Vision <br /> Ihre Design Agentur!</>} className="max-w-[948px] text-center mx-auto" />}
             {location.pathname === '/about-us' && <H1 boldHeadingBefore="About" heading='Us' className="max-w-[948px] text-center mx-auto" />}
             {location.pathname === '/contact-us' && <H1 heading='Contact' boldHeadingAfter="Us" className="max-w-[948px] text-center mx-auto" />}
-            {location.pathname === '/portfolio' && <H1 heading='Portfolio' className="max-w-[948px] text-center mx-auto" />}
+            {location.pathname === '/portfolios' && <H1 heading='Portfolio' className="max-w-[948px] text-center mx-auto" />}
             {location.pathname === '/offer' && <H1 heading='Offer' className="max-w-[948px] text-center mx-auto" />}
           </div>
           {location.pathname === '/' && <Description className='pt-3 sm:pt-5 px-5 lg:pt-9 text-center text-white lg:!text-2xl' description='Kreativagentur für Branding, Social Media & digitale Lösungen.' />}
