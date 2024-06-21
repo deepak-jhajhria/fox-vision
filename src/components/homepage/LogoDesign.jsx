@@ -45,7 +45,7 @@ const LogoDesign = () => {
                   <StrategyIcon />
                 </div>
                 <H4 heading="Strategy & Digital Marketing" className="!text-white !mb-2 text-center !leading-150 lg:text-start" />
-                <Description description="Strategy in digital marketing is the foundation upon which successful online campaigns are built. It involves setting clear objectives, identifying target audiences." className="!text-white text-center !leading-150 lg:text-start mx-auto lg:mx-0 max-w-[445px]" />
+                <Description description="Strategy in digital marketing is the foundation upon which successful online campaigns are built. It involves setting clear objectives, identifying target audiences." className="!text-white !text-opacity-70 text-center !leading-150 lg:text-start mx-auto lg:mx-0 max-w-[445px]" />
               </div>
             </div>
           </div>
