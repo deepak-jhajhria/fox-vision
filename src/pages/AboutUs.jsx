@@ -8,7 +8,12 @@ const AboutUs = () => {
     <>
       <ProjectAgency />
       <DesignMastery />
-      <HowWeWork padding="lg:!pt-24 xl:!mt-1 xl:!pb-32 lg:!pb-24 xl:!mb-[2px]" margin="lg:!mb-11" imgClassName="lg:!max-w-[467px] xl:-mt-4 max-md:!max-w-[360px] !mt-0 lg:!max-h-[363px]" />
+      <HowWeWork
+        arrowPosition="max-lg:!top-[2%] !z-[1]"
+        padding="lg:!pt-24 xl:!mt-1 xl:!pb-32 lg:!pb-24 xl:!mb-[2px]"
+        margin="lg:!mb-11"
+        imgClassName="lg:!max-w-[467px] xl:-mt-4 max-md:!max-w-[360px] !mt-0 lg:!max-h-[363px]"
+      />
       <Customer />
     </>
   );
