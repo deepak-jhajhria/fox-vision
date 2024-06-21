@@ -6,7 +6,7 @@ const AngebotCardPath = (props) => {
     <div
       className={`${props.className} p-4 md:p-[26.83px] xl:w-[366px] xl:min-h-[383px] w-full h-full group relative duration-300 bg-white rounded-[6px]`}
     >
-      <div>
+      <div className="">
         <div
           className={`sm:mb-[27px] mb-5 md:w-[75px] lg::w-[85.27px] md:h-[75px] lg::h-[85.27px] w-[65px] h-[65px] rounded-[6.94px] shadow-[0px_10px_20px_0px_#4B17E62B] flex justify-center items-center ${
             props.cardBox
@@ -17,7 +17,7 @@ const AngebotCardPath = (props) => {
           {props.svg}
         </div>
         <H4 heading={props.title} />
-        <p className="pb-6 text-sm font-normal leading-normal text-black text-start md:mt-2 opacity-70 md:pb-11 sm:text-base font-poppins">
+        <p className="pb-6 text-sm font-normal leading-normal text-black text-start md:mt-2 opacity-70 md:pb-11 xl:max-w-[324px] sm:text-base font-poppins">
           {props.description}
         </p>
       </div>
