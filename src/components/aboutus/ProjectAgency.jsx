@@ -1,4 +1,4 @@
-import { Description, H2, H5 } from "../common/Heading";
+import { Description, H5 } from "../common/Heading";
 import CommonButton from "../common/CommonButton";
 import cardImage from "../../assets/images/webp/projectAgency.webp";
 import { ProjectArrow, WhatWeSecLogo } from "../common/Icons";
@@ -9,14 +9,13 @@ const ProjectAgency = () => {
       <div className="py-10 sm:py-12 md:py-16 lg:py-24 xl:pb-0 xl:pt-[126px] px-6 overflow-hidden">
         <div className="container px-0 max-w-[1140px] relative">
           <H5 className="uppercase max-lg:text-center" title="FOX VISION" />
-          <H2
-            className="mt-1 lg:mt-2 !leading-120 max-lg:text-center max-lg:mx-auto md:max-w-[440px] lg:max-w-[498px]"
-            heading="Design Project Agency"
-          />
+
+          <p className="mt-1 lg:mt-2 leading-120 max-lg:text-center max-lg:mx-auto md:max-w-[440px] lg:max-w-[498px] font-montserrat font-semibold text-blackPearl text-custom-2xl sm:text-custom-4xl lg:text-5xl xl:text-custom-6xl ">Design Project Agency</p>
           <div className="flex items-center max-lg:flex-col max-sm:gap-3 max-lg:gap-5 lg:items-end ">
             <img
               className="w-full max-w-[380px] lg:max-w-[500px]  mt-4 sm:mt-0 md:mt-4 lg:mt-[29px] xl:max-w-[590px] lg:h-[328px] h-full"
               src={cardImage}
+              aria-label="cardImage"
               alt="cardimage"
             />
             <div className="flex relative flex-col items-start md:translate-y-[-16%] lg:ml-8 ">

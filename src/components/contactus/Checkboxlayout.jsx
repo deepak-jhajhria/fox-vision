@@ -20,9 +20,9 @@ const CheckboxLayout = ({ checked, onChange }) => {
             I’m not a robot
           </span>
         </div>
-        <div className="flex flex-col !justify-end items-center">
-          <img src={captcha} alt="Captcha_Image" />
-          <p className="text-silver !flex-nowrap font-normal font-poppins leading-[12px] text-[8px]">
+        <div className="flex flex-col justify-end items-center">
+          <img src={captcha} alt="captchaImage" />
+          <p className="text-silver flex-nowrap font-normal font-poppins leading-[12px] text-[8px]">
             Privacy - Terms
           </p>
         </div>

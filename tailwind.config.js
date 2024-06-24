@@ -55,7 +55,10 @@ module.exports = {
         contactbox :"0px 11.57px 27px 0px #4B17E61A",
         contactCard:"0px 4px 27px 0px #4B17E614",
         designCard:"0px 16.7px 41.74px 0px #3B3E430D",
-        
+        designShadow: "0px -51px 68px -51px #00000012",
+        inputShadow: "0px 0px 5px -2px #4B17E666",
+        angebot: "0px 10px 20px 0px #4B17E62B",
+        blueCard: "0px 11.57px 23.15px 0px #05D5FB29",
       },
     },
   },
