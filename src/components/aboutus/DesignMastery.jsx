@@ -14,7 +14,7 @@ const DesignMastery = () => {
             className="mb-6 text-center mt-1 sm:mt-2 lg:mt-3 md:mb-10 lg:mb-14 text-blackPearl"
             heading="Design Mastery in Our Genes"
           />
-          <div className="flex flex-col lg:flex-row gap-5 justify-between items-center bg-transparent overflow-hidden shadow-[0px_-51px_68px_-51px_#00000012] p-5 md:p-6 lg:p-[35px]">
+          <div className="flex flex-col lg:flex-row gap-5 justify-between items-center bg-transparent overflow-hidden shadow-designShadow p-5 md:p-6 lg:p-[35px]">
             <div className="flex flex-col">
               <H4
                 className="text-blackPearl text-center lg:text-start mb-2 lg:mb-[15px]"
