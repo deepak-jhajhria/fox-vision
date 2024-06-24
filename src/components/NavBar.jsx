@@ -19,7 +19,9 @@ const NavBar = () => {
       document.body.classList.remove("overflow-hidden")
     }
   }, [isOpen])
-
+  const handleNavigate = (path) => {
+    window.location.href = path;
+  }
   return (
     <nav>
       <div className="py-3 sm:py-5">
@@ -34,12 +36,14 @@ const NavBar = () => {
                   </li>
                 ))}
               </ul>
-              <div className="flex items-center gap-4 max-lg:flex-col">
+              <div className="flex items-center gap-7 max-lg:flex-col">
                 <div className="flex items-center gap-4">
                   <Link to="tel:+1234567890" rel="noopener noreferrer" className="flex items-center justify-center duration-300 border rounded-full w-9 h-9 border-blackPearl group hover:border-turquoise"><CallIcon /></Link>
                   <Link to="mailto:example@example.com" rel="noopener noreferrer" className="flex items-center justify-center duration-300 border rounded-full w-9 h-9 border-blackPearl group hover:border-turquoise"><MailIcon /></Link>
                 </div>
-                <CommonButton name="Kontakt" className='py-[11px]' />
+                <div onClick={() => handleOpen()}>
+                  <CommonButton onClick={() => handleNavigate('/contact-us')} name="Kontakt" className='py-[11px]' />
+                </div>
               </div>
             </div>
             <div onClick={() => setIsOpen(!isOpen)} className='relative z-50 flex flex-col justify-between cursor-pointer lg:hidden'>
