@@ -6,7 +6,7 @@ const AngebotCardPath = (props) => {
     <div
       className={`${props.className} p-4 md:p-[26.83px] xl:w-[366px] xl:min-h-[383px] w-full h-full group relative duration-300 bg-white rounded-[6px]`}
     >
-      <div className="">
+      <div className="max-sm:px-0">
         <div
           className={`sm:mb-[27px] mb-5 lg:w-[85.27px] lg:h-[85.27px] w-[60px] h-[60px] rounded-[6.94px] shadow-[0px_10px_20px_0px_#4B17E62B] flex justify-center items-center ${
             props.cardBox

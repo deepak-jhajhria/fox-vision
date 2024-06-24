@@ -4,11 +4,11 @@ import Conversation from "../components/contactus/Conversation";
 
 const ContactUs = () => {
   return (
-    <div>
+    <>
       <Conversation />
       <MoreWays />
       <Map />
-    </div>
+    </>
   );
 };
 
