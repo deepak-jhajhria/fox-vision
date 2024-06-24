@@ -59,6 +59,7 @@ module.exports = {
         inputShadow: "0px 0px 5px -2px #4B17E666",
         angebot: "0px 10px 20px 0px #4B17E62B",
         blueCard: "0px 11.57px 23.15px 0px #05D5FB29",
+      
       },
     },
   },
