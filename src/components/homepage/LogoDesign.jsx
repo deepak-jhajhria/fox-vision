@@ -18,8 +18,8 @@ const LogoDesign = () => {
               <div className="flex bg-white w-[72px] h-[72px] md:w-[93.15px] md:h-[93.15px] mx-auto lg:mx-0 justify-center items-center rounded-[7.59px] mb-3 md:mb-[29px]">
                 <DesignIcon />
               </div>
-              <H4 heading="Logo Design" className="!text-white text-center !leading-150 lg:text-start !mb-2" />
-              <Description description="Logo design is a specialized discipline within the realm of graphic design, focused on creating unique and memorable visual symbols that represent a brand, company, or organization." className="!text-white !leading-150 !text-opacity-70 text-center mx-auto lg:mx-0 lg:text-start max-w-[421px]" />
+              <H4 heading="Logo Design" className="text-white text-center !leading-normal lg:text-start mb-2 " />
+              <Description description="Logo design is a specialized discipline within the realm of graphic design, focused on creating unique and memorable visual symbols that represent a brand, company, or organization." className="text-white !leading-150 text-opacity-70 text-center mx-auto lg:mx-0 lg:text-start max-w-[421px]" />
             </div>
             <div className="flex gap-[22.88px] justify-center lg:justify-normal mb-4 sm:mb-10 lg:mb-0 w-full px-3 lg:w-1/2 relative z-[1]">
               <img src={designWhiteEllipse} alt="ellipse1" className='absolute max-[500px]:hidden z-[-1] max-w-[414.46px] w-full bottom-[6%] right-[4%] sm:right-[7%] min-[900px]:right-[16%] lg:right-[2%] pointer-events-none' />
@@ -43,8 +43,8 @@ const LogoDesign = () => {
                 <div className="flex bg-white w-[72px] h-[72px] md:w-[93.15px] md:h-[93.15px] mx-auto lg:mx-0 justify-center items-center rounded-[7.59px] mb-3 md:mb-[29px]">
                   <StrategyIcon />
                 </div>
-                <H4 heading="Strategy & Digital Marketing" className="!text-white !mb-2 text-center !leading-150 lg:text-start" />
-                <Description description="Strategy in digital marketing is the foundation upon which successful online campaigns are built. It involves setting clear objectives, identifying target audiences." className="!text-white !text-opacity-70 text-center !leading-150 lg:text-start mx-auto lg:mx-0 max-w-[445px]" />
+                <H4 heading="Strategy & Digital Marketing" className="text-white !mb-2 text-center !leading-150 lg:text-start" />
+                <Description description="Strategy in digital marketing is the foundation upon which successful online campaigns are built. It involves setting clear objectives, identifying target audiences." className="text-white text-opacity-70 text-center !leading-150 lg:text-start mx-auto lg:mx-0 max-w-[445px]" />
               </div>
             </div>
           </div>
