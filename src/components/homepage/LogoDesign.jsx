@@ -25,8 +25,7 @@ const LogoDesign = () => {
               <img src={designWhiteEllipse} alt="ellipse1" className=' absolute max-[500px]:hidden z-[-1] max-w-[414.46px] w-full bottom-[6%] right-[4%] sm:right-[7%] min-[900px]:right-[16%] lg:right-[2%] pointer-events-none' />
               <img src={designBoy1} alt="boy1" className='absolute lg:-top-[25.5%] min-[500px]:right-[27%] min-[500px]:top-[-13%] -top-[18%] right-[18%] md:right-[32%] md:top-[-22%] sm:right-[29%] sm:top-[-13%] lg:left-[36%] lg:max-w-[194.67px] md:max-w-[170px] sm:max-w-[150px] max-w-[120px] z-[1] pointer-events-none' />
               <div className='flex flex-col max-[500px]:items-center gap-5 min-[500px]:gap-[26.5px]'>
-                <img src={designCard1} alt="designcard1" className='max-w-[203.39px] border border-solid border-transparent hover:border-blue duration-300 w-full rounded-[12.52px] hover:scale-105 shadow-designCard
-      ' />
+                <img src={designCard1} alt="designcard1" className='max-w-[203.39px] border border-solid border-transparent hover:border-blue duration-300 w-full rounded-[12.52px] hover:scale-105 shadow-designCard'/>
                 <img src={designCard2} alt="designCard2" className='max-w-[203.39px] border border-solid border-transparent hover:border-blue duration-300 w-full rounded-[12.52px] hover:scale-105' />
               </div>
               <div className='flex flex-col max-[500px]:items-center gap-5 min-[500px]:gap-[28.68px] mt-5 min-[500px]:mt-10'>
