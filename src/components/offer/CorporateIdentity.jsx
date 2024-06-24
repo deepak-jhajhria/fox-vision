@@ -34,19 +34,19 @@ const CorporateIdentity = () => {
                   <>
                     Many people primarily associate logo and colors with it.
                     Corporate identity is much more. Corporate identity, together
-                    with{" "}
+                    with
                     {
                       <span className="text-opacity-100 text-violet">
                         rcorporate design,
                       </span>
-                    }{" "}
+                    }
                     forms the character of your company. Give your company a face
-                    and awaken emotions and trust in your customers.{" "}
+                    and awaken emotions and trust in your customers.
                     {
                       <span className="text-opacity-100 text-violet">
                         FOX VISION
                       </span>
-                    }{" "}
+                    }
                     would be happy to develop your corporate identity.
                   </>
                 }

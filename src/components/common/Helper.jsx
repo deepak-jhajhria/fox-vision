@@ -58,7 +58,7 @@ export const footerLinkList = [
         title: 'Agency',
         links: [
             { link: 'Fox Vision GmbH ', path: '#fox' },
-            { link: (<>Badstrasse 50 <span className="max-lg:hidden">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span> <br /> CH-5200 Brugg</>), path: '#address', },
+            { link: (<>Badstrasse 50 <span className="max-lg:hidden">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span> <br /> CH-5200 Brugg</>), path: '/contact-us', },
             { link: '+41 79 725 61 00', path: 'tel:+1234567890' },
             { link: 'info@foxvision.ch', path: 'mailto:example@example.com', },
         ]

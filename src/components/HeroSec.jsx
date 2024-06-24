@@ -34,8 +34,7 @@ const HeroSec = () => {
             <Link to={location.pathname} className="text-sm font-medium text-white capitalize sm:text-base font-poppins">{location.pathname.replace(/[\/-]/g, ' ')}</Link>
           </div>}
         </div>
-      </div>
-    </header>
+      </div>    </header>
   );
 };
 

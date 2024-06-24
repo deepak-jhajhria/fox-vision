@@ -16,17 +16,17 @@ const CheckboxLayout = ({ checked, onChange }) => {
             {checked && <CheckedIcon />}
           </span>
           <span className="text-sm font-normal text-black cursor-pointer select-none font-poppins opacity-70 sm:text-base ">
-            {" "}
+          
             I’m not a robot
           </span>
         </div>
-        <div className="flex flex-col !justify-end items-center">
-          <img className="" src={captcha} alt="Captcha_Image" />
-          <p className="text-silver !flex-nowrap font-normal font-poppins leading-[12px] text-[8px]">
+        <div className="flex flex-col justify-end items-center">
+          <img src={captcha} alt="captchaImage" />
+          <p className="text-silver flex-nowrap font-normal font-poppins leading-[12px] text-[8px]">
             Privacy - Terms
           </p>
         </div>
-      </label>{" "}
+      </label>
     </div>
   );
 };
